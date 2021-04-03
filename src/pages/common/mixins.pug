@@ -1,0 +1,11 @@
+//- Мини баннер на главной
+mixin banner-card(data)
+  a.banners__item(href="#")
+    img.banners__item-img(src='./img/' + data.image alt="")
+    span.banners__item-info
+      span.banners__item-title!=data.title
+
+//- +banner-card({
+//-   image : "banners/1.jpg",
+//-   title: "Оптимизация <br>бурения"
+//- })
