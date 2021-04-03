@@ -3,13 +3,13 @@
 @font-face {
     font-family: "ProximaNova";
     src: url("../fonts/proximanova-black-webfont.eot");
-    src: url("../fonts/proximanova-black-webfont.eot?#iefix")
-            format("embedded-opentype"),
+    src:
+        url("../fonts/proximanova-black-webfont.eot?#iefix") format("embedded-opentype"),
         url("../fonts/proximanova-black-webfont.woff2") format("woff2"),
         url("../fonts/proximanova-black-webfont.woff") format("woff"),
         url("../fonts/proximanova-black-webfont.ttf") format("truetype"),
         url("../fonts/proximanova-black-webfont.svg#proxima_nova_blblack")
-            format("svg");
+        format("svg");
     font-weight: 900;
     font-style: normal;
     font-display: swap;
