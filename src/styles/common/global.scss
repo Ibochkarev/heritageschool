@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background: #e5e5e5;
+    background: white;
     position: relative;
     display: flex;
     min-height: 100vh;
@@ -136,63 +136,30 @@ p {
     padding-top: 60px;
     padding-bottom: 60px;
 
-    &__headline {
-        display: flex;
-        align-items: center;
-        margin-bottom: 42px;
-    }
-
     &__title {
-        margin-right: 60px;
         font-family: $primary-font;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 1.2;
+        font-size: 42px;
+        font-weight: 550;
+        line-height: 24px;
         text-transform: uppercase;
-        color: #373c40;
-    }
-
-    &__link {
-        display: none;
-        align-items: center;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 1.4;
-        color: #373c40;
-        transition: all 0.5s ease-in-out;
-
-        .arrow-link {
-            margin-left: 3px;
-            transition: all 0.5s ease-in-out;
-        }
-
-        &:hover {
-            color: darken($color: #373c40, $amount: 15);
-
-            .arrow-link {
-                margin-left: 18px;
-            }
-        }
+        color: $blue;
+        margin-bottom: 116px;
+        text-align: center;
     }
 }
 
 @media (min-width: 768px) {
-    .section__link {
-        display: flex;
-    }
-
     .section {
         &__title {
             font-size: 48px;
-            line-height: 56px;
         }
     }
 }
 
 @media (min-width: 1200px) {
     .section {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 130px;
+        padding-bottom: 130px;
     }
 }
 

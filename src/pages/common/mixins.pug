@@ -1,11 +1,9 @@
-//- Мини баннер на главной
-mixin banner-card(data)
-  a.banners__item(href="#")
-    img.banners__item-img(src='./img/' + data.image alt="")
-    span.banners__item-info
-      span.banners__item-title!=data.title
-
-//- +banner-card({
-//-   image : "banners/1.jpg",
-//-   title: "Оптимизация <br>бурения"
-//- })
+//- Useful block card
+mixin useful-card(data)
+  .useful__item
+    img.useful__item-img(src='./img/' + data.image alt="")
+    .useful__item-info
+      .useful__item-title!=data.title
+      .useful__item-date!=data.date
+      .useful__item-text!=data.text
+    a.useful__item-link(href="#") read more
