@@ -1,0 +1,21 @@
++b.subscribe
+  .container
+    +e.wrap
+      +e.info
+        +e.title Do you want to receive useful content about school education and children?
+        +e.text Subscribe to our newsletter (no spam and ads)
+      +e.form
+        +b.FORM.form(action="subscribe")
+          .row-horizontal
+            .subscribe__form-group
+              +e.LABEL.label(for="name")
+                +e.INPUT.input(type="text", name="name", placeholder="Your name")
+            .subscribe__form-group
+              +e.LABEL.label(for="name")
+                +e.INPUT.input(type="text", name="name", placeholder="Your name")
+            .subscribe__form-group
+              +e.BUTTON.button(type="submit") Subscribe
+          +e.terms
+            input(type="checkbox" name="terms")
+            label(for="terms")
+              a(href="#") I agree with the terms of processing personal data

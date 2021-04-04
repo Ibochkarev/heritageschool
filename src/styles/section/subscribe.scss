@@ -1,0 +1,45 @@
+.subscribe {
+    margin-bottom: 170px;
+    padding: 68px 0 58px;
+    background: #f5f5f5;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: wrap;
+    }
+
+    &__info {
+        color: $blue;
+        flex-basis: 40%;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    &__form {
+        flex-basis: 60%;
+
+        &-group {
+            width: calc(100% / 3 - 20px);
+        }
+
+        .row-horizontal {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 23px;
+        }
+    }
+}
