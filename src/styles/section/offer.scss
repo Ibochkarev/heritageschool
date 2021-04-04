@@ -1,0 +1,60 @@
+.offer {
+    background: #e5e5e5;
+
+    &__item {
+        width: calc(100% / 6);
+        height: auto;
+        margin-bottom: 26px;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
+        align-self: stretch;
+
+        &-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            height: 100%;
+            padding: 40px 30px;
+            color: #3a3a3a;
+            transition: all 0.5s ease-in-out;
+            flex-direction: column;
+            background-color: #ffffff;
+        }
+
+        &-icon {
+            width: 72px;
+            height: 72px;
+            margin-bottom: 35px;
+        }
+
+        &-title {
+            font-size: 22px;
+            line-height: 1.4;
+        }
+
+        &-text {
+            display: none;
+        }
+
+        &:hover {
+            .offer__item-icon {
+                width: 49px;
+                height: 49px;
+            }
+
+            .offer__item-title {
+                display: none;
+            }
+
+            .offer__item-text {
+                display: block;
+            }
+
+            .offer__item-wrap {
+                color: white;
+                background-color: $blue;
+            }
+        }
+    }
+}

@@ -7,3 +7,12 @@ mixin useful-card(data)
       .useful__item-date!=data.date
       .useful__item-text!=data.text
     a.useful__item-link(href="#") read more
+
+//- Offer block card
+mixin offer-card(data)
+  .offer__item
+    .offer__item-wrap
+      img.offer__item-icon(src='./img/offer/' + data.icon alt="")
+      .offer__item-info
+        .offer__item-title!=data.title
+        .offer__item-text!=data.text
