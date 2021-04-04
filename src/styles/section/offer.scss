@@ -3,7 +3,7 @@
 
     &__item {
         width: calc(100% / 6);
-        height: auto;
+        height: 300px;
         margin-bottom: 26px;
         padding-right: 10px;
         padding-left: 10px;
@@ -13,7 +13,7 @@
         &-wrap {
             display: flex;
             align-items: center;
-            justify-content: start;
+            justify-content: center;
             height: 100%;
             padding: 40px 30px;
             color: #3a3a3a;
@@ -35,6 +35,9 @@
 
         &-text {
             display: none;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.4;
         }
 
         &:hover {
@@ -52,6 +55,7 @@
             }
 
             .offer__item-wrap {
+                justify-content: start;
                 color: white;
                 background-color: $blue;
             }
