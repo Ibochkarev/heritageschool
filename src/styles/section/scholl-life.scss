@@ -1,5 +1,20 @@
 .school-life {
+    position: relative;
     background-color: rgba(22, 52, 95, 0.95);
+    background-size: cover;
+    background-position: center;
+
+    &::after {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/school-life/bg.jpg");
+        content: "";
+        background-size: cover;
+    }
 
     .section__title {
         color: #ffffff;

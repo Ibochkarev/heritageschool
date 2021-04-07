@@ -33,3 +33,11 @@ mixin mass-media-card(data)
     .mass-media__item-source!=data.source
     .mass-media__item-date!=data.date
     a.mass-media__item-title(href="#", target="_blank", rel="nofollow")!=data.title
+
+//- Environment card
+mixin environment-card(data)
+  .environment__item
+    .environment__item-info
+      .environment__item-icon
+        img(src='./img/' + data.icon alt="")
+      .environment__item-title!=data.title
