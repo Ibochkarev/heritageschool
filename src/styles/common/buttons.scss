@@ -1,9 +1,12 @@
-.btn-more {
+.btn {
     cursor: pointer;
+    display: block;
     width: 240px;
     height: 53px;
     font-size: 14px;
     font-weight: 750;
+    line-height: 53px;
+    text-align: center;
     text-transform: uppercase;
     color: #f9f9f9;
     background: #c49a6c;

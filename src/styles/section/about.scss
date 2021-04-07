@@ -1,0 +1,56 @@
+.about {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1266px;
+        height: 820px;
+        background-size: contain;
+        background-image: url("../img/about/bg.png");
+        content: "";
+        z-index: -1;
+    }
+
+    &__photo {
+        width: 25%;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        width: 75%;
+
+        &-block {
+            max-width: 745px;
+            margin-left: 170px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 70px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.4;
+        color: #3a3a3a;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.45;
+    }
+
+    &__founder {
+        margin-bottom: 70px;
+        font-size: 24px;
+        line-height: 1.45;
+    }
+
+    &__btn {
+        width: 280px;
+        font-weight: 400;
+    }
+}
