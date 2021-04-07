@@ -1,0 +1,47 @@
++b.SECTION.school-life.section
+  .container
+    h2.section__title SCHOOL LIFE
+    +e.wrap
+      +e.col
+        +school-life-card({
+          image : "useful/img-01.jpg",
+          title: "Mr Matthew has a message for you",
+          date: "31. 01. 2020",
+          text: "The teachers of the Cambridge program are qualified native English teachers who have passed a special selection and came to us from the UK."
+        })
+      +e.col
+        +school-life-card({
+          image : "useful/img-02.jpg",
+          title: "Mr Matthew has a message for you",
+          date: "31. 01. 2020",
+          text: "The teachers of the Cambridge program are qualified native English teachers who have passed a special selection and came to us from the UK."
+        })
+      +e.col
+        +school-life-card({
+          image : "useful/img-03.jpg",
+          title: "Mr Matthew has a message for you",
+          date: "31. 01. 2020",
+          text: "The teachers of the Cambridge program are qualified native English teachers who have passed a special selection and came to us from the UK."
+        })
+      +e.col.mass-media
+        .mass-media__header
+          h2.mass-media__title MASS MEDIA
+          a.mass-media__link(href="#") read more
+        .mass-media__wrapper
+          +mass-media-card({
+            title: "Mr Matthew has a message for you",
+            date: "31. 01. 2020",
+            source: "VC.RU"
+          })
+          +mass-media-card({
+            title: "Mr Matthew has a message for you",
+            date: "31. 01. 2020",
+            source: "Комсомольская правда"
+          })
+          +mass-media-card({
+            title: "Mr Matthew has a message for you",
+            date: "31. 01. 2020",
+            source: "VC.RU"
+          })
+    +e.more
+      button.btn-more(type="button") Read more

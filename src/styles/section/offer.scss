@@ -10,6 +10,18 @@
         text-align: center;
         align-self: stretch;
 
+        @media (max-width: 1200px) {
+            width: calc(100% / 4);
+        }
+
+        @media (max-width: 768px) {
+            width: calc(100% / 3);
+        }
+
+        @media (max-width: 375px) {
+            width: calc(100% / 2);
+        }
+
         &-wrap {
             display: flex;
             align-items: center;

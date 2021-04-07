@@ -16,3 +16,20 @@ mixin offer-card(data)
       .offer__item-info
         .offer__item-title!=data.title
         .offer__item-text!=data.text
+
+//- School-life block card
+mixin school-life-card(data)
+  .school-life__item
+    img.school-life__item-img(src='./img/' + data.image alt="")
+    .school-life__item-info
+      .school-life__item-title!=data.title
+      .school-life__item-date!=data.date
+      .school-life__item-text!=data.text
+    a.school-life__item-link(href="#") read more
+
+//- Mass media card
+mixin mass-media-card(data)
+  .mass-media__item
+    .mass-media__item-source!=data.source
+    .mass-media__item-date!=data.date
+    a.mass-media__item-title(href="#", target="_blank", rel="nofollow")!=data.title

@@ -1,0 +1,164 @@
+.school-life {
+    background-color: rgba(22, 52, 95, 0.95);
+
+    .section__title {
+        color: #ffffff;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        flex-wrap: wrap;
+    }
+
+    &__col {
+        width: calc(100% / 4 - 30px);
+    }
+
+    &__item {
+        &-img {
+            margin-bottom: 45px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__info {
+            margin-bottom: 25px;
+        }
+
+        &-title {
+            margin-bottom: 38px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.2;
+            text-decoration: underline;
+            color: white;
+        }
+
+        &-date {
+            margin-bottom: 13px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        &-text {
+            margin-bottom: 25px;
+            font-size: 16px;
+            line-height: 1.4;
+            color: white;
+        }
+
+        &-link {
+            position: relative;
+            display: block;
+            margin-left: 37px;
+            font-size: 14px;
+            line-height: 14px;
+            text-decoration: underline;
+            color: white;
+
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: -37px;
+                width: 20px;
+                height: 1px;
+                transform: translateY(-50%);
+                content: "";
+                background-color: white;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.mass-media {
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        color: white;
+    }
+
+    &__link {
+        position: relative;
+        display: block;
+        margin-left: 17px;
+        font-size: 18px;
+        line-height: 14px;
+        text-decoration: underline;
+        color: white;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: -27px;
+            width: 20px;
+            height: 1px;
+            transform: translateY(-50%);
+            content: "";
+            background-color: white;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+
+        &-source {
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.2;
+            color: white;
+        }
+
+        &-date {
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        &-title {
+            display: block;
+            max-width: 290px;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.2;
+            text-decoration: underline;
+            color: white;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
