@@ -180,34 +180,3 @@ p {
         padding-bottom: 130px;
     }
 }
-
-.swiper-pagination-bullet {
-    width: 7px;
-    height: 7px;
-    margin: 0 15px;
-    background: #373c40;
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background: #ff6e3a;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    &::after {
-        display: block;
-        width: 20px;
-        height: 24px;
-        content: "";
-        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5 23l11-11L5 1' stroke='%23FF6E3A' stroke-width='2'/%3e%3c/svg%3e");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-
-.swiper-button-prev {
-    &::after {
-        transform: rotate(180deg);
-    }
-}
