@@ -1,0 +1,17 @@
++b.home-slider
+  .swiper-container
+    .swiper-wrapper
+      .swiper-slide
+        +e.item(style="background-image: url('./img/slider/01.jpg')")
+      .swiper-slide
+        +e.item(style="background-image: url('./img/slider/01.jpg')")
+      .swiper-slide
+        +e.item(style="background-image: url('./img/slider/01.jpg')")
+
+    +e.nav-wrap
+      .container
+        +e.pagination
+          .swiper-pagination__nav
+            .swiper-pagination-num 01
+            .swiper-pagination.swiper-pagination-main
+            .swiper-pagination-total 03

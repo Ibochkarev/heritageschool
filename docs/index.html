@@ -39,8 +39,10 @@
   </head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <header class="header">
-      <div class="header__container">
-        <div class="header__logo"><img src="" alt="">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo"><img src="" alt="">
+          </div>
         </div>
       </div>
     </header>
@@ -49,24 +51,26 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="home-slider__item" style="background-image: url('./img/slider/img-01.jpg')">
-                <div class="container">
-                  <div class="home-slider__item-wrap">
-                    <div class="home-slider__item-info">
-                      <div class="home-slider__item-title"><span>1</span>title
-                      </div>
-                      <div class="home-slider__item-text">text
-                      </div><a class="home-slider__item-btn" href="#">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
+              <div class="home-slider__item" style="background-image: url('./img/slider/01.jpg')">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="home-slider__item" style="background-image: url('./img/slider/01.jpg')">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="home-slider__item" style="background-image: url('./img/slider/01.jpg')">
               </div>
             </div>
           </div>
           <div class="home-slider__nav-wrap">
-            <div class="home-slider__nav-container">
+            <div class="container">
               <div class="home-slider__pagination">
-                <div class="swiper-pagination swiper-pagination-main"></div>
+                <div class="swiper-pagination__nav">
+                  <div class="swiper-pagination-num">01</div>
+                  <div class="swiper-pagination swiper-pagination-main"></div>
+                  <div class="swiper-pagination-total">03</div>
+                </div>
               </div>
             </div>
           </div>
@@ -423,11 +427,11 @@
               <form class="form" action="subscribe">
                 <div class="row-horizontal">
                   <div class="subscribe__form-group">
-                    <label class="form__label" for="name"><input class="form__input" type="text" name="name" placeholder="Your name"/>
+                    <label class="form__label"><input class="form__input" type="text" name="name" placeholder="Your name"/>
                     </label>
                   </div>
                   <div class="subscribe__form-group">
-                    <label class="form__label" for="name"><input class="form__input" type="text" name="name" placeholder="Your name"/>
+                    <label class="form__label"><input class="form__input" type="text" name="name" placeholder="Your name"/>
                     </label>
                   </div>
                   <div class="subscribe__form-group">
@@ -436,7 +440,7 @@
                   </div>
                 </div>
                 <div class="form__terms">
-                  <input type="checkbox" name="terms">
+                  <input id="terms" type="checkbox" name="terms">
                   <label for="terms"><a href="#">I agree with the terms of processing personal data</a></label>
                 </div>
               </form>

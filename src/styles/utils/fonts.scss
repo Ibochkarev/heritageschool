@@ -43,21 +43,6 @@
 
 @font-face {
     font-family: "Avenir Next Cyr";
-    src: url("../fonts/AvenirNextCyr/AvenirNextCyr-ThinItalic.eot");
-    src: local("Avenir Next Cyr Thin Italic"), local("AvenirNextCyr-ThinItalic"),
-        url("../fonts/AvenirNextCyr/AvenirNextCyr-ThinItalic.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/AvenirNextCyr/AvenirNextCyr-ThinItalic.woff")
-            format("woff"),
-        url("../fonts/AvenirNextCyr/AvenirNextCyr-ThinItalic.ttf")
-            format("truetype");
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Avenir Next Cyr";
     src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Italic.eot");
     src: local("Avenir Next Cyr Italic"), local("AvenirNextCyr-Italic"),
         url("../fonts/AvenirNextCyr/AvenirNextCyr-Italic.eot?#iefix")
@@ -104,22 +89,6 @@
 
 @font-face {
     font-family: "Avenir Next Cyr";
-    src: url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.eot");
-    src: local("Avenir Next Cyr Light Italic"),
-        local("AvenirNextCyr-LightItalic"),
-        url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.woff")
-            format("woff"),
-        url("../fonts/AvenirNextCyr/AvenirNextCyr-LightItalic.ttf")
-            format("truetype");
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Avenir Next Cyr";
     src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot");
     src: local("Avenir Next Cyr Medium"), local("AvenirNextCyr-Medium"),
         url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot?#iefix")
@@ -133,22 +102,6 @@
 }
 
 @font-face {
-    font-family: "Avenir Next Cyr Ultra";
-    src: url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLightIt.eot");
-    src: local("Avenir Next Cyr Ultra Light Italic"),
-        local("AvenirNextCyr-UltraLightIt"),
-        url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLightIt.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLightIt.woff")
-            format("woff"),
-        url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLightIt.ttf")
-            format("truetype");
-    font-weight: 200;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
     font-family: "Avenir Next Cyr";
     src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot");
     src: local("Avenir Next Cyr Regular"), local("AvenirNextCyr-Regular"),
@@ -158,21 +111,6 @@
         url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf")
             format("truetype");
     font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Avenir Next Cyr Ultra";
-    src: url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLight.eot");
-    src: local("Avenir Next Cyr Ultra Light"), local("AvenirNextCyr-UltraLight"),
-        url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLight.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLight.woff")
-            format("woff"),
-        url("../fonts/AvenirNextCyr/AvenirNextCyr-UltraLight.ttf")
-            format("truetype");
-    font-weight: 200;
     font-style: normal;
     font-display: swap;
 }
@@ -215,18 +153,5 @@
             format("truetype");
     font-weight: bold;
     font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Avenir Next Cyr";
-    src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Thin.eot");
-    src: local("Avenir Next Cyr Thin"), local("AvenirNextCyr-Thin"),
-        url("../fonts/AvenirNextCyr/AvenirNextCyr-Thin.eot?#iefix")
-            format("embedded-opentype"),
-        url("../fonts/AvenirNextCyr/AvenirNextCyr-Thin.woff") format("woff"),
-        url("../fonts/AvenirNextCyr/AvenirNextCyr-Thin.ttf") format("truetype");
-    font-weight: 100;
-    font-style: normal;
     font-display: swap;
 }

@@ -3,25 +3,8 @@ include common/mixins.pug
 
 block content
   .content
-    +b.home-slider
-      .swiper-container
-        .swiper-wrapper
-          .swiper-slide
-            +e.item(style="background-image: url('./img/slider/img-01.jpg')")
-              .container
-                +e.item-wrap
-                  +e.item-info
-                    +e.item-title
-                      span 1
-                      | title
-                    +e.item-text text
-                    +e.A.item-btn(href="#") Подробнее
 
-        +e.nav-wrap
-          +e.nav-container
-            +e.pagination
-              .swiper-pagination.swiper-pagination-main
-
+    include blocks/main-slider.pug
     include blocks/about.pug
     include blocks/offer.pug
     include blocks/school-life.pug
