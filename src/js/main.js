@@ -1,4 +1,4 @@
-import {Swiper, Navigation, Pagination, Mousewheel} from "swiper"
+import { Swiper, Navigation, Pagination, Mousewheel } from "swiper"
 Swiper.use([Navigation, Pagination, Mousewheel])
 
 document.addEventListener(`DOMContentLoaded`, () => {
@@ -54,8 +54,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
         const toggleTarget = e.target.classList.contains(`mobile-menu__link`)
             ? e.target.parentNode
             : e.target.classList.contains(`mobile-menu__sub-item`)
-                ? e.target
-                : e.target.closest(`.mobile-menu__sub-item`)
+            ? e.target
+            : e.target.closest(`.mobile-menu__sub-item`)
         if (toggleTarget.classList.contains(`is-open`)) {
             toggleTarget.classList.remove(`is-open`)
         } else {

@@ -1,0 +1,77 @@
+.details {
+    width: 100%;
+    max-width: 1220px;
+    margin-bottom: 75px;
+
+    &__item {
+        cursor: pointer;
+        min-height: 64px;
+        padding: 12px 32px 18px 79px;
+        background: #ffffff;
+        box-sizing: border-box;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        summary {
+            position: relative;
+            padding-top: 5px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #16345f;
+            padding-left: 20px;
+        }
+
+        &-content {
+            padding-top: 18px;
+            padding-left: 20px;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 157%;
+            color: #3a3a3a;
+        }
+    }
+
+    summary::after {
+        position: absolute;
+        top: 0;
+        left: -49px;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.6;
+        text-align: center;
+        color: #16345f;
+        border: 2px solid #16345f;
+        border-radius: 50%;
+        content: "+";
+    }
+
+    details[open] summary::after {
+        content: "—";
+    }
+
+    details > summary {
+        list-style: none;
+    }
+
+    details > summary::-webkit-details-marker {
+        display: none;
+    }
+
+    details[open] {
+        animation: animateDown 0.5s ease-in-out;
+    }
+
+    @keyframes animateDown {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}

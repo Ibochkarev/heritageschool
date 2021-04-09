@@ -41,3 +41,23 @@ mixin environment-card(data)
       .environment__item-icon
         img(src='./img/' + data.icon alt="")
       .environment__item-title!=data.title
+
+mixin breadcrumb(levels)
+  nav.breadcrumbs(aria-label="breadcrumb")
+    .container
+      ul.breadcrumb(itemscope itemtype="http://schema.org/BreadcrumbList")
+
+        each item, index in levels
+          - var count = index+1
+          - var name = item[0]
+          - var link = item[1] || null
+
+          li.breadcrumb__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+            if link
+              a(href=link aria-level!=count)
+                span(itemprop="name") #{name}
+            else
+              span(itemprop="name") #{name}
+
+            if count < levels.length
+              i.fa.fa-angle-right(aria-hidden="true")
