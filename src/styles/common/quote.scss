@@ -1,0 +1,43 @@
+.quote {
+    display: flex;
+    align-items: center;
+    margin-bottom: 65px;
+    background: #ffffff;
+
+    &__photo {
+        width: 30%;
+        height: 100%;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    &__info {
+        height: 100%;
+        padding: 45px 50px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #16345f;
+    }
+
+    &__position {
+        margin-bottom: 35px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #3a3a3a;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 157%;
+        color: #c49a6c;
+    }
+}

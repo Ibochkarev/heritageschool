@@ -1,0 +1,58 @@
+extends common/layout
+include common/mixins.pug
+
+block content
+  .content.inner-page
+    .page
+      +breadcrumb([["Main", "/"], ["About Us", "/"], ["Message from Head of School", ""]])
+      .container
+        h1.page__title About school
+
+        .inner.row
+          .inner__left
+            .bg-menu
+              nav
+                +b.UL.left-menu
+                  +e.LI.item
+                    +e.A.item-link.active(href="#") Message from Founders
+                  +e.LI.item
+                    +e.A.item-link(href="#") Message from Head of School
+                  +e.LI.item
+                    +e.A.item-link(href="#") Our Values
+                  +e.LI.item
+                    +e.A.item-link(href="#") Our Facilities
+                  +e.LI.item
+                    +e.A.item-link(href="#") Safe Environment
+                  +e.LI.item
+                    +e.A.item-link(href="#") Contact
+
+          .inner__right
+            +b.quote
+              +e.photo
+                img(src="./img/inner/photo.jpg", alt="")
+              +e.info
+                +e.title Matthew Robert Ashton
+                +e.position Head of School
+                +e.wrap
+                  +e.subtitle Quote
+                  +e.text
+                    p Education is the passport to the future, for tomorrow belongs to those who prepare for it today.
+
+            .inner__content
+              p
+                b Dear children, parents, colleagues and community members!
+              p It is a privilege to introduce myself as the inaugural Head of Heritage School; we are at the start of a very exciting journey, and what a year we have ahead of us!
+              p
+                b Our vision
+                | is to make a difference through education. Of the many things that can make a difference in the world, none is more powerful than education. Education opens doors and opens minds, and allows children not only to fulfil their potential, but also to realise potential they never knew they had. We talk of world-class education. Here at Heritage School, we will show you that we understand this term in two-ways! Our teachers are not only outstanding practitioners with a proven record of success in the classroom, they also hail from countries across the world with diverse and well-respected education systems, and they will bring their language, culture and global perspectives into your children’s lives, providing a uniquely rich educational experience.
+
+              img(src="./img/inner/image.jpg", alt="")
+
+              p
+                b What is a school for?
+                | Our youngest children will enter adulthood in the year 2034 – what skills will they need? What will the world look like? At Heritage school, we do not simply equip our children with the academic and theoretical skills that they might need; we also develop within them the holistic personal skills that they will need in order to flourish in this uncertain and constantly changing modern world. A Growth Mindset is vital to being able to adapt quickly, and we at Heritage School foster this way of thinking in our children from the youngest age, as well as developing the core values which successful adults have – empathy, perseverance, diligence to name but three.
+
+              p Many new schools bring innovative approaches to teaching and learning, and we are no exception. Our teachers are innovative practitioners and our facilities are cutting-edge. However, we understand the value of proven and well-established frameworks, in particular the Cambridge International Curriculum. This long-established and well-respected programme, which we are implementing right through from the youngest classes to the oldest, lays out a clear pathway for academic learning, leading to qualifications which are recognised by the world’s most well-respected universities. Our partnership with Cambridge will make us part of a prestigious global community of schools.
+
+              p It will be my privilege to watch our children learn and grow as they make their journey through our wonderful new school, and I am certain that every child will achieve their full potential with us.
+              p Welcome to Heritage Education!
