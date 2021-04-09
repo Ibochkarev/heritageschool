@@ -42,6 +42,7 @@ mixin environment-card(data)
         img(src='./img/' + data.icon alt="")
       .environment__item-title!=data.title
 
+//- Хлебные крошки
 mixin breadcrumb(levels)
   nav.breadcrumbs(aria-label="breadcrumb")
     .container
@@ -61,3 +62,15 @@ mixin breadcrumb(levels)
 
             if count < levels.length
               i.fa.fa-angle-right(aria-hidden="true")
+
+//- Карточка в списке
+mixin card(data)
+  .card
+    .card__img
+      img(src='./img/' + data.img alt="")
+    .card__wrap
+      .card__info
+        .card__title!=data.title
+        .card__date!=data.date
+        .card__text!=data.text
+      a.card__link(href="#") читать подробнее
