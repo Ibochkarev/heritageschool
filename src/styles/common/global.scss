@@ -247,6 +247,15 @@ strong {
 }
 
 .content-list {
+    &__title {
+        margin-bottom: 70px;
+        font-size: 48px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        color: #16345f;
+        letter-spacing: -0.015em;
+    }
+
     .row {
         align-items: stretch;
     }
