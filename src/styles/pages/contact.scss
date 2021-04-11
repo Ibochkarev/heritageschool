@@ -1,0 +1,145 @@
+.contact {
+    &__wrapper {
+        display: flex;
+    }
+
+    &__list {
+        flex-basis: 60%;
+    }
+
+    &__form {
+        flex-basis: 40%;
+    }
+}
+
+.camspus-item {
+    width: 100%;
+    max-width: 877px;
+    margin-bottom: 130px;
+    background: #ffffff;
+    transition: all 0.5s ease-in-out;
+
+    &.is-active {
+        .camspus-item {
+            &__bottom {
+                height: 100%;
+                visibility: visible;
+            }
+
+            &__btn {
+                .hide {
+                    display: block;
+                }
+
+                .show {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__top {
+        display: flex;
+
+        &-col {
+            flex-basis: 50%;
+        }
+    }
+
+    &__bottom {
+        height: 0;
+        visibility: hidden;
+    }
+
+    &__headline {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        padding: 38px 45px;
+        flex-direction: column;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.33;
+        color: #041e42;
+    }
+
+    &__btn {
+        position: relative;
+        display: block;
+        width: max-content;
+        padding-left: 40px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 14px;
+        color: #c49a6c;
+        border: 0;
+        background-color: transparent;
+        text-decoration-line: underline;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: #c49a6c;
+            transform: translateY(-50%);
+            content: "";
+        }
+
+        .hide {
+            display: none;
+        }
+    }
+
+    &__info {
+        padding: 75px 35px 55px;
+
+        &-item {
+            display: flex;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+
+            &__icon {
+                width: 32px;
+                height: 32px;
+                margin-right: 21px;
+            }
+
+            &__text {
+                span,
+                a {
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    color: #3a3a3a;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__map {
+        iframe {
+            width: 100%;
+            height: 510px;
+        }
+    }
+}

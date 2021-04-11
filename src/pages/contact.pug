@@ -1,0 +1,87 @@
+extends common/layout
+include common/mixins.pug
+
+block content
+  .content.inner-page
+    .page
+      +breadcrumb([["Main", "/"], ["Contact", ""]])
+      .container
+        h1.page__title Contact
+        +b.contact
+          +e.wrapper
+            +e.list
+              +b.camspus-item
+                +e.top
+                  +e.top-col
+                    +e.IMG.img(src="img/contact/item.jpg", alt="")
+                  +e.top-col
+                    +e.headline
+                      +e.title Кампус Сокольники
+                      +e.A.btn(href="#")
+                        span.show read more
+                        span.hide hide
+                +e.bottom
+                  +e.info
+                    +e.info-item
+                      +e.info-item__icon
+                        img(src="img/contact/phone.svg", alt="")
+                      +e.info-item__text
+                        span
+                          a(href="tel:+74995830247") +7 (499) 583 02 47
+                        span (по вопросам поступления)
+
+                    +e.info-item
+                      +e.info-item__icon
+                        img(src="img/contact/mail.svg", alt="")
+                      +e.info-item__text
+                        span Учёба в Heritage
+                        span
+                          a(href="mailto:study@heritageschool.ru")  study@heritageschool.ru
+
+                    +e.info-item
+                      +e.info-item__icon
+                        img(src="img/contact/marker.svg", alt="")
+                      +e.info-item__text
+                        span ул. Краснобогатырская, д. 90, стр. 3
+                        span (метро «Преображенская Площадь»)
+
+                  +e.map 1231
+
+              +b.camspus-item.is-active
+                +e.top
+                  +e.top-col
+                    +e.IMG.img(src="img/contact/item.jpg", alt="")
+                  +e.top-col
+                    +e.headline
+                      +e.title Кампус Ленинский
+                      +e.A.btn(href="#")
+                        span.show read more
+                        span.hide hide
+                +e.bottom
+                  +e.info
+                    +e.info-item
+                      +e.info-item__icon
+                        img(src="img/contact/phone.svg", alt="")
+                      +e.info-item__text
+                        span
+                          a(href="tel:+74995830247") +7 (499) 583 02 47
+                        span (по вопросам поступления)
+
+                    +e.info-item
+                      +e.info-item__icon
+                        img(src="img/contact/mail.svg", alt="")
+                      +e.info-item__text
+                        span Учёба в Heritage
+                        span
+                          a(href="mailto:study@heritageschool.ru")  study@heritageschool.ru
+
+                    +e.info-item
+                      +e.info-item__icon
+                        img(src="img/contact/marker.svg", alt="")
+                      +e.info-item__text
+                        span ул. Краснобогатырская, д. 90, стр. 3
+                        span (метро «Преображенская Площадь»)
+
+                  +e.map 1231
+
+            +e.form 121

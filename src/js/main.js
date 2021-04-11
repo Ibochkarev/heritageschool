@@ -16,6 +16,29 @@ document.addEventListener(`DOMContentLoaded`, () => {
         },
     })
 
+    // Карточка кампуса
+
+    const campusBtn = document.querySelectorAll(`.camspus-item__btn`)
+
+    campusBtn.forEach((el) => {
+        el.addEventListener("click", toggleCampus)
+    })
+
+    function toggleCampus(e) {
+        e.preventDefault()
+        const toggleTarget = e.target.classList.contains("camspus-item")
+            ? e.target.parentNode
+            : e.target.classList.contains("camspus-item")
+            ? e.target
+            : e.target.closest(".camspus-item")
+
+        if (toggleTarget.classList.contains("is-active")) {
+            toggleTarget.classList.remove("is-active")
+        } else {
+            toggleTarget.classList.add("is-active")
+        }
+    }
+
     // Открытие по кнопке мобильного меню
 
     const mobileMenu = document.querySelector(`.mobile-menu`)
