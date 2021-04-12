@@ -1,0 +1,82 @@
+.contacts {
+    &__wrap {
+        display: flex;
+    }
+
+    &__col {
+        flex-basis: 50%;
+    }
+
+    &__headline {
+        margin-bottom: 70px;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        font-size: 48px;
+        font-weight: 550;
+        line-height: 24px;
+        color: #041e42;
+
+        &-campus {
+            font-size: 36px;
+            font-weight: 300;
+            line-height: 24px;
+            color: #041e42;
+        }
+    }
+
+    &__info {
+        &-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 20px;
+            }
+
+            &__icon {
+                width: 32px;
+                height: 32px;
+                margin-right: 21px;
+            }
+
+            &__text {
+                span,
+                a {
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    color: #3a3a3a;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__download {
+        display: block;
+        margin-bottom: 50px;
+        padding-left: 53px;
+        font-size: 16px;
+        font-weight: 300;
+        text-decoration: underline;
+        color: #041e42;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__map {
+        iframe {
+            width: 100%;
+            height: 530px;
+        }
+    }
+}
