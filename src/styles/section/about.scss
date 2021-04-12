@@ -2,15 +2,17 @@
     position: relative;
 
     &::before {
+        z-index: -1;
         position: absolute;
-        top: 0;
+        top: 50%;
         right: 0;
         width: 1266px;
         height: 820px;
+        transform: translateY(-50%);
         background-size: contain;
         background-image: url("../img/about/bg.png");
         content: "";
-        z-index: -1;
+        pointer-events: none;
     }
 
     &__photo {

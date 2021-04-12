@@ -1,0 +1,22 @@
+.about-campus {
+    margin-bottom: 120px;
+
+    &__title {
+        margin-bottom: 95px;
+        font-size: 48px;
+        font-weight: 550;
+        text-align: center;
+        text-transform: uppercase;
+        color: #041e42;
+    }
+
+    &__text {
+        p {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 1.6;
+            color: #3a3a3a;
+            letter-spacing: -0.015em;
+        }
+    }
+}
