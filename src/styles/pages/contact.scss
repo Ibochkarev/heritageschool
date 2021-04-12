@@ -9,6 +9,11 @@
 
     &__form {
         flex-basis: 40%;
+
+        &-wrap {
+            position: sticky;
+            top: 120px;
+        }
     }
 }
 
