@@ -1,5 +1,29 @@
 +b.HEADER.header
   .container
     +e.wrapper
-      +e.logo
-        img(src="", alt="")
+      +e.left
+        +e.logo
+          img(src="img/global/logo.svg", alt="")
+        +b.UL.header-menu
+          +e.LI.item
+            +e.A.item-link(href="#") School
+          +e.LI.item
+            +e.A.item-link(href="#") Academic
+          +e.LI.item
+            +e.A.item-link(href="#") Beyond the classroom
+          +e.LI.item
+            +e.A.item-link(href="#") Campuses
+          +e.LI.item
+            +e.A.item-link(href="#") Admissions
+          +e.LI.item
+            +e.A.item-link(href="#") Careers
+          +e.LI.item
+            +e.A.item-link(href="#") Contacts
+
+      +e.right
+        +e.right-block
+          +e.right-link
+            a(href="#") RU
+          +e.right-line
+          +e.right-link
+            +e.A.search-link(href="#")
