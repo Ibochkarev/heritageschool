@@ -1,0 +1,55 @@
+.author-block {
+    margin-bottom: 130px;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        height: 160px;
+        padding: 38px 75px;
+        background-color: $blue;
+    }
+
+    &__photos {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 56px;
+        flex-basis: 400px;
+
+        &-item {
+            z-index: 2;
+            margin-top: 180px;
+
+            img {
+                width: 175px;
+                height: 175px;
+                margin-bottom: 0;
+                border: 5px solid #ffffff;
+                border-radius: 100%;
+                flex: none;
+            }
+        }
+    }
+
+    &__name {
+        font-size: 24px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+
+    &__bottom {
+        padding: 109px 75px 75px;
+        background: #ffffff;
+
+        p {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 1.7;
+            color: #000000;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
