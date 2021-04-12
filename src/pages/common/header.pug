@@ -1,6 +1,7 @@
 +b.HEADER.header
   .container
     +e.wrapper
+      +e.BUTTON.mobile-btn(type="button")
       +e.left
         +e.logo
           img(src="img/global/logo.svg", alt="")
@@ -27,3 +28,35 @@
           +e.right-line
           +e.right-link
             +e.A.search-link(href="#")
+
++b.mobile-menu
+  +e.wrapper
+    +e.top
+      +e.headline
+        +e.logo
+          img(src="img/global/logo.svg", alt="")
+        +e.BUTTON.close(type="button")
+
+      +e.UL.list
+        +e.LI.item
+          +e.A.item-link(href="#") School
+        +e.LI.item
+          +e.A.item-link(href="#") Academic
+        +e.LI.item
+          +e.A.item-link(href="#") Beyond the classroom
+        +e.LI.item
+          +e.A.item-link(href="#") Campuses
+          ul
+            li
+              a(href="#") Кампус Ленинский
+            li
+              a(href="#") Кампус Сокольники
+        +e.LI.item
+          +e.A.item-link(href="#") Admissions
+        +e.LI.item
+          +e.A.item-link(href="#") Careers
+        +e.LI.item
+          +e.A.item-link(href="#") Contacts
+
+    +e.bottom
+      +e.BUTTON.button.btn(type="button") Оставить заявку

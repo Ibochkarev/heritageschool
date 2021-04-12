@@ -46,20 +46,24 @@ document.addEventListener(`DOMContentLoaded`, () => {
     const menuBtnHamburger = document.querySelector(
         `.header__mobile-btn .is_open`
     )
-    const menuBtnClose = document.querySelector(`.header__mobile-btn .is_close`)
+    const menuBtnClose = document.querySelector(`.mobile-menu__close`)
 
     menuBtn.addEventListener(`click`, toggleMenu)
+
+    menuBtnClose.addEventListener(`click`, closeMobileMenu)
 
     function toggleMenu() {
         if (mobileMenu.classList.contains(`_is-active`)) {
             mobileMenu.classList.remove(`_is-active`)
-            menuBtnClose.style.display = `none`
             menuBtnHamburger.style.display = `block`
         } else {
             mobileMenu.classList.add(`_is-active`)
             menuBtnHamburger.style.display = `none`
-            menuBtnClose.style.display = `block`
         }
+    }
+
+    function closeMobileMenu() {
+        mobileMenu.classList.remove(`_is-active`)
     }
 
     // Открытие под меню

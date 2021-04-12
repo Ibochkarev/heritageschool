@@ -2,7 +2,6 @@
     z-index: 4;
     position: fixed;
     width: 100%;
-    padding: 0 20px;
     background-color: #ffffff;
 
     &__wrapper {
@@ -15,9 +14,29 @@
         margin: 0 auto;
     }
 
+    &__mobile-btn {
+        cursor: pointer;
+        display: block;
+        width: 34px;
+        height: 25px;
+        border: 0;
+        background-image: url("data:image/svg+xml,%3Csvg width='34' height='19' viewBox='0 0 34 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.000564575' y1='1' x2='33.8916' y2='1' stroke='%23041E42' stroke-width='2'/%3E%3Cline y1='17.2087' x2='33.891' y2='17.2087' stroke='%23041E42' stroke-width='2'/%3E%3Cline y1='9.10425' x2='16.9455' y2='9.10425' stroke='%23041E42' stroke-width='2'/%3E%3C/svg%3E%0A");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+
     &__left {
         display: flex;
         align-items: center;
+
+        @media (max-width: 992px) {
+            justify-content: center;
+        }
     }
 
     &__right {
@@ -25,6 +44,10 @@
         align-items: center;
         justify-content: flex-end;
         flex: 90px 0 0;
+
+        @media (max-width: 992px) {
+            flex: auto;
+        }
 
         &-block {
             display: flex;
@@ -64,8 +87,15 @@
         height: 100px;
         margin-right: 60px;
         background-color: $blue;
-        flex: 0 0 245px;
+        flex: 0 0 152px;
         flex-direction: column;
+
+        @media (max-width: 992px) {
+            position: absolute;
+            left: 50%;
+            margin-right: 0;
+            transform: translateX(-50%);
+        }
 
         img {
             width: 100%;
@@ -77,8 +107,24 @@
         display: flex;
         align-items: center;
 
+        @media (max-width: 992px) {
+            display: none;
+        }
+
         &__item {
-            margin-right: 60px;
+            margin-right: 80px;
+
+            @media (max-width: 1500px) {
+                margin-right: 55px;
+            }
+
+            @media (max-width: 1366px) {
+                margin-right: 30px;
+            }
+
+            @media (max-width: 1199px) {
+                margin-right: 20px;
+            }
 
             &-link {
                 display: block;
@@ -91,6 +137,94 @@
 
                 &:hover {
                     text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.mobile-menu {
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    background: #041e42;
+    transform: translateX(-10000px);
+
+    &._is-active {
+        overflow: auto;
+        left: 0;
+        transform: translateX(0);
+        transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out !important;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        padding: 38px 24px;
+        flex-direction: column;
+    }
+
+    &__headline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 44px;
+    }
+
+    &__logo {
+        max-width: 120px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__close {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        border: 0;
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.31898 8L15.9518 0.321472C16.063 0.193865 15.9695 0 15.7977 0H13.7813C13.6625 0 13.5488 0.0515337 13.4705 0.139877L8 6.47362L2.52951 0.139877C2.45371 0.0515337 2.34 0 2.21872 0H0.202345C0.030524 0 -0.0629672 0.193865 0.0482113 0.321472L6.68102 8L0.0482113 15.6785C0.0233063 15.707 0.00732877 15.7418 0.00217506 15.7788C-0.00297865 15.8158 0.0029079 15.8534 0.0191365 15.8873C0.035365 15.9211 0.0612539 15.9497 0.093729 15.9697C0.126204 15.9897 0.163901 16.0002 0.202345 16H2.21872C2.33748 16 2.45118 15.9485 2.52951 15.8601L8 9.52638L13.4705 15.8601C13.5463 15.9485 13.66 16 13.7813 16H15.7977C15.9695 16 16.063 15.8061 15.9518 15.6785L9.31898 8Z' fill='white'/%3E%3C/svg%3E%0A");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+
+        &-link {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.5);
+
+            &.active {
+                color: #c49a6c;
+            }
+        }
+
+        ul {
+            margin-top: 21px;
+
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 14px;
+                    color: #fff;
                 }
             }
         }
