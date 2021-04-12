@@ -1,0 +1,94 @@
+.tuition {
+    margin-bottom: 240px;
+
+    &__title {
+        margin-bottom: 90px;
+        font-size: 48px;
+        font-weight: 550;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+        color: #041e42;
+    }
+
+    &__wrap {
+        display: flex;
+        margin-right: -15px;
+        margin-left: -15px;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        width: calc(100% / 3 - 15px);
+        height: 400px;
+        margin-bottom: 45px;
+        margin-left: 15px;
+        background: #ffffff;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            background: #041e42;
+
+            .tuition__card-name,
+            .tuition__card-age {
+                color: #ffffff;
+            }
+        }
+
+        &-wrap {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            margin-right: -15px;
+            margin-left: -15px;
+            padding: 31px 55px 40px;
+            flex-direction: column;
+        }
+
+        &-name {
+            margin-bottom: 30px;
+            font-size: 40px;
+            font-weight: 300;
+            color: #16345f;
+        }
+
+        &-age {
+            margin-bottom: 50px;
+            font-size: 28px;
+            font-weight: 300;
+            line-height: 1.5;
+            color: #041e42;
+        }
+
+        &-cost {
+            font-size: 40px;
+            font-weight: 300;
+            color: #c49a6c;
+        }
+
+        &-link {
+            position: relative;
+            display: block;
+            margin-left: 37px;
+            font-size: 14px;
+            line-height: 14px;
+            text-decoration: underline;
+            color: #c49a6c;
+
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: -37px;
+                width: 20px;
+                height: 1px;
+                transform: translateY(-50%);
+                content: "";
+                background-color: #c49a6c;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

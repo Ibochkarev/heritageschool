@@ -74,3 +74,13 @@ mixin card(data)
         .card__date!=data.date
         .card__text!=data.text
       a.card__link(href="#") читать подробнее
+
+//- Карточка стоимости обучения
+mixin tuition-card(data)
+  .tuition__card
+    .tuition__card-wrap
+      .tuition__card-info
+        .tuition__card-name!=data.name
+        .tuition__card-age!=data.age
+        .tuition__card-cost!=data.cost
+      a.tuition__card-link(href="#") read more
