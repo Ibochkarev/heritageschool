@@ -16,7 +16,7 @@
             width: calc(100% / 4);
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             width: calc(100% / 3);
         }
 
@@ -45,6 +45,18 @@
         &-title {
             font-size: 22px;
             line-height: 1.4;
+
+            @media (max-width: 992px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+
+            @media (max-width: 560px) {
+                font-size: 10px;
+            }
         }
 
         &-text {

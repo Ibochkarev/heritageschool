@@ -1,0 +1,105 @@
+.studying {
+    margin-bottom: 200px;
+
+    &__title {
+        margin-bottom: 90px;
+        font-size: 48px;
+        font-weight: 550;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+        color: #041e42;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__col {
+        width: calc(100% / 2 - 45px);
+    }
+
+    &__block {
+        position: relative;
+        margin-bottom: 30px;
+
+        &::before {
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(4, 30, 66, 0.9);
+            mix-blend-mode: normal;
+            content: "";
+            pointer-events: none;
+        }
+
+        &-info {
+            z-index: 2;
+            position: relative;
+            padding: 30px 100px;
+        }
+
+        &-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &-logo {
+            max-height: 75px;
+            margin-bottom: 30px;
+        }
+
+        &-text {
+            width: 100%;
+            max-width: 460px;
+            margin-bottom: 25px;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.4;
+            color: #f9eeee;
+        }
+        &-more {
+            position: relative;
+            display: block;
+            margin-left: 37px;
+            font-size: 18px;
+            line-height: 18px;
+            text-decoration: underline;
+            color: #f9f9f9;
+
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: -37px;
+                width: 20px;
+                height: 1px;
+                transform: translateY(-50%);
+                content: "";
+                background-color: #f9f9f9;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__text {
+        max-width: 700px;
+        margin-bottom: 120px;
+
+        p {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 1.4;
+            color: #3a3a3a;
+            letter-spacing: -0.015em;
+        }
+    }
+}

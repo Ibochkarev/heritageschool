@@ -26,6 +26,14 @@
         background: #ffffff;
         transition: all 0.5s ease-in-out;
 
+        @media (max-width: 768px) {
+            width: calc(100% / 2 - 15px);
+        }
+
+        @media (max-width: 565px) {
+            width: 100%;
+        }
+
         &:hover {
             background: #041e42;
 
