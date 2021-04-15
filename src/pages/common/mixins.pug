@@ -84,3 +84,25 @@ mixin tuition-card(data)
         .tuition__card-age!=data.age
         .tuition__card-cost!=data.cost
       a.tuition__card-link(href="#") read more
+
+//- Карточка команды кампуса
+mixin team-card(data)
+  .swiper-slide
+    .team__card
+      .team__card-photo
+        img(src='./img/team/' + data.photo alt="")
+      .team__card-name!=data.name
+      .team__card-position!=data.position
+
+//- Карточка команды кампуса
+mixin feedback-card(data)
+  .swiper-slide
+    .feedback__card
+      .feedback__card-photo
+        img(src='./img/team/' + data.photo alt="")
+      .feedback__card-info
+        .feedback__card-text!=data.text
+        .feedback__card-name!=data.name
+        .feedback__card-student!=data.student
+        .feedback__card-campus!=data.campus
+        a.feedback__card-link(href="#") read more

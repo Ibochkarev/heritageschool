@@ -3,16 +3,29 @@
     padding: 68px 0 58px;
     background: #f5f5f5;
 
+    @media (max-width: 1024px) {
+        margin-bottom: 120px;
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 80px;
+        padding: 30px 0 80px;
+    }
+
     &__wrap {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex: wrap;
+        flex-wrap: wrap;
     }
 
     &__info {
         color: $blue;
         flex-basis: 40%;
+
+        @media (max-width: 1024px) {
+            flex-basis: 100%;
+        }
     }
 
     &__title {
@@ -20,18 +33,53 @@
         font-size: 24px;
         font-weight: 700;
         line-height: 28px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 550;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 14px;
+        }
     }
 
     &__text {
         font-size: 20px;
         line-height: 24px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
     }
 
     &__form {
         flex-basis: 60%;
 
+        @media (max-width: 1024px) {
+            flex-basis: 100%;
+        }
+
         &-group {
             width: calc(100% / 3 - 20px);
+
+            @media (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 15px;
+
+                .form__button {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
         }
 
         .row-horizontal {
@@ -40,6 +88,10 @@
             justify-content: space-between;
             width: 100%;
             margin-bottom: 23px;
+
+            @media (max-width: 768px) {
+                flex-wrap: wrap;
+            }
         }
     }
 }

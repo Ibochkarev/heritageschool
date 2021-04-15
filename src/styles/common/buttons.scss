@@ -13,6 +13,12 @@
     border: 1px solid #c49a6c;
     transition: all 0.5s ease-in-out;
 
+    @media (max-width: 768px) {
+        font-size: 12px;
+        height: 40px;
+        line-height: 40px;
+    }
+
     &:hover {
         background: #c49a6c;
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 3px 4px rgba(0, 0, 0, 0.12),

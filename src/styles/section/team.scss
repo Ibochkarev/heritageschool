@@ -1,0 +1,66 @@
+.team {
+    margin-bottom: 250px;
+
+    &__title {
+        z-index: 2;
+        position: relative;
+        margin-bottom: 100px;
+        font-size: 48px;
+        font-weight: 550;
+        text-align: center;
+        text-transform: uppercase;
+        color: #041e42;
+    }
+
+    &__card {
+        width: 300px;
+        margin: 0 auto 100px;
+        text-align: center;
+
+        &-photo {
+            margin-bottom: 52px;
+
+            img {
+                width: 300%;
+                height: auto;
+            }
+        }
+
+        &-name {
+            margin-bottom: 15px;
+            font-size: 24px;
+            font-weight: 550;
+            line-height: 0.8;
+            color: #041e42;
+        }
+
+        &-position {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 0.8;
+            color: #041e42;
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+        background: #908e8e;
+    }
+
+    .swiper-pagination-total {
+        color: #908e8e;
+    }
+
+    .swiper-pagination-num {
+        color: #041e42;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #041e42;
+    }
+}

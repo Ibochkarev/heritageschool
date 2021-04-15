@@ -3,6 +3,24 @@
     margin-bottom: 90px;
     padding: 0 50px 0;
 
+    @media (max-width: 1410px) {
+        padding: 0 25px 0;
+    }
+
+    @media (max-width: 1200px) {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+
+    @media (max-width: 992px) {
+        padding: 15px;
+    }
+
+    @media (max-width: 575px) {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
     &__img {
         img {
             position: relative;
@@ -20,6 +38,11 @@
         padding: 40px 23px 35px;
         background: #ffffff;
         flex-direction: column;
+
+        @media (max-width: 768px) {
+            min-height: auto;
+            padding: 35px 20px 30px;
+        }
     }
 
     &__title {
@@ -29,6 +52,14 @@
         font-weight: 600;
         line-height: 1.33;
         color: #041e42;
+
+        @media (max-width: 992px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
     }
 
     &__date {
@@ -37,6 +68,11 @@
         font-weight: 300;
         line-height: 1.4;
         color: #3a3a3a;
+
+        @media (max-width: 768px) {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
     }
 
     &__text {
@@ -45,6 +81,10 @@
         font-weight: 300;
         line-height: 1.4;
         color: #3a3a3a;
+        @media (max-width: 768px) {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
     }
 
     &__link {
@@ -73,62 +113,5 @@
         &:hover {
             color: #a97945;
         }
-    }
-}
-
-@media (max-width: 1410px) {
-    .card {
-        padding: 0 25px 0;
-    }
-}
-
-@media (max-width: 1200px) {
-    .card {
-        width: 50%;
-        margin-bottom: 50px;
-    }
-}
-
-@media (max-width: 992px) {
-    .card {
-        padding: 15px;
-
-        &__title {
-            font-size: 20px;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .card {
-        &__wrap {
-            min-height: auto;
-            padding: 35px 20px 30px;
-        }
-
-        &__title {
-            font-size: 18px;
-        }
-
-        &__date {
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-
-        &__text {
-            margin-bottom: 15px;
-            font-size: 14px;
-        }
-
-        &__link {
-            font-size: 14px;
-        }
-    }
-}
-
-@media (max-width: 575px) {
-    .card {
-        width: 100%;
-        margin-bottom: 15px;
     }
 }

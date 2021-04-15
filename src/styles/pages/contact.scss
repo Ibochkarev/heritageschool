@@ -1,14 +1,40 @@
 .contact {
     &__wrapper {
         display: flex;
+
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__list {
         flex-basis: 60%;
+
+        @media (max-width: 992px) {
+            flex-basis: 50%;
+        }
+
+        @media (max-width: 700px) {
+            flex-basis: 100%;
+        }
     }
 
     &__form {
         flex-basis: 40%;
+        padding-left: 50px;
+
+        @media (max-width: 992px) {
+            flex-basis: 50%;
+        }
+
+        @media (max-width: 768px) {
+            padding-left: 25px;
+        }
+
+        @media (max-width: 700px) {
+            flex-basis: 100%;
+            margin-bottom: 120px;
+        }
 
         &-wrap {
             position: sticky;
@@ -23,6 +49,14 @@
     margin-bottom: 130px;
     background: #ffffff;
     transition: all 0.5s ease-in-out;
+
+    @media (max-width: 1440px) {
+        margin-bottom: 60px;
+    }
+
+    @media (max-width: 1024px) {
+        margin-bottom: 25px;
+    }
 
     &.is-active {
         .camspus-item {
@@ -46,8 +80,16 @@
     &__top {
         display: flex;
 
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+
         &-col {
             flex-basis: 50%;
+
+            @media (max-width: 768px) {
+                flex-basis: 100%;
+            }
         }
     }
 
@@ -62,6 +104,14 @@
         height: 100%;
         padding: 38px 45px;
         flex-direction: column;
+
+        @media (max-width: 1440px) {
+            padding: 25px 35px;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 15px 25px;
+        }
     }
 
     &__img {
@@ -75,6 +125,14 @@
         font-weight: 600;
         line-height: 1.33;
         color: #041e42;
+
+        @media (max-width: 1440px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 16px;
+        }
     }
 
     &__btn {
@@ -110,6 +168,14 @@
     &__info {
         padding: 75px 35px 55px;
 
+        @media (max-width: 1440px) {
+            padding: 35px 32px;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 25px 20px;
+        }
+
         &-item {
             display: flex;
             align-items: center;
@@ -132,6 +198,10 @@
                     font-weight: 300;
                     line-height: 1.4;
                     color: #3a3a3a;
+
+                    @media (max-width: 768px) {
+                        font-size: 14px;
+                    }
                 }
 
                 a:hover {

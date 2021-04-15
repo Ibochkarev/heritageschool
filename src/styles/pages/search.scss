@@ -3,6 +3,10 @@
     max-width: 1322px;
     margin-bottom: 250px;
 
+    @media (max-width: 768px) {
+        margin-bottom: 150px;
+    }
+
     &__form {
         margin-bottom: 48px;
 
@@ -27,6 +31,14 @@
             color: #3a3a3a;
             border: 1px solid #ffffff;
 
+            @media (max-width: 768px) {
+                height: 60px;
+                padding-right: 25px;
+                padding-left: 25px;
+                font-size: 18px;
+                line-height: 18px;
+            }
+
             &:hover {
                 box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
             }
@@ -43,12 +55,21 @@
             border: 1px solid #c49a6c;
             transition: all 0.5s ease-in-out;
 
+            @media (max-width: 768px) {
+                height: 60px;
+            }
+
             span {
                 display: block;
                 width: 37px;
                 height: 37px;
                 background-size: cover;
                 background-image: url("data:image/svg+xml,%3Csvg width='37' height='37' viewBox='0 0 37 37' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36.7742 34.5942L26.0259 23.846C28.0646 21.3292 29.2917 18.1295 29.2917 14.6459C29.2917 6.57019 22.7215 0 14.6458 0C6.57011 0 0 6.57019 0 14.6459C0 22.7216 6.57019 29.2918 14.6459 29.2918C18.1295 29.2918 21.3292 28.0646 23.846 26.026L34.5942 36.7742C34.8953 37.0752 35.3833 37.0752 35.6844 36.7742L36.7742 35.6843C37.0752 35.3833 37.0752 34.8952 36.7742 34.5942ZM14.6459 26.2084C8.26995 26.2084 3.08336 21.0218 3.08336 14.6459C3.08336 8.26995 8.26995 3.08336 14.6459 3.08336C21.0218 3.08336 26.2084 8.26995 26.2084 14.6459C26.2084 21.0218 21.0218 26.2084 14.6459 26.2084Z' fill='white'/%3E%3C/svg%3E%0A");
+
+                @media (max-width: 768px) {
+                    width: 25px;
+                    height: 25px;
+                }
             }
 
             &:hover {
@@ -70,6 +91,15 @@
         line-height: 157%;
         background: #ffffff;
 
+        @media (max-width: 768px) {
+            padding: 25px 35px;
+        }
+
+        @media (max-width: 575px) {
+            padding: 15px 20px;
+            margin-bottom: 25px;
+        }
+
         &:hover {
             box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
         }
@@ -78,11 +108,21 @@
             display: block;
             margin-bottom: 40px;
             color: #16345f;
+
+            @media (max-width: 768px) {
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
         }
 
         &-text {
             display: block;
             color: #3a3a3a;
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+                line-height: 1.4;
+            }
         }
     }
 }

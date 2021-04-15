@@ -34,6 +34,12 @@
         border-radius: 0;
         opacity: 1;
 
+        @media (max-width: 768px) {
+            width: 22px;
+            height: 4px;
+            margin: 0 10px;
+        }
+
         &-active {
             background: $blue;
         }

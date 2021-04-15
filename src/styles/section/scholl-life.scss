@@ -29,11 +29,27 @@
 
     &__col {
         width: calc(100% / 4 - 30px);
+
+        @media (max-width: 768px) {
+            width: calc(100% / 2 - 15px);
+
+            &:not(:last-child) {
+                margin-bottom: 60px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            width: 100%;
+        }
     }
 
     &__item {
         &-img {
             margin-bottom: 45px;
+
+            @media (max-width: 768px) {
+                margin-bottom: 30px;
+            }
 
             img {
                 width: 100%;
@@ -52,6 +68,16 @@
             line-height: 1.2;
             text-decoration: underline;
             color: white;
+
+            @media (max-width: 768px) {
+                margin-bottom: 15px;
+                font-size: 16px;
+                line-height: 1.7;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 14px;
+            }
         }
 
         &-date {
@@ -59,6 +85,14 @@
             font-size: 14px;
             line-height: 1.6;
             color: rgba(255, 255, 255, 0.8);
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 12px;
+            }
         }
 
         &-text {
@@ -66,6 +100,15 @@
             font-size: 16px;
             line-height: 1.4;
             color: white;
+
+            @media (max-width: 768px) {
+                margin-bottom: 30px;
+                font-size: 14px;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 12px;
+            }
         }
 
         &-link {
@@ -114,6 +157,10 @@
         font-weight: 600;
         line-height: 24px;
         color: white;
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
     }
 
     &__link {
@@ -124,6 +171,10 @@
         line-height: 14px;
         text-decoration: underline;
         color: white;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
 
         &::before {
             position: absolute;
@@ -144,6 +195,10 @@
     &__item {
         &:not(:last-child) {
             margin-bottom: 50px;
+
+            @media (max-width: 768px) {
+                margin-bottom: 25px;
+            }
         }
 
         &-source {
@@ -152,6 +207,10 @@
             font-weight: 600;
             line-height: 1.2;
             color: white;
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
         }
 
         &-date {
@@ -160,6 +219,10 @@
             font-weight: 300;
             line-height: 1.6;
             color: rgba(255, 255, 255, 0.8);
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+            }
         }
 
         &-title {
@@ -170,6 +233,14 @@
             line-height: 1.2;
             text-decoration: underline;
             color: white;
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 14px;
+            }
 
             &:hover {
                 text-decoration: none;

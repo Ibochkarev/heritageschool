@@ -7,6 +7,10 @@
     flex: none;
     background-image: url("../img/menu/bg.jpg");
 
+    @media (max-width: 1200px) {
+        padding: 30px 15px;
+    }
+
     &::before {
         position: absolute;
         top: 0;
@@ -28,6 +32,10 @@
     &__item {
         &:not(:last-child) {
             margin-bottom: 32px;
+
+            @media (max-width: 1200px) {
+                margin-bottom: 15px;
+            }
         }
 
         &-link {
@@ -36,6 +44,10 @@
             line-height: 1.6;
             color: rgba(255, 255, 255, 0.8);
             transition: color 0.5s ease-in-out;
+
+            @media (max-width: 1200px) {
+                font-size: 18px;
+            }
 
             &.active,
             &:hover {

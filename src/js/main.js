@@ -11,8 +11,75 @@ document.addEventListener(`DOMContentLoaded`, () => {
         },
         pagination: {
             el: `.swiper-pagination-main`,
-            type: `bullets`,
             clickable: true,
+        },
+        on: {
+            afterInit: function () {
+                let totalNumber = this.pagination.bullets.length
+                this.el.querySelector(".swiper-pagination-total").innerText =
+                    totalNumber < 10 ? `0${totalNumber}` : totalNumber
+                let currentNumber = Number(this.activeIndex) + 1
+                this.el.querySelector(".swiper-pagination-num").innerText =
+                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
+            },
+            activeIndexChange: function () {
+                let currentNumber = Number(this.activeIndex) + 1
+                this.el.querySelector(".swiper-pagination-num").innerText =
+                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
+            },
+        },
+    })
+
+    const teamSlider = new Swiper(".team-slider", {
+        slidesPerView: 4,
+        slidesPerColumn: 2,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination-team",
+            clickable: true,
+        },
+        slidesPerColumnFill: "row",
+        on: {
+            afterInit: function () {
+                let totalNumber = this.pagination.bullets.length
+                let currentNumber = Number(this.activeIndex) + 1
+                this.el.querySelector(".swiper-pagination-total").innerText =
+                    totalNumber < 10 ? `0${totalNumber}` : totalNumber
+                this.el.querySelector(".swiper-pagination-num").innerText =
+                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
+            },
+            activeIndexChange: function () {
+                let currentNumber = Number(this.activeIndex) + 1
+                this.el.querySelector(".swiper-pagination-num").innerText =
+                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
+            },
+        },
+    })
+
+    const feedbackSlider = new Swiper(".feedback-slider", {
+        slidesPerView: 2,
+        loop: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        pagination: {
+            el: ".swiper-pagination-feedback",
+            clickable: true,
+        },
+        slidesPerColumnFill: "row",
+        on: {
+            afterInit: function () {
+                let totalNumber = this.pagination.bullets.length
+                let currentNumber = Number(this.activeIndex) + 1
+                this.el.querySelector(".swiper-pagination-total").innerText =
+                    totalNumber < 10 ? `0${totalNumber}` : totalNumber
+                this.el.querySelector(".swiper-pagination-num").innerText =
+                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
+            },
+            activeIndexChange: function () {
+                let currentNumber = Number(this.activeIndex) + 1
+                this.el.querySelector(".swiper-pagination-num").innerText =
+                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
+            },
         },
     })
 
@@ -89,17 +156,4 @@ document.addEventListener(`DOMContentLoaded`, () => {
             toggleTarget.classList.add(`is-open`)
         }
     }
-
-    // Вызов формы поиска
-    const BtnSearchClose = document.querySelector(`.search-overlay__close-icon`)
-    const BtnSearchOpen = document.querySelector(`.header__search`)
-    const searchForm = document.querySelector(`.search-overlay`)
-
-    BtnSearchOpen.addEventListener(`click`, () => {
-        searchForm.classList.add(`active`)
-    })
-
-    BtnSearchClose.addEventListener(`click`, () => {
-        searchForm.classList.remove(`active`)
-    })
 })

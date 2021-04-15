@@ -1,12 +1,25 @@
 .admissions {
+    @media (max-width: 768px) {
+        padding-bottom: 0;
+    }
+
     &__wrapper {
         display: flex;
         height: 875px;
         background: #ffffff;
+
+        @media (max-width: 768px) {
+            height: auto;
+            flex-wrap: wrap;
+        }
     }
 
     &__col {
         width: 50%;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     &__info {
@@ -15,10 +28,18 @@
         height: 100%;
         padding-right: 40px;
         flex-direction: column;
+
+        @media (max-width: 768px) {
+            padding-right: 0;
+        }
     }
 
     .section__title {
         text-align: left;
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
     }
 
     &__text {
@@ -32,6 +53,16 @@
 
         p {
             margin-bottom: 40px;
+
+            @media (max-width: 768px) {
+                margin-bottom: 20px;
+                font-size: 16px;
+            }
+
+            @media (max-width: 575px) {
+                margin-bottom: 20px;
+                font-size: 12px;
+            }
         }
     }
 
@@ -41,6 +72,14 @@
         line-height: 1.6;
         text-decoration: underline;
         color: $blue;
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 12px;
+        }
     }
 
     &__bg {
@@ -49,5 +88,14 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+
+        @media (max-width: 768px) {
+            height: 400px;
+            margin-top: 36px;
+        }
+
+        @media (max-width: 575px) {
+            height: 254px;
+        }
     }
 }
