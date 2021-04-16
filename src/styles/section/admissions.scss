@@ -51,7 +51,14 @@
         color: #3a3a3a;
         letter-spacing: -0.015em;
 
-        p {
+        ul,
+        ol {
+            padding-left: 30px;
+        }
+
+        p,
+        ul,
+        ol {
             margin-bottom: 40px;
 
             @media (max-width: 768px) {
