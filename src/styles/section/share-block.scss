@@ -60,6 +60,9 @@
 .share {
     display: flex;
     align-items: center;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
 
     &__item {
         width: 70px;

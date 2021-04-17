@@ -1,12 +1,13 @@
 //- Useful block card
 mixin useful-card(data)
-  .useful__item
-    img.useful__item-img(src='./img/' + data.image alt="")
-    .useful__item-info
-      .useful__item-title!=data.title
-      .useful__item-date!=data.date
-      .useful__item-text!=data.text
-    a.useful__item-link(href="#") read more
+  .col-6.col-md-3
+    .useful__item
+      img.useful__item-img(src='./img/' + data.image alt="")
+      .useful__item-info
+        .useful__item-title!=data.title
+        .useful__item-date!=data.date
+        .useful__item-text!=data.text
+      a.useful__item-link(href="#") read more
 
 //- Offer block card
 mixin offer-card(data)
@@ -66,15 +67,16 @@ mixin breadcrumb(levels)
 
 //- Карточка в списке
 mixin card(data)
-  .card
-    .card__img
-      img(src='./img/' + data.img alt="")
-    .card__wrap
-      .card__info
-        .card__title!=data.title
-        .card__date!=data.date
-        .card__text!=data.text
-      a.card__link(href="#") читать подробнее
+  .col-6.col-md-4
+    .card
+      .card__img
+        img(src='./img/' + data.img alt="")
+      .card__wrap
+        .card__info
+          .card__title!=data.title
+          .card__date!=data.date
+          .card__text!=data.text
+        a.card__link(href="#") читать подробнее
 
 //- Карточка стоимости обучения
 mixin tuition-card(data)

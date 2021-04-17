@@ -9,18 +9,10 @@
     }
 
     &__item {
-        width: calc(100% / 4 - 30px);
-
         @media (max-width: 768px) {
-            width: calc(100% / 2 - 15px);
-
             &:not(:last-child) {
                 margin-bottom: 60px;
             }
-        }
-
-        @media (max-width: 575px) {
-            width: 100%;
         }
 
         &-img {

@@ -1,25 +1,30 @@
 .admissions {
+    background: #ffffff;
+    padding: 0;
+
     @media (max-width: 768px) {
         padding-bottom: 0;
     }
 
     &__wrapper {
         display: flex;
-        height: 875px;
-        background: #ffffff;
 
         @media (max-width: 768px) {
-            height: auto;
             flex-wrap: wrap;
         }
     }
 
-    &__col {
-        width: 50%;
+    &__content {
+        display: flex;
+        flex: 0 0 100%;
+    }
 
-        @media (max-width: 768px) {
-            width: 100%;
-        }
+    &__info {
+        position: relative;
+        width: 50%;
+        padding-top: 130px;
+        padding-right: 70px;
+        padding-bottom: 130px;
     }
 
     &__info {
@@ -88,6 +93,11 @@
         @media (max-width: 575px) {
             font-size: 12px;
         }
+    }
+
+    &__image {
+        transform: translate(-100%, 0);
+        flex: 0 0 50%;
     }
 
     &__bg {

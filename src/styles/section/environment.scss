@@ -1,4 +1,6 @@
 .environment {
+    background-color: #ffffff;
+
     &__item {
         margin-bottom: 30px;
 
@@ -59,5 +61,21 @@
         .swiper-pagination-nav {
             margin-top: 110px;
         }
+    }
+
+    .swiper-pagination-bullet {
+        background: #908e8e;
+    }
+
+    .swiper-pagination-total {
+        color: #908e8e;
+    }
+
+    .swiper-pagination-num {
+        color: #041e42;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #041e42;
     }
 }
