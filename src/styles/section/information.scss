@@ -1,0 +1,33 @@
+.information {
+    margin-bottom: 150px;
+    background-color: #ffffff;
+
+    &__wrap {
+        display: flex;
+    }
+
+    &__block {
+        display: flex;
+        flex: 0 0 100%;
+    }
+
+    &__photo {
+        transform: translate(-100%, 0);
+        flex: 0 0 50%;
+    }
+
+    &__body {
+        position: relative;
+        width: 50%;
+        padding-top: 50px;
+        padding-right: 50px;
+
+        p {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 1.6;
+            color: #3a3a3a;
+            letter-spacing: -0.015em;
+        }
+    }
+}

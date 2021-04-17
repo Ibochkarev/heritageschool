@@ -51,6 +51,12 @@ a {
     }
 }
 
+p {
+    &:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+
 ul,
 ol {
     padding-left: 25px;
