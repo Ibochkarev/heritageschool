@@ -36,11 +36,12 @@ mixin mass-media-card(data)
 
 //- Environment card
 mixin environment-card(data)
-  .environment__item
-    .environment__item-info
-      .environment__item-icon
-        img(src='./img/' + data.icon alt="")
-      .environment__item-title!=data.title
+  .col-4
+    .environment__item
+      .environment__item-info
+        .environment__item-icon
+          img(src='./img/' + data.icon alt="")
+        .environment__item-title!=data.title
 
 //- Хлебные крошки
 mixin breadcrumb(levels)

@@ -83,6 +83,33 @@ document.addEventListener(`DOMContentLoaded`, () => {
         },
     })
 
+    const gallerySlider = new Swiper(".gallery-slider", {
+        slidesPerView: 2,
+        loop: true,
+        spaceBetween: 120,
+        centeredSlides: true,
+        pagination: {
+            el: ".swiper-pagination-gallery",
+            clickable: true,
+        },
+        slidesPerColumnFill: "row",
+        on: {
+            afterInit: function () {
+                let totalNumber = this.pagination.bullets.length
+                let currentNumber = Number(this.activeIndex) + 1
+                this.el.querySelector(".swiper-pagination-total").innerText =
+                    totalNumber < 10 ? `0${totalNumber}` : totalNumber
+                this.el.querySelector(".swiper-pagination-num").innerText =
+                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
+            },
+            activeIndexChange: function () {
+                let currentNumber = Number(this.activeIndex) + 1
+                this.el.querySelector(".swiper-pagination-num").innerText =
+                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
+            },
+        },
+    })
+
     // Карточка кампуса
 
     const campusBtn = document.querySelectorAll(`.camspus-item__btn`)
@@ -114,6 +141,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
         `.header__mobile-btn .is_open`
     )
     const menuBtnClose = document.querySelector(`.mobile-menu__close`)
+    const overlay = document.querySelector(`.overlay`)
 
     menuBtn.addEventListener(`click`, toggleMenu)
 
@@ -123,14 +151,17 @@ document.addEventListener(`DOMContentLoaded`, () => {
         if (mobileMenu.classList.contains(`_is-active`)) {
             mobileMenu.classList.remove(`_is-active`)
             menuBtnHamburger.style.display = `block`
+            overlay.classList.remove(`_is-open`)
         } else {
             mobileMenu.classList.add(`_is-active`)
+            overlay.classList.add(`_is-open`)
             menuBtnHamburger.style.display = `none`
         }
     }
 
     function closeMobileMenu() {
         mobileMenu.classList.remove(`_is-active`)
+        overlay.classList.remove(`_is-open`)
     }
 
     // Открытие под меню
