@@ -77,13 +77,20 @@ mixin card(data)
 
 //- Карточка стоимости обучения
 mixin tuition-card(data)
-  .tuition__card
-    .tuition__card-wrap
-      .tuition__card-info
-        .tuition__card-name!=data.name
-        .tuition__card-age!=data.age
-        .tuition__card-cost!=data.cost
-      a.tuition__card-link(href="#") read more
+  .col-md-6.col-lg-4
+    .tuition__card
+      .tuition__card-wrap
+        .tuition__card-info
+          .tuition__card-name!=data.name
+          .tuition__card-age!=data.age
+          .tuition__card-cost!=data.cost
+        a.tuition__card-link(href="#") read more
+
+mixin tuition-card-block(data)
+  .tuition__card-block__item
+    .tuition__card-block__item-icon
+      img(src='./img/tuition/' + data.icon alt="")
+    .tuition__card-block__item-text!=data.text
 
 //- Карточка команды кампуса
 mixin team-card(data)

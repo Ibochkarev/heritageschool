@@ -5,7 +5,10 @@
 .breadcrumb {
     display: flex;
     align-items: center;
+    margin: 0;
+    padding-left: 0;
     flex-wrap: wrap;
+    list-style-type: none;
 
     &__item {
         position: relative;

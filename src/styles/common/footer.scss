@@ -77,16 +77,10 @@
 
             @media (max-width: 768px) {
                 margin-bottom: 50px;
-
-                p {
-                    font-size: 14px;
-                }
             }
 
             @media (max-width: 575px) {
-                p {
-                    font-size: 10px;
-                }
+                font-size: 10px;
             }
         }
     }
@@ -121,6 +115,9 @@
 
         ul {
             max-width: 140px;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
 
             li {
                 &:not(:last-child) {
@@ -168,7 +165,7 @@
             height: 53px;
             max-width: 191px;
             font-size: 14px;
-            font-weight: 700;
+            font-weight: 550;
             text-transform: uppercase;
             color: #f9f9f9;
             border: 0;

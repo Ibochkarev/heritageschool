@@ -107,6 +107,9 @@
     &-menu {
         display: flex;
         align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
 
         @media (max-width: 992px) {
             display: none;
@@ -162,6 +165,8 @@
             opacity: 0;
             transform: translateZ(0);
             transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            margin: 0;
+            list-style-type: none;
 
             li {
                 padding-top: 8px;

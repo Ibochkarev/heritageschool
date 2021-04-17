@@ -74,7 +74,7 @@
     &__text {
         margin-bottom: 70px;
         font-size: 32px;
-        font-weight: 600;
+        font-weight: 550;
         line-height: 1.4;
         color: #3a3a3a;
 
@@ -98,7 +98,7 @@
     &__name {
         margin-bottom: 10px;
         font-size: 24px;
-        font-weight: 600;
+        font-weight: 550;
         line-height: 1.45;
 
         @media (max-width: 768px) {
@@ -115,6 +115,7 @@
     &__founder {
         margin-bottom: 70px;
         font-size: 24px;
+        font-weight: 300;
         line-height: 1.45;
 
         @media (max-width: 768px) {
@@ -125,14 +126,14 @@
         }
 
         @media (max-width: 575px) {
-            font-size: 12px;
             margin-bottom: 30px;
+            font-size: 12px;
         }
     }
 
     &__btn {
         width: 280px;
-        font-weight: 400;
+        font-weight: 550;
 
         @media (max-width: 768px) {
             width: 100%;

@@ -11,27 +11,63 @@
         color: #041e42;
     }
 
-    &__wrap {
-        display: flex;
-        margin-right: -15px;
-        margin-left: -15px;
-        flex-wrap: wrap;
-    }
-
     &__card {
-        width: calc(100% / 3 - 15px);
         height: 400px;
         margin-bottom: 45px;
-        margin-left: 15px;
         background: #ffffff;
         transition: all 0.5s ease-in-out;
 
-        @media (max-width: 768px) {
-            width: calc(100% / 2 - 15px);
-        }
+        &-block {
+            height: 100%;
+            margin-bottom: 45px;
 
-        @media (max-width: 565px) {
-            width: 100%;
+            &__wrapper {
+                padding: 31px 55px 40px;
+                background: #ffffff;
+            }
+
+            &__title {
+                margin-bottom: 25px;
+                font-size: 24px;
+                font-weight: 550;
+                line-height: 1.8;
+                color: #041e42;
+            }
+
+            &__wrap {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            &__item {
+                display: flex;
+                align-items: center;
+                width: 50%;
+                margin-bottom: 18px;
+
+                &.w-100 {
+                    width: 100%;
+                }
+
+                &-icon {
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 10px;
+                    flex: none;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                &-text {
+                    width: 85%;
+                    font-size: 22px;
+                    font-weight: 300;
+                    color: #000000;
+                }
+            }
         }
 
         &:hover {
@@ -47,8 +83,6 @@
             display: flex;
             justify-content: space-between;
             height: 100%;
-            margin-right: -15px;
-            margin-left: -15px;
             padding: 31px 55px 40px;
             flex-direction: column;
         }

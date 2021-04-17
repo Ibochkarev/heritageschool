@@ -40,7 +40,7 @@
 
     &__title {
         font-size: 24px;
-        font-weight: 700;
+        font-weight: 550;
         color: #16345f;
 
         @media (max-width: 1200px) {
@@ -87,7 +87,7 @@
         }
     }
 
-    &__text p {
+    &__tex {
         @media (max-width: 575px) {
             font-size: 12px;
             line-height: inherit;

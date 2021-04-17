@@ -37,16 +37,16 @@
 
     &__photo {
         z-index: 2;
-        width: 25%;
         position: relative;
+        width: 25%;
     }
 
     &__info {
         z-index: 2;
+        position: relative;
         display: flex;
         align-items: center;
         width: 75%;
-        position: relative;
 
         &-block {
             max-width: 745px;
@@ -58,13 +58,10 @@
         width: 100%;
         max-width: 840px;
         margin-bottom: 65px;
-
-        p {
-            font-size: 26px;
-            font-weight: 300;
-            line-height: 1.4;
-            color: #3a3a3a;
-        }
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 1.4;
+        color: #3a3a3a;
     }
 
     &__name {

@@ -60,7 +60,7 @@
             max-width: 460px;
             margin-bottom: 25px;
             font-size: 24px;
-            font-weight: 700;
+            font-weight: 550;
             line-height: 1.4;
             color: #f9eeee;
         }
@@ -93,13 +93,10 @@
     &__text {
         max-width: 700px;
         margin-bottom: 120px;
-
-        p {
-            font-size: 24px;
-            font-weight: 300;
-            line-height: 1.4;
-            color: #3a3a3a;
-            letter-spacing: -0.015em;
-        }
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.4;
+        color: #3a3a3a;
+        letter-spacing: -0.015em;
     }
 }
