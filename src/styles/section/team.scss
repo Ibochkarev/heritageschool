@@ -1,6 +1,10 @@
 .team {
     margin-bottom: 250px;
 
+    @media (max-width: 1336px) {
+        margin-bottom: 120px;
+    }
+
     &__title {
         z-index: 2;
         position: relative;
@@ -10,19 +14,59 @@
         text-align: center;
         text-transform: uppercase;
         color: #041e42;
+
+        @media (max-width: 1336px) {
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 42px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 35px;
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        @media (max-width: 375px) {
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
     }
 
     &__card {
-        width: 300px;
+        width: auto;
         margin: 0 auto 100px;
         text-align: center;
+
+        @media (max-width: 1200px) {
+            margin: 0 auto 60px;
+        }
+
+        @media (max-width: 768px) {
+            margin: 0 auto 30px;
+        }
+
+        @media (max-width: 575px) {
+            margin: 0 auto 20px;
+        }
 
         &-photo {
             margin-bottom: 52px;
 
+            @media (max-width: 1024px) {
+                margin-bottom: 30px;
+            }
+
+            @media (max-width: 768px) {
+                margin-bottom: 15px;
+            }
+
             img {
-                width: 300%;
+                width: 100%;
                 height: auto;
+                max-width: 300px;
             }
         }
 
@@ -32,6 +76,19 @@
             font-weight: 550;
             line-height: 0.8;
             color: #041e42;
+
+            @media (max-width: 1024px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 768px) {
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 14px;
+            }
         }
 
         &-position {
@@ -39,6 +96,18 @@
             font-weight: 300;
             line-height: 0.8;
             color: #041e42;
+
+            @media (max-width: 1024px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 14px;
+            }
         }
     }
 

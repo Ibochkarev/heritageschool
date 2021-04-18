@@ -1,6 +1,10 @@
 .tuition {
     margin-bottom: 240px;
 
+    @media (max-width: 1336px) {
+        margin-bottom: 120px;
+    }
+
     &__title {
         margin-bottom: 90px;
         font-size: 48px;
@@ -9,6 +13,25 @@
         text-align: center;
         text-transform: uppercase;
         color: #041e42;
+
+        @media (max-width: 1336px) {
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 42px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 35px;
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        @media (max-width: 375px) {
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
     }
 
     &__card {
@@ -17,14 +40,31 @@
         background: #ffffff;
         transition: all 0.5s ease-in-out;
 
+        @media (max-width: 1336px) {
+            height: 360px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 1024px) {
+            height: 300px;
+        }
+
         &-block {
             height: 100%;
             margin-bottom: 45px;
+
+            @media (max-width: 1336px) {
+                margin-bottom: 30px;
+            }
 
             &__wrapper {
                 height: 100%;
                 padding: 31px 57px 20px;
                 background: #ffffff;
+
+                @media (max-width: 1336px) {
+                    padding: 30px 40px 35px;
+                }
             }
 
             &__title {
@@ -33,6 +73,14 @@
                 font-weight: 550;
                 line-height: 1.8;
                 color: #041e42;
+
+                @media (max-width: 1336px) {
+                    font-size: 20px;
+                }
+
+                @media (max-width: 1024px) {
+                    font-size: 18px;
+                }
             }
 
             &__wrap {
@@ -51,6 +99,14 @@
 
                 &.w-100 {
                     width: 100%;
+
+                    @media (max-width: 768px) {
+                        width: 50%;
+                    }
+
+                    @media (max-width: 575px) {
+                        width: 100%;
+                    }
                 }
 
                 &-icon {
@@ -66,10 +122,23 @@
                 }
 
                 &-text {
-                    width: 85%;
+                    padding-right: 10px;
                     font-size: 22px;
                     font-weight: 300;
                     color: #000000;
+                    hyphens: auto;
+
+                    @media (max-width: 1336px) {
+                        font-size: 18px;
+                    }
+
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
+
+                    @media (max-width: 575px) {
+                        font-size: 12px;
+                    }
                 }
             }
         }
@@ -89,6 +158,10 @@
             height: 100%;
             padding: 31px 57px 40px;
             flex-direction: column;
+
+            @media (max-width: 1336px) {
+                padding: 30px 40px 35px;
+            }
         }
 
         &-name {
@@ -96,6 +169,15 @@
             font-size: 40px;
             font-weight: 300;
             color: #16345f;
+
+            @media (max-width: 1336px) {
+                margin-bottom: 25px;
+                font-size: 32px;
+            }
+
+            @media (max-width: 1024px) {
+                font-size: 24px;
+            }
         }
 
         &-age {
@@ -104,12 +186,29 @@
             font-weight: 300;
             line-height: 1.5;
             color: #041e42;
+
+            @media (max-width: 1336px) {
+                margin-bottom: 30px;
+                font-size: 22px;
+            }
+
+            @media (max-width: 1024px) {
+                font-size: 20px;
+            }
         }
 
         &-cost {
             font-size: 40px;
             font-weight: 300;
             color: #c49a6c;
+
+            @media (max-width: 1336px) {
+                font-size: 32px;
+            }
+
+            @media (max-width: 1024px) {
+                font-size: 28px;
+            }
         }
 
         &-link {

@@ -5,10 +5,6 @@
         margin-bottom: 60px;
     }
 
-    @media (max-width: 575px) {
-        height: 300px;
-    }
-
     .swiper-container {
         position: relative;
     }
@@ -16,17 +12,77 @@
     &__item {
         position: relative;
         width: 100%;
-        height: 840px;
+        height: 82vh;
+        margin-top: 100px;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
 
-        @media (max-width: 768px) {
-            height: 450px;
+        @media (max-width: 1024px) {
+            height: 62vh;
         }
 
-        @media (max-width: 575px) {
-            height: 300px;
+        @media (max-width: 768px) {
+            height: 26vh;
+            margin-top: 0;
+        }
+
+        @media (min-width: 376px) and (max-width: 414px) {
+            height: 25vh;
+        }
+
+        @media (min-width: 367px) and (max-width: 375px) {
+            height: 22.5vh;
+        }
+
+        @media (max-width: 320px) {
+            height: 25vh;
+        }
+
+        &-wrap {
+            display: flex;
+            justify-content: flex-end;
+            height: 100%;
+            padding-bottom: 75px;
+            flex-direction: column;
+
+            .container {
+                position: relative;
+            }
+
+            @media (max-width: 768px) {
+                padding-bottom: 45px;
+            }
+
+            @media (max-width: 575px) {
+                padding-bottom: 30px;
+            }
+        }
+
+        &-text {
+            z-index: 1;
+            position: relative;
+            bottom: 25px;
+            max-width: 50%;
+            min-width: 35%;
+            font-size: 95px;
+            font-weight: 550;
+            line-height: 1;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+            @media (max-width: 1440px) {
+                font-size: 72px;
+            }
+
+            @media (max-width: 1024px) {
+                font-size: 48px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 32px;
+            }
         }
 
         &::before {

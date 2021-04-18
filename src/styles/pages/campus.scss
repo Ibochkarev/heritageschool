@@ -1,12 +1,44 @@
 .campus {
     padding-bottom: 250px;
 
+    @media (max-width: 1336px) {
+        padding-bottom: 120px;
+    }
+
     .environment {
-        background-color: #ffffff;
         margin-bottom: 150px;
+        background-color: #ffffff;
+    }
+
+    .contacts a,
+    .contacts span {
+        font-size: 24px;
+
+        @media (max-width: 1336px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 12px;
+        }
     }
 
     .contacts__map {
         margin-top: 50px;
+    }
+
+    iframe {
+        display: block;
+        width: 80%;
+        height: 540px;
+        margin: 0 auto 30px;
+    }
+
+    .contacts__form {
+        margin-top: 40px;
     }
 }

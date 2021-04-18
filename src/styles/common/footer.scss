@@ -33,8 +33,8 @@
 
     &__info {
         width: 100%;
-        margin-right: 60px;
-        flex: 0 0 400px;
+        margin-right: 40px;
+        flex: 0 0 360px;
 
         @media (max-width: 1200px) {
             margin-right: 0;
@@ -89,7 +89,10 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin-right: 80px;
+        margin-right: 60px;
+        margin-left: 0;
+        padding-left: 0;
+        list-style-type: none;
 
         @media (max-width: 1200px) {
             margin-bottom: 35px;
@@ -99,21 +102,20 @@
             display: none;
         }
 
-        &__col {
-            &:not(:last-child) {
-                margin-right: 20px;
-            }
+        &__item {
+            margin-right: 30px;
         }
 
-        &__title {
-            margin-bottom: 10px;
-            font-size: 14px;
+        &__item-link {
+            margin-bottom: 20px;
+            font-size: 13px;
             font-weight: 500;
             line-height: 17px;
             text-transform: uppercase;
+            color: #ffffff;
         }
 
-        ul {
+        &__submenu {
             max-width: 140px;
             margin: 0;
             padding: 0;
@@ -125,7 +127,7 @@
                 }
 
                 a {
-                    font-size: 14px;
+                    font-size: 13px;
                     line-height: 17px;
                     color: white;
                 }
@@ -161,6 +163,7 @@
 
         &-btn {
             cursor: pointer;
+            display: block;
             width: 100%;
             height: 53px;
             max-width: 191px;

@@ -1,7 +1,7 @@
 .about-campus {
     margin-bottom: 120px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1336px) {
         margin-bottom: 60px;
     }
 
@@ -13,23 +13,43 @@
         text-transform: uppercase;
         color: #041e42;
 
+        @media (max-width: 1336px) {
+            margin-bottom: 60px;
+        }
+
         @media (max-width: 1024px) {
-            font-size: 32px;
-            margin-bottom: 40px;
+            font-size: 42px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 35px;
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        @media (max-width: 375px) {
+            margin-bottom: 25px;
+            font-size: 14px;
         }
     }
 
     &__text {
-        p {
-            font-size: 24px;
-            font-weight: 300;
-            line-height: 1.6;
-            color: #3a3a3a;
-            letter-spacing: -0.015em;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.6;
+        color: #3a3a3a;
+        letter-spacing: -0.015em;
 
-            @media (max-width: 1024px) {
-                font-size: 18px;
-            }
+        @media (max-width: 1024px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 12px;
         }
     }
 }

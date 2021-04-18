@@ -1,8 +1,9 @@
 .contact {
     &__wrapper {
         display: flex;
+        justify-content: space-between;
 
-        @media (max-width: 992px) {
+        @media (max-width: 1600px) {
             flex-wrap: wrap;
         }
     }
@@ -10,7 +11,7 @@
     &__list {
         flex-basis: 60%;
 
-        @media (max-width: 992px) {
+        @media (max-width: 1600px) {
             flex-basis: 50%;
         }
 
@@ -20,10 +21,10 @@
     }
 
     &__form {
-        flex-basis: 40%;
         padding-left: 50px;
+        flex-basis: 40%;
 
-        @media (max-width: 992px) {
+        @media (max-width: 1600px) {
             flex-basis: 50%;
         }
 
@@ -32,8 +33,8 @@
         }
 
         @media (max-width: 700px) {
-            flex-basis: 100%;
             margin-bottom: 120px;
+            flex-basis: 100%;
         }
 
         &-wrap {

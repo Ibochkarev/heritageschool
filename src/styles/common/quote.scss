@@ -39,7 +39,7 @@
     }
 
     &__title {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 550;
         color: #16345f;
 
@@ -55,7 +55,7 @@
 
     &__position {
         margin-bottom: 35px;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 600;
         color: #3a3a3a;
 
@@ -72,13 +72,13 @@
     }
 
     &__subtitle {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 600;
         line-height: 1.6;
         color: #c49a6c;
 
         @media (max-width: 1200px) {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 550;
         }
 

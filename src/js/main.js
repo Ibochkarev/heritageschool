@@ -31,7 +31,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
     })
 
     const teamSlider = new Swiper(".team-slider", {
-        slidesPerView: 4,
+        slidesPerView: 2,
         slidesPerColumn: 2,
         spaceBetween: 30,
         pagination: {
@@ -54,13 +54,24 @@ document.addEventListener(`DOMContentLoaded`, () => {
                     currentNumber < 10 ? `0${currentNumber}` : currentNumber
             },
         },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 4,
+            },
+        },
     })
 
     const feedbackSlider = new Swiper(".feedback-slider", {
-        slidesPerView: 2,
+        // slidesPerView: 2,
         loop: true,
         spaceBetween: 30,
-        centeredSlides: true,
+        // centeredSlides: true,
         pagination: {
             el: ".swiper-pagination-feedback",
             clickable: true,
@@ -81,12 +92,20 @@ document.addEventListener(`DOMContentLoaded`, () => {
                     currentNumber < 10 ? `0${currentNumber}` : currentNumber
             },
         },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                loop: true,
+                spaceBetween: 30,
+                centeredSlides: true,
+            },
+        },
     })
 
     const gallerySlider = new Swiper(".gallery-slider", {
         slidesPerView: 2,
         loop: true,
-        spaceBetween: 120,
+        spaceBetween: 30,
         centeredSlides: true,
         pagination: {
             el: ".swiper-pagination-gallery",
@@ -106,6 +125,17 @@ document.addEventListener(`DOMContentLoaded`, () => {
                 let currentNumber = Number(this.activeIndex) + 1
                 this.el.querySelector(".swiper-pagination-num").innerText =
                     currentNumber < 10 ? `0${currentNumber}` : currentNumber
+            },
+        },
+        breakpoints: {
+            640: {
+                spaceBetween: 40,
+            },
+            768: {
+                spaceBetween: 50,
+            },
+            1024: {
+                spaceBetween: 120,
             },
         },
     })

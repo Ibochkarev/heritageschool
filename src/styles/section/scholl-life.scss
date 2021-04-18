@@ -62,8 +62,8 @@
         }
 
         &-title {
+            display: block;
             margin-bottom: 38px;
-            font-size: 20px;
             font-weight: 500;
             line-height: 1.2;
             text-decoration: underline;
@@ -153,7 +153,6 @@
     }
 
     &__title {
-        font-size: 20px;
         font-weight: 600;
         line-height: 24px;
         color: white;
@@ -203,7 +202,6 @@
 
         &-source {
             margin-bottom: 10px;
-            font-size: 20px;
             font-weight: 600;
             line-height: 1.2;
             color: white;
@@ -228,7 +226,6 @@
         &-title {
             display: block;
             max-width: 290px;
-            font-size: 20px;
             font-weight: 600;
             line-height: 1.2;
             text-decoration: underline;

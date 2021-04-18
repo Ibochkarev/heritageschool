@@ -24,6 +24,7 @@ body {
     color: $black;
     background: #e5e5e5;
     flex-direction: column;
+    scroll-behavior: smooth;
 }
 
 .overlay {
@@ -44,7 +45,7 @@ img {
 
 a {
     text-decoration: none;
-    color: #244cc8;
+    color: #041e42;
 
     &:hover {
         transition: 0.3 all ease-in-out;
@@ -53,7 +54,15 @@ a {
 
 p {
     &:not(:last-child) {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+
+        @media (max-width: 1200px) {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 575px) {
+            margin-bottom: 15px;
+        }
     }
 }
 
@@ -135,11 +144,40 @@ strong {
     .container-sm,
     .container-md,
     .container-lg {
-        max-width: 960px;
+        max-width: 1024px;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg {
+        max-width: 1150px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl {
+        max-width: 1290px;
+    }
+}
+
+@media (min-width: 1450px) {
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl {
+        max-width: 1500px;
+    }
+}
+
+@media (min-width: 1700px) {
     .container,
     .container-sm,
     .container-md,
@@ -604,8 +642,11 @@ strong {
         text-transform: uppercase;
         color: $blue;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1336px) {
             margin-bottom: 60px;
+        }
+
+        @media (max-width: 1024px) {
             font-size: 42px;
         }
 
@@ -623,10 +664,14 @@ strong {
 
     &__introtext {
         margin-bottom: 100px;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 300;
         line-height: 1.5;
         color: #3a3a3a;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 60px;
+        }
 
         @media (max-width: 768px) {
             margin-bottom: 27px;
@@ -647,10 +692,10 @@ strong {
 }
 
 .page {
-    padding-top: 178px;
+    padding-top: 140px;
 
     @media (max-width: 768px) {
-        padding-top: 130px;
+        padding-top: 0;
     }
 
     &__title {
@@ -735,7 +780,6 @@ strong {
 
     &__content {
         margin-bottom: 120px;
-        font-size: 24px;
         font-weight: 300;
         line-height: 1.6;
         color: #3a3a3a;
@@ -743,7 +787,7 @@ strong {
 
         @media (max-width: 1200px) {
             margin-bottom: 90px;
-            font-size: 18px;
+            font-size: 16px;
         }
 
         @media (max-width: 575px) {
@@ -751,7 +795,6 @@ strong {
         }
 
         p {
-            font-size: 24px;
             line-height: 1.6;
 
             @media (max-width: 1200px) {
@@ -763,10 +806,10 @@ strong {
             }
 
             &:not(:last-child) {
-                margin-bottom: 50px;
+                margin-bottom: 30px;
 
                 @media (max-width: 1200px) {
-                    margin-bottom: 30px;
+                    margin-bottom: 20px;
                 }
 
                 @media (max-width: 575px) {
@@ -777,10 +820,10 @@ strong {
 
         ul,
         ol {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
 
             @media (max-width: 1200px) {
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
 
             @media (max-width: 575px) {
@@ -791,10 +834,10 @@ strong {
         img {
             width: 100%;
             height: auto;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
 
             @media (max-width: 1200px) {
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
 
             @media (max-width: 575px) {
@@ -827,4 +870,143 @@ strong {
     .row {
         align-items: stretch;
     }
+}
+
+.respons__table {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    caption {
+        margin: 0.5em 0 0.75em;
+        font-size: 1.5em;
+    }
+
+    tr {
+        padding: 0.35em;
+        border: 1px solid #ddd;
+        background-color: #f8f8f8;
+        &:nth-of-type(even) {
+            background: #eee;
+        }
+    }
+
+    th,
+    td {
+        padding: 0.625em;
+        text-align: center;
+    }
+
+    th {
+        font-size: 0.85em;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    &-cost {
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .respons__table {
+        border: 0;
+        caption {
+            font-size: 1.3em;
+        }
+
+        thead {
+            overflow: hidden;
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            border: none;
+            clip: rect(0 0 0 0);
+        }
+
+        tr {
+            display: block;
+            margin-bottom: 0.625em;
+            border-bottom: 3px solid #dddddd;
+        }
+
+        td {
+            display: block;
+            font-size: 0.8em;
+            text-align: right;
+            border-bottom: 1px solid #dddddd;
+
+            &::before {
+                font-weight: bold;
+                text-transform: uppercase;
+                content: attr(data-label);
+                float: left;
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+.cookie-popup {
+    z-index: 500;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    max-width: 500px;
+    padding: 16px 20px 18px 20px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cookie-popup .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -10px;
+    flex-wrap: nowrap;
+}
+
+.cookie-popup-l {
+    padding: 0 10px;
+}
+
+.cookie-popup p:not(:last-child) {
+    margin: 0 0 7px 0;
+}
+.cookie-popup p:last-child {
+    margin-bottom: 0;
+}
+.cookie-popup a {
+    text-decoration: underline !important;
+    color: #000 !important;
+}
+.cookie-popup-r {
+    padding: 0 10px;
+}
+.btn-cookie,
+.btn-cookie:focus {
+    cursor: pointer;
+    width: max-content;
+    padding: 10px 14px 10px 14px;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000;
+    border: 2px solid #ffcc00;
+    background-color: #ffcc00;
 }

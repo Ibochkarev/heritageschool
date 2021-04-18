@@ -1,18 +1,33 @@
 .welcome {
     position: relative;
 
+    @media (max-width: 1024px) {
+        margin-bottom: 90px;
+    }
+
+    @media (max-width: 575px) {
+        margin-bottom: 80px;
+    }
+
     &::after {
         z-index: 1;
         position: absolute;
         top: 50%;
         right: 0;
-        width: 1266px;
-        height: 648px;
+        width: 100%;
+        height: 800px;
         transform: translateY(-50%);
-        background-size: contain;
+        background-size: cover;
+        background-position: center;
         background-image: url("../img/about/bg.png");
+        background-repeat: no-repeat;
         content: "";
         pointer-events: none;
+
+        @media (max-width: 575px) {
+            height: 415px;
+            background-position: center;
+        }
     }
 
     &__wrap {
@@ -33,6 +48,25 @@
         text-align: center;
         text-transform: uppercase;
         color: #041e42;
+
+        @media (max-width: 1336px) {
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 42px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 35px;
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        @media (max-width: 375px) {
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
     }
 
     &__photo {
@@ -51,6 +85,18 @@
         &-block {
             max-width: 745px;
             margin-left: 170px;
+
+            @media (max-width: 1336px) {
+                margin-left: 100px;
+            }
+
+            @media (max-width: 1024px) {
+                margin-left: 60px;
+            }
+
+            @media (max-width: 575px) {
+                margin-left: 25px;
+            }
         }
     }
 
@@ -62,6 +108,23 @@
         font-weight: 300;
         line-height: 1.4;
         color: #3a3a3a;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 35px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 40px;
+            font-size: 14px;
+            line-height: 1.3;
+        }
+
+        @media (max-width: 575px) {
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
     }
 
     &__name {
@@ -69,31 +132,81 @@
         font-size: 24px;
         font-weight: 600;
         line-height: 1.45;
+
+        @media (max-width: 1024px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 12px;
+        }
     }
 
     &__founder {
         margin-bottom: 10px;
         font-size: 24px;
         line-height: 1.45;
+
+        @media (max-width: 1024px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 12px;
+        }
     }
 
     &__campus {
         margin-bottom: 30px;
         font-size: 24px;
         line-height: 1.45;
+
+        @media (max-width: 1024px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 12px;
+        }
     }
 
     &__signature {
         margin-bottom: 70px;
 
+        @media (max-width: 1024px) {
+            margin-bottom: 35px;
+        }
+
         img {
             width: auto;
             height: 100%;
             max-height: 75px;
+
+            @media (max-width: 1024px) {
+                max-height: 45px;
+            }
         }
     }
 
     &__btn {
         width: 280px;
+
+        @media (max-width: 768px) {
+            width: max-content;
+            padding-right: 28px;
+            padding-left: 28px;
+        }
     }
 }
