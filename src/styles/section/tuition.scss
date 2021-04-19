@@ -1,8 +1,12 @@
 .tuition {
-    margin-bottom: 240px;
+    margin-bottom: 130px;
 
     @media (max-width: 1336px) {
         margin-bottom: 120px;
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 45px;
     }
 
     &__title {
@@ -35,14 +39,13 @@
     }
 
     &__card {
-        height: 400px;
-        margin-bottom: 45px;
+        height: 360px;
+        margin-bottom: 30px;
         background: #ffffff;
         transition: all 0.5s ease-in-out;
 
         @media (max-width: 1336px) {
-            height: 360px;
-            margin-bottom: 30px;
+            height: 320px;
         }
 
         @media (max-width: 1024px) {
@@ -64,6 +67,10 @@
 
                 @media (max-width: 1336px) {
                     padding: 30px 40px 35px;
+                }
+
+                @media (max-width: 768px) {
+                    padding: 30px 30px;
                 }
             }
 
@@ -123,17 +130,17 @@
 
                 &-text {
                     padding-right: 10px;
-                    font-size: 22px;
+                    font-size: 20px;
                     font-weight: 300;
                     color: #000000;
                     hyphens: auto;
 
                     @media (max-width: 1336px) {
-                        font-size: 18px;
+                        font-size: 16px;
                     }
 
                     @media (max-width: 768px) {
-                        font-size: 16px;
+                        font-size: 14px;
                     }
 
                     @media (max-width: 575px) {
@@ -162,17 +169,21 @@
             @media (max-width: 1336px) {
                 padding: 30px 40px 35px;
             }
+
+            @media (max-width: 768px) {
+                padding: 30px 30px;
+            }
         }
 
         &-name {
             margin-bottom: 30px;
-            font-size: 40px;
+            font-size: 32px;
             font-weight: 300;
             color: #16345f;
 
             @media (max-width: 1336px) {
                 margin-bottom: 25px;
-                font-size: 32px;
+                font-size: 28px;
             }
 
             @media (max-width: 1024px) {
@@ -181,14 +192,14 @@
         }
 
         &-age {
-            margin-bottom: 50px;
-            font-size: 28px;
+            margin-bottom: 30px;
+            font-size: 24px;
             font-weight: 300;
             line-height: 1.5;
             color: #041e42;
 
             @media (max-width: 1336px) {
-                margin-bottom: 30px;
+                margin-bottom: 25px;
                 font-size: 22px;
             }
 
@@ -198,16 +209,16 @@
         }
 
         &-cost {
-            font-size: 40px;
+            font-size: 32px;
             font-weight: 300;
             color: #c49a6c;
 
             @media (max-width: 1336px) {
-                font-size: 32px;
+                font-size: 28px;
             }
 
             @media (max-width: 1024px) {
-                font-size: 28px;
+                font-size: 24px;
             }
         }
 

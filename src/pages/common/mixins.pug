@@ -14,6 +14,7 @@ mixin offer-card(data)
   .offer__item
     .offer__item-wrap
       img.offer__item-icon(src='./img/offer/' + data.icon alt="")
+      img.offer__item-icon--white(src='./img/offer/' + data.iconwhite alt="")
       .offer__item-info
         .offer__item-title!=data.title
         .offer__item-text!=data.text

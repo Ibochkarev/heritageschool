@@ -14,7 +14,7 @@
         flex: none;
 
         @media (max-width: 575px) {
-            width: 45%;
+            width: 30%;
         }
 
         img {
@@ -39,43 +39,10 @@
     }
 
     &__title {
-        font-size: 20px;
-        font-weight: 550;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 400;
         color: #16345f;
-
-        @media (max-width: 1200px) {
-            font-size: 18px;
-            font-weight: 550;
-        }
-
-        @media (max-width: 575px) {
-            font-size: 14px;
-        }
-    }
-
-    &__position {
-        margin-bottom: 35px;
-        font-size: 20px;
-        font-weight: 600;
-        color: #3a3a3a;
-
-        @media (max-width: 1200px) {
-            margin-bottom: 25px;
-            font-size: 18px;
-            font-weight: 500;
-        }
-
-        @media (max-width: 575px) {
-            margin-bottom: 15px;
-            font-size: 14px;
-        }
-    }
-
-    &__subtitle {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 1.6;
-        color: #c49a6c;
 
         @media (max-width: 1200px) {
             font-size: 16px;
@@ -87,7 +54,43 @@
         }
     }
 
-    &__tex {
+    &__position {
+        margin-bottom: 35px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #3a3a3a;
+
+        @media (max-width: 1200px) {
+            margin-bottom: 25px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 575px) {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.6;
+        color: #c49a6c;
+
+        @media (max-width: 1200px) {
+            font-size: 14px;
+            font-weight: 550;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 12px;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+
         @media (max-width: 575px) {
             font-size: 12px;
             line-height: inherit;

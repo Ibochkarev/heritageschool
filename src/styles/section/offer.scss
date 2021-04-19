@@ -1,6 +1,6 @@
 .offer {
-    padding-top: 240px;
-    padding-bottom: 240px;
+    padding-top: 130px;
+    padding-bottom: 130px;
     background: #e5e5e5;
 
     @media (max-width: 1440px) {
@@ -31,7 +31,7 @@
         }
 
         @media (max-width: 768px) {
-            height: 150px;
+            height: 160px;
             margin-bottom: 10px;
         }
 
@@ -65,6 +65,12 @@
                 height: 32px;
                 margin-bottom: 15px;
             }
+
+            &--white {
+                display: none;
+                width: 22px;
+                height: 22px;
+            }
         }
 
         &-title {
@@ -89,15 +95,23 @@
             font-weight: 300;
             line-height: 1.4;
 
+            @media (max-width: 768px) {
+                font-size: 10px;
+            }
+
             @media (max-width: 560px) {
-                font-size: 8px;
+                font-size: 9px;
             }
         }
 
         &:hover {
             .offer__item-icon {
-                width: 49px;
-                height: 49px;
+                display: none;
+            }
+
+            .offer__item-icon--white {
+                display: block;
+                margin-bottom: 10px;
             }
 
             .offer__item-title {

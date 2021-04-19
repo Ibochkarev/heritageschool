@@ -2,6 +2,14 @@
     margin-bottom: 150px;
     background-color: #ffffff;
 
+    @media (max-width: 1336px) {
+        margin-bottom: 120px;
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 45px;
+    }
+
     &__wrap {
         display: flex;
 
@@ -20,9 +28,9 @@
         flex: 0 0 50%;
 
         @media (max-width: 768px) {
-            flex: 0 0 100%;
-            transform: none;
             margin-top: 40px;
+            transform: none;
+            flex: 0 0 100%;
         }
     }
 
@@ -30,7 +38,7 @@
         width: 50%;
         padding-top: 50px;
         padding-right: 50px;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 300;
         line-height: 1.6;
         color: #3a3a3a;
@@ -41,9 +49,10 @@
         }
 
         @media (max-width: 768px) {
-            font-size: 16px;
-            flex-wrap: wrap;
             width: 100%;
+            padding-right: 0;
+            font-size: 14px;
+            flex-wrap: wrap;
         }
     }
 }

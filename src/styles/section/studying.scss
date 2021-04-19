@@ -1,12 +1,12 @@
 .studying {
-    margin-bottom: 200px;
+    margin-bottom: 130px;
 
     @media (max-width: 1336px) {
         margin-bottom: 120px;
     }
 
     @media (max-width: 768px) {
-        margin-bottom: 65px;
+        margin-bottom: 30px;
     }
 
     &__title {
@@ -95,6 +95,10 @@
             @media (max-width: 1024px) {
                 padding: 30px 50px;
             }
+
+            @media (max-width: 768px) {
+                padding: 30px 30px;
+            }
         }
 
         &-img {
@@ -118,7 +122,7 @@
             width: 100%;
             max-width: 460px;
             margin-bottom: 25px;
-            font-size: 24px;
+            font-size: 20px;
             line-height: 1.4;
             color: #f9eeee;
 
@@ -127,7 +131,7 @@
             }
 
             @media (max-width: 768px) {
-                font-size: 16px;
+                font-size: 14px;
             }
         }
 
@@ -168,8 +172,8 @@
     &__text {
         width: 100%;
         max-width: 700px;
-        margin-bottom: 120px;
-        font-size: 24px;
+        margin-bottom: 90px;
+        font-size: 20px;
         font-weight: 300;
         line-height: 1.4;
         color: #3a3a3a;

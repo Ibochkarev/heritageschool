@@ -12,9 +12,7 @@
         height: 100%;
 
         @media (max-width: 768px) {
-            &:not(:last-child) {
-                margin-bottom: 60px;
-            }
+            margin-bottom: 60px;
         }
 
         &-img {

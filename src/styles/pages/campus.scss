@@ -8,11 +8,19 @@
     .environment {
         margin-bottom: 150px;
         background-color: #ffffff;
+
+        @media (max-width: 1336px) {
+            margin-bottom: 120px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 45px;
+        }
     }
 
     .contacts a,
     .contacts span {
-        font-size: 24px;
+        font-size: 20px;
 
         @media (max-width: 1336px) {
             font-size: 18px;

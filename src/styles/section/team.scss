@@ -1,8 +1,12 @@
 .team {
-    margin-bottom: 250px;
+    margin-bottom: 130px;
 
     @media (max-width: 1336px) {
         margin-bottom: 120px;
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 45px;
     }
 
     &__title {
@@ -37,11 +41,11 @@
 
     &__card {
         width: auto;
-        margin: 0 auto 100px;
+        margin: 0 auto 60px;
         text-align: center;
 
         @media (max-width: 1200px) {
-            margin: 0 auto 60px;
+            margin: 0 auto 50px;
         }
 
         @media (max-width: 768px) {
@@ -53,7 +57,7 @@
         }
 
         &-photo {
-            margin-bottom: 52px;
+            margin-bottom: 32px;
 
             @media (max-width: 1024px) {
                 margin-bottom: 30px;
@@ -66,13 +70,13 @@
             img {
                 width: 100%;
                 height: auto;
-                max-width: 300px;
+                max-width: 240px;
             }
         }
 
         &-name {
             margin-bottom: 15px;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 550;
             line-height: 0.8;
             color: #041e42;
@@ -92,7 +96,7 @@
         }
 
         &-position {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 300;
             line-height: 0.8;
             color: #041e42;

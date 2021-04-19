@@ -217,4 +217,15 @@ document.addEventListener(`DOMContentLoaded`, () => {
             toggleTarget.classList.add(`is-open`)
         }
     }
+
+    const scrollToTopBtn = document.querySelector(".scroll-top__btn")
+
+    scrollToTopBtn.addEventListener("click", scrollToTop)
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        })
+    }
 })
