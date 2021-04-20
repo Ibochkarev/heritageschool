@@ -13,6 +13,59 @@
         }
     }
 
+    &-headline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        @media (max-width: 575px) {
+            flex-direction: column;
+        }
+
+        &__left {
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 575px) {
+                justify-content: space-between;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__right {
+            .rating,
+            .rating__best,
+            .rating__star,
+            .rating__current {
+                height: 25px;
+            }
+        }
+    }
+
+    &__content-time {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.4;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        span {
+            margin-right: 5px;
+        }
+    }
+
+    &__rating {
+        margin-bottom: 25px;
+    }
+
     &__title {
         margin-bottom: 30px;
         font-size: 48px;
@@ -31,7 +84,7 @@
     }
 
     &__date {
-        margin-bottom: 30px;
+        margin-right: 30px;
         font-size: 16px;
         font-weight: 300;
         line-height: 1.4;
@@ -47,9 +100,16 @@
         max-width: 1140px;
         margin: 0 auto;
         font-weight: 300;
-        line-height: 1.6;
         color: #3a3a3a;
         letter-spacing: -0.015em;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 14px;
+        }
 
         p {
             margin-bottom: 30px;
@@ -92,7 +152,7 @@
                     }
 
                     @media (max-width: 575px) {
-                        font-size: 12px;
+                        font-size: 14px;
                     }
 
                     &:hover {
@@ -110,6 +170,7 @@
         h6 {
             margin-bottom: 30px;
             font-weight: 500;
+            line-height: initial;
             text-transform: none;
             color: #041e42;
 
@@ -128,6 +189,10 @@
             @media (max-width: 768px) {
                 font-size: 32px;
             }
+
+            @media (max-width: 575px) {
+                font-size: 22px;
+            }
         }
 
         img {
@@ -141,6 +206,20 @@
 
             @media (max-width: 768px) {
                 margin-bottom: 20px;
+            }
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+        iframe {
+            @media (max-width: 768px) {
+                height: 280px;
+            }
+
+            @media (max-width: 545px) {
+                height: 190px;
             }
         }
     }
