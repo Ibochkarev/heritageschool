@@ -134,10 +134,25 @@ document.addEventListener(`DOMContentLoaded`, () => {
             768: {
                 spaceBetween: 50,
             },
+            992: {
+                spaceBetween: 50,
+            },
             1024: {
                 spaceBetween: 120,
             },
         },
+    })
+
+    const usefulSlider = new Swiper(".useful-slider", {
+        slidesPerView: 2,
+        loop: true,
+        spaceBetween: 10,
+        centeredSlides: true,
+        pagination: {
+            el: ".swiper-pagination-useful",
+            clickable: true,
+        },
+        slidesPerColumnFill: "row",
     })
 
     // Карточка кампуса

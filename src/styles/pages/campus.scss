@@ -1,8 +1,8 @@
 .campus {
-    padding-bottom: 250px;
+    padding-bottom: 90px;
 
     @media (max-width: 1336px) {
-        padding-bottom: 120px;
+        padding-bottom: 60px;
     }
 
     .environment {
@@ -46,7 +46,9 @@
         margin: 0 auto 30px;
     }
 
-    .contacts__form {
-        margin-top: 40px;
+    @media (max-width: 1460px) {
+        .contacts__form {
+            margin-top: 40px;
+        }
     }
 }

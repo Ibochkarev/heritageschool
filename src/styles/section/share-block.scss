@@ -5,6 +5,10 @@
         margin-bottom: 90px;
     }
 
+    @media (max-width: 768px) {
+        margin-bottom: 60px;
+    }
+
     &__wrap {
         display: flex;
         align-items: center;
@@ -34,10 +38,14 @@
             @media (max-width: 992px) {
                 max-width: 100%;
                 font-size: 22px;
+                text-align: center;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 18px;
             }
 
             @media (max-width: 575px) {
-                max-width: 100%;
                 font-size: 16px;
             }
         }
@@ -60,10 +68,10 @@
 .share {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: 0;
     padding-left: 0;
     list-style-type: none;
-    justify-content: center;
 
     &__item {
         width: 70px;

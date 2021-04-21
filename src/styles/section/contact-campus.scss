@@ -1,22 +1,27 @@
 .contacts {
     &__wrap {
         display: flex;
+        justify-content: space-between;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1460px) {
             flex-wrap: wrap;
         }
     }
 
     &__col {
-        flex-basis: 50%;
+        flex-basis: 49%;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1460px) {
             flex-basis: 100%;
         }
     }
 
     &__headline {
         margin-bottom: 70px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__title {
@@ -35,14 +40,10 @@
         }
 
         @media (max-width: 768px) {
-            margin-bottom: 35px;
-            font-size: 24px;
-            font-weight: 300;
-        }
-
-        @media (max-width: 375px) {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             font-size: 14px;
+            font-weight: 300;
+            text-transform: uppercase;
         }
 
         &-campus {
@@ -54,6 +55,10 @@
             @media (max-width: 1024px) {
                 font-size: 28px;
             }
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -63,8 +68,16 @@
             align-items: center;
             margin-bottom: 40px;
 
+            @media (max-width: 768px) {
+                border-bottom: 20px;
+            }
+
             &:last-child {
                 margin-bottom: 20px;
+
+                @media (max-width: 768px) {
+                    border-bottom: 10px;
+                }
             }
 
             &__icon {

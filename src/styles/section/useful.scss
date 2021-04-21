@@ -8,19 +8,56 @@
         flex-wrap: wrap;
     }
 
+    &__desktop {
+        display: none;
+
+        @media (min-width: 768.1px) {
+            display: flex;
+        }
+    }
+
+    &__mobile {
+        display: none;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        .swiper-slide {
+            width: 100%;
+            opacity: 0.5;
+
+            .useful__item-info,
+            .useful__item-link {
+                display: none;
+            }
+        }
+
+        .swiper-slide-active {
+            opacity: 1;
+
+            .useful__item-info,
+            .useful__item-link {
+                display: block;
+            }
+        }
+    }
+
     &__item {
         height: 100%;
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             margin-bottom: 60px;
         }
 
-        &-img {
-            margin-bottom: 45px;
+        @media (max-width: 768px) {
+            width: 100%;
+            max-width: 390px;
+            margin-bottom: 0;
+        }
 
-            @media (max-width: 768px) {
-                margin-bottom: 30px;
-            }
+        &-img {
+            margin-bottom: 30px;
 
             img {
                 width: 100%;
@@ -28,12 +65,19 @@
             }
         }
 
+        &-wrap {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
         &__info {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         &-title {
             display: block;
+            min-height: 50px;
             margin-bottom: 38px;
             font-weight: 500;
             line-height: 1.2;
@@ -41,6 +85,7 @@
             color: $dark-black;
 
             @media (max-width: 768px) {
+                min-height: 65px;
                 margin-bottom: 15px;
                 font-size: 16px;
                 line-height: 1.7;
@@ -67,12 +112,14 @@
         }
 
         &-text {
+            min-height: 230px;
             margin-bottom: 25px;
             font-size: 16px;
             line-height: 1.4;
             color: $dark-black;
 
             @media (max-width: 768px) {
+                min-height: auto;
                 margin-bottom: 30px;
                 font-size: 14px;
             }
@@ -90,6 +137,10 @@
             line-height: 14px;
             text-decoration: underline;
             color: $dark-black;
+
+            @media (max-width: 575px) {
+                font-size: 12px;
+            }
 
             &::before {
                 position: absolute;

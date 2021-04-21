@@ -15,7 +15,7 @@
             flex-basis: 50%;
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 1024px) {
             flex-basis: 100%;
         }
     }
@@ -28,12 +28,9 @@
             flex-basis: 50%;
         }
 
-        @media (max-width: 768px) {
-            padding-left: 25px;
-        }
-
-        @media (max-width: 700px) {
-            margin-bottom: 120px;
+        @media (max-width: 1024px) {
+            margin-bottom: 30px;
+            padding-left: 0;
             flex-basis: 100%;
         }
 
@@ -45,8 +42,7 @@
 }
 
 .camspus-item {
-    width: 100%;
-    max-width: 877px;
+    max-width: 95%;
     margin-bottom: 130px;
     background: #ffffff;
     transition: all 0.5s ease-in-out;
@@ -56,6 +52,7 @@
     }
 
     @media (max-width: 1024px) {
+        max-width: 100%;
         margin-bottom: 25px;
     }
 
@@ -122,10 +119,10 @@
     }
 
     &__title {
+        margin-bottom: 15px;
         font-size: 24px;
         font-weight: 600;
         line-height: 1.33;
-        margin-bottom: 15px;
         color: #041e42;
 
         @media (max-width: 1440px) {
