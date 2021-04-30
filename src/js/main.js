@@ -104,7 +104,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
 
     const gallerySlider = new Swiper(".gallery-slider", {
         slidesPerView: 2,
-        loop: true,
+        // loop: true,
         spaceBetween: 30,
         centeredSlides: true,
         pagination: {

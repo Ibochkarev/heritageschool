@@ -1,5 +1,5 @@
 .card {
-    margin-bottom: 90px;
+    margin-bottom: 60px;
 
     @media (max-width: 1200px) {
         margin-bottom: 25px;
@@ -28,6 +28,14 @@
         background: #ffffff;
         flex-direction: column;
 
+        @media (max-width: 1400px) {
+            min-height: 465px;
+        }
+
+        @media (max-width: 1200px) {
+            min-height: 555px;
+        }
+
         @media (max-width: 768px) {
             min-height: auto;
             padding: 30px 20px 30px;
@@ -38,17 +46,21 @@
         display: block;
         min-height: 64px;
         margin-bottom: 10px;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 600;
         line-height: 1.33;
         color: #041e42;
 
+        @media (max-width: 1336px) {
+            min-height: 75px;
+        }
+
         @media (max-width: 992px) {
-            font-size: 20px;
+            font-size: 16px;
         }
 
         @media (max-width: 768px) {
-            font-size: 16px;
+            min-height: auto;
         }
 
         @media (max-width: 575px) {
@@ -76,7 +88,8 @@
         font-weight: 300;
         line-height: 1.4;
         color: #3a3a3a;
-        @media (max-width: 768px) {
+
+        @media (max-width: 1300px) {
             margin-bottom: 15px;
             font-size: 14px;
         }
@@ -115,6 +128,16 @@
 
         &:hover {
             color: #a97945;
+        }
+    }
+
+    .post-top {
+        flex-wrap: wrap;
+
+        @media (max-width: 1300px) {
+            .post-top__time {
+                margin-bottom: 5px;
+            }
         }
     }
 }
