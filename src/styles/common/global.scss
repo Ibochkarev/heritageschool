@@ -636,10 +636,11 @@ strong {
 
     &__title {
         margin-bottom: 75px;
+        font-family: "Lora", serif;
         font-size: 48px;
-        font-weight: 550;
+        font-weight: 400;
         text-align: center;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         color: $blue;
 
         @media (max-width: 1336px) {
@@ -698,8 +699,8 @@ strong {
 
     &__title {
         margin-bottom: 40px;
+        font-family: "Lora", serif;
         font-size: 48px;
-        font-weight: 550;
         line-height: 1.2;
         text-transform: uppercase;
         color: #041e42;
@@ -854,6 +855,13 @@ strong {
                 margin-bottom: 15px;
             }
         }
+
+        h2,
+        h3,
+        h4 {
+            font-family: "Lora", serif;
+            font-weight: 400;
+        }
     }
 }
 
@@ -987,7 +995,7 @@ strong {
     align-items: center;
     justify-content: space-between;
     margin: 0 -10px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .cookie-popup-l {
@@ -1004,10 +1012,11 @@ strong {
 
 .cookie-popup a {
     text-decoration: underline !important;
-    color: #000 !important;
+    color: #000000 !important;
 }
 
 .cookie-popup-r {
+    margin-top: 10px;
     padding: 0 10px;
 }
 

@@ -1,6 +1,10 @@
 .campus {
     padding-bottom: 90px;
 
+    .home-slider__nav-wrap {
+        opacity: 0;
+    }
+
     @media (max-width: 1336px) {
         padding-bottom: 60px;
     }
