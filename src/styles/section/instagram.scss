@@ -6,10 +6,24 @@
         line-height: 67px;
         text-align: center;
         color: #16345f;
+
+        @media (max-width: 992px) {
+            margin-bottom: 60px;
+            font-size: 42px;
+            line-height: 42px;
+        }
     }
 
     &__socials {
         margin-bottom: 120px;
+
+        @media (max-width: 992px) {
+            margin-bottom: 90px;
+        }
+
+        @media (max-width: 575px) {
+            margin-bottom: 35px;
+        }
 
         &-title {
             margin-bottom: 33px;
@@ -18,6 +32,11 @@
             text-align: center;
             text-transform: uppercase;
             color: #16345f;
+
+            @media (max-width: 992px) {
+                margin-bottom: 20px;
+                font-size: 18px;
+            }
         }
 
         &-wrap {
