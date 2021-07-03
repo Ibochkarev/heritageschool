@@ -117,3 +117,12 @@ mixin feedback-card(data)
         .feedback__card-student!=data.student
         .feedback__card-campus!=data.campus
         a.feedback__card-link(href="#") read more
+
+//- Home post
+mixin post-card(data)
+  .posts__item
+    .posts__item-overlay
+    img.posts__item-image(src='./img/' + data.image alt="")
+    .posts__item-info
+      a.posts__item-title(href="#")!=data.title
+      .posts__item-text!=data.text
