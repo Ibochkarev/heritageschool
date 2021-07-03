@@ -30,8 +30,8 @@
         flex-wrap: wrap;
 
         @media (max-width: 575px) {
-            flex-direction: column;
             justify-content: center;
+            flex-direction: column;
         }
     }
 
@@ -59,8 +59,8 @@
 
         &__col {
             @media (max-width: 1200px) {
-                margin-bottom: 20px;
                 width: calc(100% / 4 - 20px);
+                margin-bottom: 20px;
             }
 
             @media (max-width: 992px) {
@@ -69,11 +69,11 @@
         }
 
         &__title {
-            color: #ffffff;
+            margin-bottom: 10px;
             font-size: 14px;
             line-height: 1.8;
-            margin-bottom: 10px;
             text-transform: uppercase;
+            color: #ffffff;
         }
 
         ul {
@@ -82,10 +82,10 @@
             list-style-type: none;
 
             a {
-                color: #ffffff;
+                margin-bottom: 10px;
                 font-size: 14px;
                 line-height: 1.8;
-                margin-bottom: 10px;
+                color: #ffffff;
 
                 &.uppercase {
                     text-transform: uppercase;
@@ -96,35 +96,35 @@
 
     &__contacts {
         display: flex;
-        flex-direction: column;
         align-items: flex-end;
         margin-left: 40px;
+        flex-direction: column;
 
         @media (max-width: 1200px) {
-            margin-left: 0;
             align-items: flex-start;
+            margin-left: 0;
         }
 
         @media (max-width: 992px) {
-            flex-direction: row;
             justify-content: space-between;
-            margin-left: 0;
             width: 100%;
+            margin-left: 0;
+            flex-direction: row;
         }
 
         @media (max-width: 575px) {
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
+            flex-direction: column;
         }
 
         &-phone {
-            color: #ffffff;
             display: block;
-            font-size: 24px;
             margin-bottom: 40px;
-            white-space: nowrap;
+            font-size: 24px;
             text-align: right;
+            color: #ffffff;
+            white-space: nowrap;
 
             @media (max-width: 575px) {
                 margin-bottom: 20px;
@@ -137,12 +137,12 @@
         display: block;
         font-size: 14px;
         line-height: 1.2;
-        color: #ffffff;
         text-align: right;
+        color: #ffffff;
 
         @media (max-width: 575px) {
-            font-size: 12px;
             margin-top: 15px;
+            font-size: 12px;
 
             br {
                 display: none;
