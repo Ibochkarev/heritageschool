@@ -44,7 +44,7 @@
 .camspus-item {
     max-width: 95%;
     margin-bottom: 130px;
-    background: #ffffff;
+    background: $white;
     transition: all 0.5s ease-in-out;
 
     @media (max-width: 1440px) {
@@ -120,11 +120,11 @@
 
     &__title {
         margin-bottom: 15px;
-        font-size: 24px;
         font-family: "Lora", serif;
+        font-size: 24px;
         font-weight: 400;
         line-height: 1.33;
-        color: #041e42;
+        color: $blue;
 
         @media (max-width: 1440px) {
             font-size: 18px;
@@ -140,10 +140,11 @@
         display: block;
         width: max-content;
         padding-left: 40px;
+        font-family: "HelveticaNeueCyr";
         font-size: 14px;
         font-weight: 300;
         line-height: 14px;
-        color: #c49a6c;
+        color: $twine;
         border: 0;
         background-color: transparent;
         text-decoration-line: underline;
@@ -155,7 +156,7 @@
             display: block;
             width: 20px;
             height: 2px;
-            background: #c49a6c;
+            background: $twine;
             transform: translateY(-50%);
             content: "";
         }
@@ -194,6 +195,7 @@
                 span,
                 a {
                     display: block;
+                    font-family: "HelveticaNeueCyr";
                     font-size: 16px;
                     font-weight: 300;
                     line-height: 1.4;

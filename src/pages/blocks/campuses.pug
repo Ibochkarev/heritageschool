@@ -1,19 +1,28 @@
-+b.SECTION.campuses.section
++b.SECTION.campuses.section.slide
   .container
-    h2.section__title Кампусы
+    h2.section__title(data-aos="fade-up" data-aos-duration="3000") Кампусы
   +e.wrapper
     +campuses-card({
       image : "campuses/image01.jpg",
       city : "Москва",
       title: "Кампус Сокольники",
+      aos: "fade-up",
+      duration: "3000",
+      delay: "1000"
     })
     +campuses-card({
       image : "campuses/image02.jpg",
       city : "Москва",
       title: "Кампус Ленинский",
+      aos: "fade-up",
+      duration: "3000",
+      delay: "2000"
     })
     +campuses-card({
       image : "campuses/image03.jpg",
       city : "Тюмень",
       title: "Кампус Тюмень",
+      aos: "fade-up",
+      duration: "3000",
+      delay: "3000"
     })

@@ -26,10 +26,11 @@
             padding-right: 38px;
             padding-left: 38px;
             font-size: 24px;
+            font-family: "HelveticaNeueCyr";
             font-weight: 300;
             line-height: 24px;
             color: #3a3a3a;
-            border: 1px solid #ffffff;
+            border: 1px solid $white;
 
             @media (max-width: 768px) {
                 height: 60px;
@@ -51,8 +52,8 @@
             justify-content: center;
             width: 95px;
             height: 92px;
-            background: #c49a6c;
-            border: 1px solid #c49a6c;
+            background: $twine;
+            border: 1px solid $twine;
             transition: all 0.5s ease-in-out;
 
             @media (max-width: 768px) {
@@ -87,9 +88,10 @@
         margin-bottom: 48px;
         padding: 38px 130px 38px 50px;
         font-size: 24px;
+        font-family: "HelveticaNeueCyr";
         font-weight: 300;
         line-height: 157%;
-        background: #ffffff;
+        background: $white;
 
         @media (max-width: 768px) {
             padding: 25px 35px;

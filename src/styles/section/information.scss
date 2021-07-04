@@ -1,6 +1,6 @@
 .information {
     margin-bottom: 150px;
-    background-color: #ffffff;
+    background-color: $white;
 
     @media (max-width: 1336px) {
         margin-bottom: 120px;
@@ -38,6 +38,7 @@
         width: 50%;
         padding-top: 50px;
         padding-right: 50px;
+        font-family: "HelveticaNeueCyr";
         font-size: 20px;
         font-weight: 300;
         line-height: 1.6;

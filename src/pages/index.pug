@@ -1,15 +1,18 @@
-extends common/layout
+extends common/layout-home
 include common/mixins.pug
 
 block content
-  .content.home-page
+  #fullpage.content.home-page
 
     include blocks/main-slider.pug
+    include blocks/quote.pug
     include blocks/campuses.pug
+    include blocks/admission-home.pug
     include blocks/posts.pug
+    include blocks/native-text.pug
     include blocks/instagram.pug
+    include common/footer.pug
     //- include blocks/about.pug
-    //- include blocks/admissions.pug
     //- include blocks/offer.pug
     //- include blocks/school-life.pug
     //- include blocks/environment.pug

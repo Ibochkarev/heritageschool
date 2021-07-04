@@ -16,7 +16,7 @@
     &__card {
         height: 300px;
         margin-bottom: 30px;
-        background: #ffffff;
+        background: $white;
         transition: all 0.5s ease-in-out;
 
         @media (max-width: 1336px) {
@@ -42,7 +42,7 @@
             &__wrapper {
                 height: 100%;
                 padding: 31px 57px 20px;
-                background: #ffffff;
+                background: $white;
 
                 @media (max-width: 1336px) {
                     padding: 30px 40px;
@@ -57,7 +57,7 @@
                 margin-bottom: 25px;
                 font-size: 24px;
                 font-weight: 550;
-                color: #041e42;
+                color: $blue;
 
                 @media (max-width: 1336px) {
                     font-size: 20px;
@@ -114,8 +114,9 @@
                 &-text {
                     padding-right: 10px;
                     font-size: 20px;
+                    font-family: "HelveticaNeueCyr";
                     font-weight: 300;
-                    color: #000000;
+                    color: $dark-black;
                     hyphens: auto;
 
                     @media (max-width: 1336px) {
@@ -134,11 +135,11 @@
         }
 
         &:hover {
-            background: #041e42;
+            background: $blue;
 
             .tuition__card-name,
             .tuition__card-age {
-                color: #ffffff;
+                color: $white;
             }
         }
 
@@ -161,6 +162,7 @@
         &-name {
             margin-bottom: 30px;
             font-size: 32px;
+            font-family: "HelveticaNeueCyr";
             font-weight: 300;
             color: #16345f;
 
@@ -181,9 +183,10 @@
         &-age {
             margin-bottom: 30px;
             font-size: 24px;
+            font-family: "HelveticaNeueCyr";
             font-weight: 300;
             line-height: 1.5;
-            color: #041e42;
+            color: $blue;
 
             @media (max-width: 1336px) {
                 margin-bottom: 25px;
@@ -195,15 +198,16 @@
             }
 
             @media (max-width: 768px) {
-                font-size: 18px;
                 margin-bottom: 20px;
+                font-size: 18px;
             }
         }
 
         &-cost {
             font-size: 32px;
+            font-family: "HelveticaNeueCyr";
             font-weight: 300;
-            color: #c49a6c;
+            color: $twine;
 
             @media (max-width: 1336px) {
                 font-size: 28px;
@@ -225,7 +229,7 @@
             font-size: 14px;
             line-height: 14px;
             text-decoration: underline;
-            color: #c49a6c;
+            color: $twine;
 
             &::before {
                 position: absolute;
@@ -235,7 +239,7 @@
                 height: 1px;
                 transform: translateY(-50%);
                 content: "";
-                background-color: #c49a6c;
+                background-color: $twine;
             }
 
             &:hover {

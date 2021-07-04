@@ -9,7 +9,7 @@
         font-weight: 550;
         text-align: center;
         text-transform: uppercase;
-        color: #041e42;
+        color: $blue;
 
         @media (max-width: 1336px) {
             margin-bottom: 60px;
@@ -21,6 +21,7 @@
 
         @media (max-width: 768px) {
             margin-bottom: 35px;
+            font-family: "HelveticaNeueCyr";
             font-size: 24px;
             font-weight: 300;
         }
@@ -162,6 +163,7 @@
 
         &-student {
             margin-bottom: 10px;
+            font-family: "HelveticaNeueCyr";
             font-size: 18px;
             font-weight: 300;
             line-height: 1.45;
@@ -180,6 +182,7 @@
 
         &-campus {
             margin-bottom: 20px;
+            font-family: "HelveticaNeueCyr";
             font-size: 18px;
             font-weight: 300;
             line-height: 1.45;
@@ -192,8 +195,8 @@
             }
 
             @media (max-width: 768px) {
-                font-size: 14px;
                 margin-bottom: 10px;
+                font-size: 14px;
             }
         }
 
@@ -204,7 +207,7 @@
             font-size: 14px;
             line-height: 14px;
             text-decoration: underline;
-            color: #c49a6c;
+            color: $twine;
 
             &::before {
                 position: absolute;
@@ -214,7 +217,7 @@
                 height: 1px;
                 transform: translateY(-50%);
                 content: "";
-                background-color: #c49a6c;
+                background-color: $twine;
             }
 
             &:hover {
@@ -236,10 +239,10 @@
     }
 
     .swiper-pagination-num {
-        color: #041e42;
+        color: $blue;
     }
 
     .swiper-pagination-bullet-active {
-        background: #041e42;
+        background: $blue;
     }
 }

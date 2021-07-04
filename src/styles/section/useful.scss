@@ -1,6 +1,6 @@
 .useful {
-    background: linear-gradient(#e5e5e5, #ffffff);
     padding-top: 90px;
+    background: linear-gradient(#e5e5e5, $white);
 
     &__wrap {
         display: flex;

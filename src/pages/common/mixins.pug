@@ -121,19 +121,19 @@ mixin feedback-card(data)
 
 //- Home post
 mixin post-card(data)
-  .posts__item
+  .posts__item(data-aos="fade-up" data-aos-delay!=data.delay data-aos-duration="2000")
     .posts__item-overlay
     img.posts__item-image(src='./img/' + data.image alt="")
     .posts__item-info
-      a.posts__item-title(href="#")!=data.title
-      .posts__item-text!=data.text
+      a.posts__item-title(href="#" data-aos="fade-up" data-aos-duration="3000")!=data.title
+      .posts__item-text(data-aos="fade-up" data-aos-delay="4000" data-aos-duration="3000")!=data.text
 
 //- Home post
 mixin campuses-card(data)
-  .campuses__item
+  .campuses__item(data-aos!=data.aos data-aos-delay!=data.delay data-aos-duration!=data.duration)
     .campuses__item-overlay
     img.campuses__item-image(src='./img/' + data.image alt="")
     .campuses__item-info
-      a.campuses__item-city(href="#")!=data.city
-      .campuses__item-title!=data.title
-      a.campuses__item-link.btn(href="#") Читать далее
+      .campuses__item-city(data-aos="fade-up" data-aos-duration="3000")!=data.city
+      .campuses__item-title(data-aos="fade-up" data-aos-delay="2000" data-aos-duration="3000")!=data.title
+      a.campuses__item-link.btn(href="#" data-aos="flip-down" data-aos-delay="3000" data-aos-duration="2000") Читать далее

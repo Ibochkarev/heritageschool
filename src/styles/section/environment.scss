@@ -1,5 +1,5 @@
 .environment {
-    background-color: #ffffff;
+    background-color: $white;
 
     &__item {
         margin-bottom: 30px;
@@ -40,8 +40,9 @@
         }
 
         &-title {
+            font-family: "HelveticaNeueCyr";
             font-weight: 300;
-            color: #000000;
+            color: $dark-black;
             max-width: 80%;
 
             @media (max-width: 1024px) {
@@ -95,10 +96,10 @@
     }
 
     .swiper-pagination-num {
-        color: #041e42;
+        color: $blue;
     }
 
     .swiper-pagination-bullet-active {
-        background: #041e42;
+        background: $blue;
     }
 }

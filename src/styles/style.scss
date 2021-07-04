@@ -1,5 +1,9 @@
 @import "node_modules/swiper/swiper-bundle";
 
+@import "node_modules/fullpage.js/dist/fullpage";
+
+@import "node_modules/aos/dist/aos";
+
 @import "utils/fonts";
 
 @import "utils/var";
@@ -67,6 +71,10 @@
 @import "section/posts";
 
 @import "section/campuses";
+
+@import "section/quote-block";
+
+@import "section/native-text";
 
 @import "pages/index";
 

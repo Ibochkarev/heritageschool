@@ -1,17 +1,23 @@
 .campus {
     padding-bottom: 90px;
 
-    .home-slider__nav-wrap {
-        opacity: 0;
-    }
-
     @media (max-width: 1336px) {
         padding-bottom: 60px;
     }
 
+    @media (max-width: 1460px) {
+        .contacts__form {
+            margin-top: 40px;
+        }
+    }
+
+    .home-slider__nav-wrap {
+        opacity: 0;
+    }
+
     .environment {
         margin-bottom: 150px;
-        background-color: #ffffff;
+        background-color: $white;
 
         @media (max-width: 1336px) {
             margin-bottom: 120px;
@@ -48,11 +54,5 @@
         width: 80%;
         height: 540px;
         margin: 0 auto 30px;
-    }
-
-    @media (max-width: 1460px) {
-        .contacts__form {
-            margin-top: 40px;
-        }
     }
 }

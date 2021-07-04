@@ -30,7 +30,7 @@
         font-family: "Lora", serif;
         font-weight: 400;
         line-height: 18px;
-        color: #041e42;
+        color: $blue;
 
         @media (max-width: 1336px) {
             margin-bottom: 60px;
@@ -43,15 +43,17 @@
         @media (max-width: 768px) {
             margin-bottom: 20px;
             font-size: 14px;
+            font-family: "HelveticaNeueCyr";
             font-weight: 300;
             text-transform: uppercase;
         }
 
         &-campus {
             font-size: 36px;
+            font-family: "HelveticaNeueCyr";
             font-weight: 300;
             line-height: 24px;
-            color: #041e42;
+            color: $blue;
 
             @media (max-width: 1024px) {
                 font-size: 28px;
@@ -92,6 +94,7 @@
                 a {
                     display: block;
                     font-size: 16px;
+                    font-family: "HelveticaNeueCyr";
                     font-weight: 300;
                     line-height: 1.4;
                     color: #3a3a3a;
@@ -109,9 +112,10 @@
         margin-bottom: 50px;
         padding-left: 53px;
         font-size: 16px;
+        font-family: "HelveticaNeueCyr";
         font-weight: 300;
         text-decoration: underline;
-        color: #041e42;
+        color: $blue;
 
         &:hover {
             text-decoration: none;

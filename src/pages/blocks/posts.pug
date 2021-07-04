@@ -1,4 +1,4 @@
-+b.SECTION.posts.section
++b.SECTION.posts.section.slide
   +e.wrapper
     +post-card({
       image : "posts/image01.jpg",
@@ -9,13 +9,15 @@
       image : "posts/image02.jpg",
       title: "Мр Мэтью, директор школы, передает вам свое послание",
       text: "Кембриджский университет – топовый университет Великобритании и один из престижнейших вузов мира. ",
+      delay: "1000"
     })
     +post-card({
       image : "posts/image03.jpg",
       title: "Мр Мэтью, директор школы, передает вам свое послание",
       text: "Кембриджский университет – топовый университет Великобритании и один из престижнейших вузов мира. ",
+      delay: "2000"
     })
   .container
     .row
       .col-12
-        a.btn.btn-center(href="#") Читать далее
+        a.btn.btn-center(href="#" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="2000") Читать далее

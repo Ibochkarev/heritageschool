@@ -49,7 +49,7 @@
             color: #3a3a3a;
             transition: all 0.5s ease-in-out;
             flex-direction: column;
-            background-color: #ffffff;
+            background-color: $white;
 
             @media (max-width: 768px) {
                 padding: 15px 10px;
@@ -93,6 +93,7 @@
         &-text {
             display: none;
             font-size: 13px;
+            font-family: "HelveticaNeueCyr";
             font-weight: 300;
             line-height: 1.4;
 

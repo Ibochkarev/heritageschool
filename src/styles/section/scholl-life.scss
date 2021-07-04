@@ -17,7 +17,7 @@
     }
 
     .section__title {
-        color: #ffffff;
+        color: $white;
     }
 
     &__wrap {
@@ -213,6 +213,7 @@
 
         &-date {
             margin-bottom: 10px;
+            font-family: "HelveticaNeueCyr";
             font-size: 14px;
             font-weight: 300;
             line-height: 1.6;
@@ -229,7 +230,7 @@
             font-weight: 600;
             line-height: 1.2;
             text-decoration: underline;
-            color: white;
+            color: $white;
 
             @media (max-width: 768px) {
                 font-size: 16px;

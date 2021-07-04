@@ -3,7 +3,7 @@
     width: 100%;
     padding: 95px 0 50px;
     color: white;
-    background-color: #041e42;
+    background-color: $blue;
 
     @media (max-width: 768px) {
         padding: 50px 0 20px;
@@ -73,7 +73,7 @@
             font-size: 14px;
             line-height: 1.8;
             text-transform: uppercase;
-            color: #ffffff;
+            color: $white;
         }
 
         ul {
@@ -85,7 +85,7 @@
                 margin-bottom: 10px;
                 font-size: 14px;
                 line-height: 1.8;
-                color: #ffffff;
+                color: $white;
 
                 &.uppercase {
                     text-transform: uppercase;
@@ -123,7 +123,7 @@
             margin-bottom: 40px;
             font-size: 24px;
             text-align: right;
-            color: #ffffff;
+            color: $white;
             white-space: nowrap;
 
             @media (max-width: 575px) {
@@ -138,7 +138,7 @@
         font-size: 14px;
         line-height: 1.2;
         text-align: right;
-        color: #ffffff;
+        color: $white;
 
         @media (max-width: 575px) {
             margin-top: 15px;
