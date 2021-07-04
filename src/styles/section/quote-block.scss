@@ -12,6 +12,11 @@
         background-size: contain;
         background-image: url("../img/quote/bg.png");
         content: "";
+
+        @media (max-width: 992px) {
+            height: 560px;
+            width: 200px;
+        }
     }
 
     &__text {
@@ -20,6 +25,22 @@
         line-height: 125%;
         text-align: center;
         color: #3a3a3a;
+
+        @media (max-width: 1600px) {
+            font-size: 55px;
+        }
+
+        @media (max-width: 1336px) {
+            font-size: 42px;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 32px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 24px;
+        }
 
         &::before {
             position: absolute;

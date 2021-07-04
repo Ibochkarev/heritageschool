@@ -7,22 +7,24 @@
         text-align: center;
         color: #16345f;
 
-        @media (max-width: 992px) {
-            margin-bottom: 60px;
-            font-size: 42px;
-            line-height: 42px;
+        @media (max-width: 1600px) {
+            margin-bottom: 25px;
+            padding-top: 45px;
+            font-size: 55px;
+            line-height: 60px;
+        }
+
+        @media (max-width: 1440px) {
+            font-size: 32px;
+            line-height: 32px;
         }
     }
 
     &__socials {
         margin-bottom: 120px;
 
-        @media (max-width: 992px) {
-            margin-bottom: 90px;
-        }
-
-        @media (max-width: 575px) {
-            margin-bottom: 35px;
+        @media (max-width: 1600px) {
+            margin-bottom: 25px;
         }
 
         &-title {
@@ -32,6 +34,11 @@
             text-align: center;
             text-transform: uppercase;
             color: #16345f;
+
+            @media (max-width: 1600px) {
+                margin-bottom: 15px;
+                font-size: 20px;
+            }
 
             @media (max-width: 992px) {
                 margin-bottom: 20px;
@@ -53,6 +60,14 @@
 
             &:not(:last-child) {
                 margin-right: 35px;
+
+                @media (max-width: 992px) {
+                    margin-right: 20px;
+                }
+
+                @media (max-width: 575px) {
+                    margin-right: 10px;
+                }
             }
 
             &:hover {
@@ -68,22 +83,40 @@
         flex-wrap: wrap;
 
         &-item {
-            width: 20%;
-
-            @media (min-width: 1600px) {
-                width: 10%;
+            @media (min-width: 1920px) {
+                width: calc(100% / 11);
             }
 
-            @media (max-width: 1200px) {
-                width: 25%;
+            @media (max-width: 1920px) {
+                width: calc(100% / 9);
+
+                &:nth-child(n + 19) {
+                    display: none;
+                }
             }
 
-            @media (max-width: 992px) {
-                width: calc(100% / 3);
+            @media (max-width: 1600px) {
+                width: calc(100% / 8);
+
+                &:nth-child(n + 17) {
+                    display: none;
+                }
             }
 
-            @media (max-width: 575px) {
-                width: 50%;
+            @media (max-width: 1024px) {
+                width: calc(100% / 4);
+
+                &:nth-child(n + 9) {
+                    display: none;
+                }
+            }
+
+            @media (max-width: 768px) {
+                width: calc(100% / 2);
+
+                &:nth-child(n + 5) {
+                    display: none;
+                }
             }
         }
     }

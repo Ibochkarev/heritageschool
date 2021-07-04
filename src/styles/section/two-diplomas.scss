@@ -1,0 +1,44 @@
+.two-diplomas {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 311px;
+        height: 760px;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../img/two-diplomas/bg.png");
+        content: "";
+
+        @media (max-width: 992px) {
+            height: 560px;
+            width: 200px;
+        }
+    }
+
+    &__text {
+        font-size: 85px;
+        line-height: 125%;
+        text-align: center;
+        color: #3a3a3a;
+
+        @media (max-width: 1600px) {
+            font-size: 55px;
+        }
+
+        @media (max-width: 1336px) {
+            font-size: 42px;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 32px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 24px;
+        }
+    }
+}

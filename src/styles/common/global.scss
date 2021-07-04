@@ -1134,14 +1134,16 @@ blockquote {
     margin-right: 5px;
 }
 
-#fullpage {
-    .section {
-        padding-top: 0;
-        padding-bottom: 0;
+@media (min-width: 768px) {
+    #fullpage {
+        .section {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
     }
 }
 
-@media screen and (max-width: 575px) {
+@media (max-width: 768px) {
     [data-aos-delay] {
         transition-delay: 0 !important;
     }

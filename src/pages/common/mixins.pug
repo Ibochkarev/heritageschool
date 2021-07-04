@@ -121,12 +121,12 @@ mixin feedback-card(data)
 
 //- Home post
 mixin post-card(data)
-  .posts__item(data-aos="fade-up" data-aos-delay!=data.delay data-aos-duration="2000")
+  .posts__item(data-aos="fade-up" data-aos-delay!=data.delay data-aos-duration="1000")
     .posts__item-overlay
     img.posts__item-image(src='./img/' + data.image alt="")
     .posts__item-info
       a.posts__item-title(href="#" data-aos="fade-up" data-aos-duration="3000")!=data.title
-      .posts__item-text(data-aos="fade-up" data-aos-delay="4000" data-aos-duration="3000")!=data.text
+      .posts__item-text(data-aos="fade-up" data-aos-delay="4000" data-aos-duration="2500")!=data.text
 
 //- Home post
 mixin campuses-card(data)
@@ -136,4 +136,4 @@ mixin campuses-card(data)
     .campuses__item-info
       .campuses__item-city(data-aos="fade-up" data-aos-duration="3000")!=data.city
       .campuses__item-title(data-aos="fade-up" data-aos-delay="2000" data-aos-duration="3000")!=data.title
-      a.campuses__item-link.btn(href="#" data-aos="flip-down" data-aos-delay="3000" data-aos-duration="2000") Читать далее
+      a.campuses__item-link.btn(href="#" data-aos="flip-down" data-aos-delay="2000" data-aos-duration="1000") Читать далее
