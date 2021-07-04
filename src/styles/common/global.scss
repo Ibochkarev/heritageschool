@@ -1140,3 +1140,9 @@ blockquote {
         padding-bottom: 0;
     }
 }
+
+@media screen and (max-width: 575px) {
+    [data-aos-delay] {
+        transition-delay: 0 !important;
+    }
+}
