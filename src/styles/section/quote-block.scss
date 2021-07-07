@@ -1,5 +1,12 @@
 .quote-block {
     position: relative;
+    padding-top: 300px;
+    padding-bottom: 300px;
+
+    @media (max-width: 992px) {
+        padding-top: 220px;
+        padding-bottom: 220px;
+    }
 
     &::after {
         position: absolute;
@@ -14,8 +21,13 @@
         content: "";
 
         @media (max-width: 992px) {
-            height: 560px;
-            width: 200px;
+            width: 180px;
+            height: 410px;
+        }
+
+        @media (max-width: 575px) {
+            width: 130px;
+            height: 340px;
         }
     }
 

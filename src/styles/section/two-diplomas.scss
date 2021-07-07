@@ -1,12 +1,18 @@
 .two-diplomas {
     position: relative;
+    padding-top: 200px;
+    padding-bottom: 500px;
+
+    @media (max-width: 992px) {
+        padding-bottom: 300px;
+    }
 
     &::after {
         position: absolute;
-        top: 50%;
+        top: 40%;
         right: 0;
         width: 311px;
-        height: 760px;
+        height: 750px;
         transform: translateY(-50%);
         background-repeat: no-repeat;
         background-size: contain;
@@ -14,8 +20,14 @@
         content: "";
 
         @media (max-width: 992px) {
-            height: 560px;
-            width: 200px;
+            height: 450px;
+            width: 180px;
+            top: 50%;
+        }
+
+        @media (max-width: 575px) {
+            height: 345px;
+            width: 120px;
         }
     }
 
