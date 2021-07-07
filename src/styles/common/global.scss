@@ -903,7 +903,7 @@ strong {
     margin: 0;
     margin-bottom: 25px;
     padding: 0;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-collapse: collapse;
     table-layout: fixed;
 
@@ -914,10 +914,10 @@ strong {
 
     tr {
         padding: 0.35em;
-        border: 1px solid #ddd;
+        border: 1px solid #dddddd;
         background-color: #f8f8f8;
         &:nth-of-type(even) {
-            background: #eee;
+            background: #eeeeee;
         }
     }
 
@@ -1134,14 +1134,14 @@ blockquote {
     margin-right: 5px;
 }
 
-@media (min-width: 768px) {
-    #fullpage {
-        .section {
-            padding-top: 0;
-            padding-bottom: 0;
-        }
-    }
-}
+// @media (min-width: 768px) {
+//     #fullpage {
+//         .section {
+//             padding-top: 0;
+//             padding-bottom: 0;
+//         }
+//     }
+// }
 
 @media (max-width: 768px) {
     [data-aos-delay] {

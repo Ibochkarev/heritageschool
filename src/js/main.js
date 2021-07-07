@@ -1,29 +1,29 @@
 import { Swiper, Navigation, Pagination, Mousewheel } from "swiper"
 Swiper.use([Navigation, Pagination, Mousewheel])
-import fullpage from "fullpage.js"
+// import fullpage from "fullpage.js"
 import AOS from "../../node_modules/aos/dist/aos"
 
-const fullPageInstance = new fullpage("#fullpage", {
-    navigation: true,
-    autoScrolling: true,
-    scrollingSpeed: 1200,
-    responsiveWidth: 768,
-    onLeave: function () {
-        jQuery(".section [data-aos]").removeClass("aos-animate")
-    },
-    onSlideLeave: function () {
-        jQuery(".slide [data-aos]").removeClass("aos-animate")
-    },
-    afterSlideLoad: function () {
-        jQuery(".slide.active [data-aos]").addClass("aos-animate")
-    },
-    afterLoad: function () {
-        jQuery(".section.active [data-aos]").addClass("aos-animate")
-    },
-})
+// const fullPageInstance = new fullpage("#fullpage", {
+//     navigation: true,
+//     autoScrolling: true,
+//     scrollingSpeed: 1200,
+//     responsiveWidth: 768,
+//     onLeave: function () {
+//         jQuery(".section [data-aos]").removeClass("aos-animate")
+//     },
+//     onSlideLeave: function () {
+//         jQuery(".slide [data-aos]").removeClass("aos-animate")
+//     },
+//     afterSlideLoad: function () {
+//         jQuery(".slide.active [data-aos]").addClass("aos-animate")
+//     },
+//     afterLoad: function () {
+//         jQuery(".section.active [data-aos]").addClass("aos-animate")
+//     },
+// })
 
-//methods
-fullpage_api.setAllowScrolling(true)
+// //methods
+// fullpage_api.setAllowScrolling(true)
 
 AOS.init({
     duration: 700,
@@ -40,10 +40,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
             nextEl: `.swiper-button-next-main`,
             prevEl: `.swiper-button-prev-main`,
         },
-        pagination: {
-            el: `.swiper-pagination-main`,
-            clickable: true,
-        },
+        // pagination: {
+        //     el: `.swiper-pagination-main`,
+        //     clickable: true,
+        // },
         on: {
             afterInit: function () {
                 let totalNumber = this.pagination.bullets.length
