@@ -96,7 +96,7 @@
 
     &__contacts {
         display: flex;
-        align-items: flex-end;
+        min-width: 236px;
         margin-left: 40px;
         flex-direction: column;
 
@@ -122,7 +122,7 @@
             display: block;
             margin-bottom: 40px;
             font-size: 24px;
-            text-align: right;
+            text-align: center;
             color: $white;
             white-space: nowrap;
 

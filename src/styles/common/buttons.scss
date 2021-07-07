@@ -1,8 +1,11 @@
 .btn {
     cursor: pointer;
     display: block;
-    width: 240px;
+    width: max-content;
     height: 53px;
+    min-width: 159px;
+    padding-right: 15px;
+    padding-left: 15px;
     font-family: "HelveticaNeueCyr";
     font-size: 14px;
     font-weight: 300;
