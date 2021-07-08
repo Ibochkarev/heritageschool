@@ -4,12 +4,15 @@
       .swiper-slide
         +e.item
           +e.item-img(src="./img/slider/01.jpg")
-          +e.item-wrap
-            .container
-              .row
-                .col-12
-                  +e.item-text Secondary School
-                  +e.A.item-btn.btn(href="#") Read more
+          .container
+            .row
+              .col-12
+                +e.item-wrap
+                  +e.item-logo
+                    img(src="./img/slider/cambridge-international-school.svg", alt="")
+                  +e.item-info
+                    +e.item-text Secondary School
+                    +e.A.item-btn.btn(href="#") Read more
       .swiper-slide
         +e.item
           +e.item-img(src="./img/slider/01.jpg")
