@@ -2,14 +2,26 @@
   .swiper-container
     .swiper-wrapper
       .swiper-slide
-        +e.item(style="background-image: url('./img/slider/01.jpg')")
+        +e.item
+          +e.item-img(src="./img/slider/01.jpg")
+          +e.item-wrap
+            .container
+              .row
+                .col-12
+                  +e.item-text Secondary School
+                  +e.A.item-btn.btn(href="#") Read more
       .swiper-slide
-        +e.item(style="background-image: url('./img/slider/01.jpg')")
+        +e.item
+          +e.item-img(src="./img/slider/01.jpg")
       .swiper-slide
-        +e.item(style="background-image: url('./img/slider/01.jpg')")
+        +e.item
+          +e.item-img(src="./img/slider/01.jpg")
 
-    +e.nav-wrap
-      .container
+  +e.button-wrap
+    .swiper-button-prev
+    .swiper-button-next
+    //- +e.nav-wrap
+    //-   .container
         //- +e.pagination
         //-   .swiper-pagination-nav
         //-     .swiper-pagination-num

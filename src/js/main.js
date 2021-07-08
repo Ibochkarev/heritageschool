@@ -37,8 +37,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
         loop: false,
         speed: 2400,
         navigation: {
-            nextEl: `.swiper-button-next-main`,
-            prevEl: `.swiper-button-prev-main`,
+            nextEl: `.swiper-button-next`,
+            prevEl: `.swiper-button-prev`,
         },
         // pagination: {
         //     el: `.swiper-pagination-main`,
