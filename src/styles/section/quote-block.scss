@@ -12,13 +12,18 @@
         position: absolute;
         top: 50%;
         right: 0;
-        width: 311px;
-        height: 760px;
+        width: 230px;
+        height: 650px;
         transform: translateY(-50%);
         background-repeat: no-repeat;
         background-size: contain;
         background-image: url("../img/quote/bg.png");
         content: "";
+
+        @media (max-width: 1440px) {
+            width: 200px;
+            height: 550px;
+        }
 
         @media (max-width: 992px) {
             width: 180px;
