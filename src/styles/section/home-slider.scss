@@ -18,28 +18,12 @@
         background-position: center;
         background-repeat: no-repeat;
 
-        @media (max-width: 1920px) {
-            height: 95vh;
-        }
-
-        @media (max-width: 1800px) {
-            height: 93vh;
-        }
-
-        @media (max-width: 1770px) {
-            height: 83vh;
-        }
-
         @media (max-width: 1600px) {
-            height: 72vh;
-        }
-
-        @media (max-width: 1280px) {
             height: 85vh;
         }
 
         @media (max-width: 1200px) {
-            height: 65vh;
+            height: 85vh;
         }
 
         @media (max-width: 992px) {

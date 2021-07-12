@@ -1,6 +1,10 @@
 .posts {
     padding-top: 400px;
 
+    @media (max-width: 1440px) {
+        padding-top: 150px;
+    }
+
     @media (max-width: 992px) {
         padding-top: 130px;
     }
@@ -8,7 +12,7 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 90px;
+        margin-bottom: 70px;
         flex-wrap: wrap;
 
         @media (max-width: 1600px) {
@@ -30,10 +34,13 @@
         display: flex;
         justify-content: flex-end;
         width: calc(100% / 3 - 6px);
-        height: 870px;
-        margin-bottom: 12px;
+        height: 800px;
         text-align: center;
         flex-direction: column;
+
+        @media (max-width: 1920px) {
+            height: 650px;
+        }
 
         @media (max-width: 1600px) {
             height: 600px;
@@ -46,6 +53,7 @@
         @media (max-width: 768px) {
             width: calc(100% / 2 - 6px);
             height: 480px;
+            margin-bottom: 12px;
         }
 
         @media (max-width: 575px) {
