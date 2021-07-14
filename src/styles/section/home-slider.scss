@@ -177,6 +177,11 @@
             background: rgba(75, 75, 75, 0.2);
             content: "";
         }
+
+        &-btn {
+            z-index: 1;
+            position: relative;
+        }
     }
 
     &__button-wrap {
