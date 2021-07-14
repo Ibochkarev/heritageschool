@@ -5,6 +5,10 @@
         margin-bottom: 120px;
     }
 
+    @media (max-width: 575px) {
+        margin-bottom: 0;
+    }
+
     &__wrapper {
         z-index: 1;
         display: flex;

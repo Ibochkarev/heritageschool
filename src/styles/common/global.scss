@@ -640,7 +640,6 @@ strong {
         font-size: 48px;
         font-weight: 400;
         text-align: center;
-        // text-transform: uppercase;
         color: $blue;
 
         @media (max-width: 1336px) {
@@ -655,21 +654,17 @@ strong {
 
         @media (max-width: 768px) {
             margin-bottom: 35px;
-            font-family: "HelveticaNeueCyr";
-            font-family: "HelveticaNeueCyr";
             font-size: 24px;
-            font-weight: 300;
         }
 
         @media (max-width: 575px) {
             margin-bottom: 25px;
-            font-size: 14px;
+            font-size: 24px;
         }
     }
 
     &__introtext {
         margin-bottom: 60px;
-        font-family: "HelveticaNeueCyr";
         font-family: "HelveticaNeueCyr";
         font-size: 18px;
         font-weight: 300;
@@ -737,7 +732,6 @@ strong {
 
     &__content {
         margin-bottom: 240px;
-        font-family: "HelveticaNeueCyr";
         font-family: "HelveticaNeueCyr";
         font-weight: 300;
         line-height: 1.6;

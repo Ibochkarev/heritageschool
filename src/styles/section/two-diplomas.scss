@@ -7,6 +7,11 @@
         padding-bottom: 300px;
     }
 
+    @media (max-width: 575px) {
+        padding-top: 160px;
+        padding-bottom: 220px;
+    }
+
     &::after {
         position: absolute;
         top: 40%;
@@ -20,19 +25,20 @@
         content: "";
 
         @media (max-width: 992px) {
-            height: 450px;
-            width: 180px;
             top: 50%;
+            width: 180px;
+            height: 450px;
         }
 
         @media (max-width: 575px) {
-            height: 345px;
             width: 120px;
+            height: 345px;
         }
     }
 
     &__text {
-        font-size: 85px;
+        position: relative;
+        font-size: 75px;
         line-height: 125%;
         text-align: center;
         color: #3a3a3a;
