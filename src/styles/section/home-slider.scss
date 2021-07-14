@@ -59,8 +59,9 @@
 
         &-logo {
             &_right {
-                display: flex;
-                justify-content: flex-end;
+                img {
+                    float: right;
+                }
             }
 
             .logo-dark {
