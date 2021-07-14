@@ -58,6 +58,26 @@
         }
 
         &-logo {
+            &_right {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .logo-dark {
+                z-index: 1;
+                display: none;
+            }
+
+            &_dark {
+                .logo-light {
+                    display: none;
+                }
+
+                .logo-dark {
+                    display: block;
+                }
+            }
+
             img {
                 height: auto;
                 max-width: 230px;

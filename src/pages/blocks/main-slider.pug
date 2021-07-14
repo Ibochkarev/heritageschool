@@ -9,16 +9,35 @@
               .col-12
                 +e.item-wrap
                   +e.item-logo
-                    img(src="./img/slider/cambridge-international-school.svg", alt="")
+                    img.logo-light(src="./img/slider/cambridge-international-school.svg", alt="")
+                    img.logo-dark(src="./img/slider/cambridge-international-school-dark.png", alt="")
                   +e.item-info
                     +e.item-text Secondary School
                     +e.A.item-btn.btn(href="#") Read more
       .swiper-slide
         +e.item
           +e.item-img(src="./img/slider/01.jpg")
-      .swiper-slide
-        +e.item
-          +e.item-img(src="./img/slider/01.jpg")
+          .container
+            .row
+              .col-12
+                +e.item-wrap
+                  +e.item-logo._right._dark
+                    img.logo-light(src="./img/slider/cambridge-international-school.svg", alt="")
+                    img.logo-dark(src="./img/slider/cambridge-international-school-dark.png", alt="")
+                  +e.item-info
+                    +e.item-text Secondary School
+                    +e.A.item-btn.btn(href="#") Read more
+        +e.item-img(src="./img/slider/01.jpg")
+          .container
+            .row
+              .col-12
+                +e.item-wrap
+                  +e.item-logo
+                    img.logo-light(src="./img/slider/cambridge-international-school.svg", alt="")
+                    img.logo-dark(src="./img/slider/cambridge-international-school-dark.png", alt="")
+                  +e.item-info
+                    +e.item-text Secondary School
+                    +e.A.item-btn.btn(href="#") Read more
 
   +e.button-wrap
     .swiper-button-prev

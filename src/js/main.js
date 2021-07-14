@@ -44,21 +44,21 @@ document.addEventListener(`DOMContentLoaded`, () => {
         //     el: `.swiper-pagination-main`,
         //     clickable: true,
         // },
-        on: {
-            afterInit: function () {
-                let totalNumber = this.pagination.bullets.length
-                this.el.querySelector(".swiper-pagination-total").innerText =
-                    totalNumber < 10 ? `0${totalNumber}` : totalNumber
-                let currentNumber = Number(this.activeIndex) + 1
-                this.el.querySelector(".swiper-pagination-num").innerText =
-                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
-            },
-            activeIndexChange: function () {
-                let currentNumber = Number(this.activeIndex) + 1
-                this.el.querySelector(".swiper-pagination-num").innerText =
-                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
-            },
-        },
+        // on: {
+        //     afterInit: function () {
+        //         let totalNumber = this.pagination.bullets.length
+        //         this.el.querySelector(".swiper-pagination-total").innerText =
+        //             totalNumber < 10 ? `0${totalNumber}` : totalNumber
+        //         let currentNumber = Number(this.activeIndex) + 1
+        //         this.el.querySelector(".swiper-pagination-num").innerText =
+        //             currentNumber < 10 ? `0${currentNumber}` : currentNumber
+        //     },
+        //     activeIndexChange: function () {
+        //         let currentNumber = Number(this.activeIndex) + 1
+        //         this.el.querySelector(".swiper-pagination-num").innerText =
+        //             currentNumber < 10 ? `0${currentNumber}` : currentNumber
+        //     },
+        // },
     })
 
     const teamSlider = new Swiper(".team-slider", {
