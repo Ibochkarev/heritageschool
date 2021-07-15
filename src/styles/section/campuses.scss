@@ -1,5 +1,5 @@
 .campuses {
-    margin-bottom: 230px;
+    margin-bottom: 160px;
 
     @media (max-width: 992px) {
         margin-bottom: 120px;
@@ -28,11 +28,11 @@
         &::after {
             z-index: 0;
             position: absolute;
-            bottom: -200px;
+            bottom: -130px;
             left: 50%;
             display: block;
             width: 3px;
-            height: 218px;
+            height: 150px;
             background: $twine;
             transform: translateX(-50%);
             content: "";
