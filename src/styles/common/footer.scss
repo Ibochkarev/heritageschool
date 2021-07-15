@@ -69,9 +69,10 @@
         }
 
         &__title {
-            margin-bottom: 10px;
+            display: block;
+            margin-bottom: 15px;
             font-size: 14px;
-            line-height: 1.8;
+            line-height: 2rem;
             text-transform: uppercase;
             color: $white;
         }
