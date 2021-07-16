@@ -157,6 +157,8 @@
         }
 
         &-link {
+            z-index: 2;
+            position: relative;
             margin: 0 auto;
 
             &__wrap {
