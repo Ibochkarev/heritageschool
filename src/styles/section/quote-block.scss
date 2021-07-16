@@ -61,11 +61,11 @@
 
         &::before {
             position: absolute;
-            top: -70px;
+            top: -50px;
             left: 50%;
             display: block;
-            width: 58px;
-            height: 58px;
+            width: 35px;
+            height: 35px;
             transform: translateX(-50%);
             content: "";
             background-size: contain;
@@ -75,11 +75,11 @@
 
         &::after {
             position: absolute;
-            bottom: -80px;
+            bottom: -60px;
             left: 50%;
             display: block;
-            width: 58px;
-            height: 58px;
+            width: 35px;
+            height: 35px;
             transform: translateX(-50%);
             content: "";
             background-size: contain;
