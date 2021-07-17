@@ -30,6 +30,7 @@ AOS.init({
     easing: "ease-out-quad",
     once: !0,
     startEvent: "load",
+    disable: window.innerWidth < 768,
 })
 
 document.addEventListener(`DOMContentLoaded`, () => {
