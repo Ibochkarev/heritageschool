@@ -97,17 +97,17 @@
             position: relative;
 
             @media (min-width: 1920px) {
-                width: calc(100% / 8);
+                width: calc(100% / 6);
             }
 
             @media (max-width: 1920px) {
-                width: calc(100% / 8);
+                width: calc(100% / 6);
             }
 
             @media (max-width: 1600px) {
-                width: calc(100% / 6);
+                width: calc(100% / 5);
 
-                &:nth-child(n + 13) {
+                &:nth-child(n + 11) {
                     display: none;
                 }
             }
@@ -153,6 +153,10 @@
                 background-color: #ffffff;
                 visibility: hidden;
                 overflow-y: scroll;
+            }
+
+            &__text {
+                font-size: 14px;
             }
         }
     }
