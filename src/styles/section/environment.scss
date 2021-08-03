@@ -1,6 +1,49 @@
 .environment {
     background-color: $white;
 
+    &__line {
+        position: relative;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        &::after {
+            z-index: 0;
+            position: absolute;
+            bottom: -130px;
+            left: 50%;
+            display: block;
+            width: 3px;
+            height: 150px;
+            background: $twine;
+            transform: translateX(-50%);
+            content: "";
+        }
+    }
+
+    &-center {
+        text-align: center;
+
+        .section__introtext {
+            max-width: 1060px;
+            margin: 0 auto 60px;
+
+            @media (max-width: 991px) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &__wrap {
+        max-width: 60%;
+        margin: 0 auto;
+
+        @media (max-width: 991px) {
+            max-width: 100%;
+        }
+    }
+
     &__item {
         margin-bottom: 30px;
 
@@ -40,10 +83,10 @@
         }
 
         &-title {
+            max-width: 80%;
             font-family: "HelveticaNeueCyr";
             font-weight: 300;
             color: $dark-black;
-            max-width: 80%;
 
             @media (max-width: 1024px) {
                 font-size: 16px;

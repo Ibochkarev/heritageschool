@@ -23,12 +23,12 @@
             height: 280px;
         }
 
-        @media (max-width: 1024px) {
-            height: 260px;
+        @media (max-width: 1280px) {
+            height: 360px;
         }
 
         @media (max-width: 768px) {
-            height: 220px;
+            height: auto;
         }
 
         &-block {
@@ -53,25 +53,19 @@
                 }
             }
 
-            &__title {
-                margin-bottom: 25px;
-                font-size: 24px;
-                font-weight: 550;
-                color: $blue;
-
-                @media (max-width: 1336px) {
-                    font-size: 20px;
-                }
-
-                @media (max-width: 1024px) {
-                    font-size: 18px;
-                }
-            }
-
             &__wrap {
                 display: flex;
                 flex-wrap: wrap;
             }
+
+            &__title {
+                margin-bottom: 25px;
+                font-size: 18px;
+                font-weight: 550;
+                color: $blue;
+            }
+
+
 
             &__item {
                 display: flex;
@@ -113,8 +107,8 @@
 
                 &-text {
                     padding-right: 10px;
-                    font-size: 20px;
                     font-family: "HelveticaNeueCyr";
+                    font-size: 20px;
                     font-weight: 300;
                     color: $dark-black;
                     hyphens: auto;
@@ -147,23 +141,17 @@
             display: flex;
             justify-content: space-between;
             height: 100%;
-            padding: 31px 57px 40px;
+            padding: 30px 35px 40px;
             flex-direction: column;
 
-            @media (max-width: 1336px) {
-                padding: 30px 40px 35px;
-            }
-
             @media (max-width: 768px) {
-                padding: 30px 30px;
+                padding: 30px;
             }
         }
 
         &-name {
             margin-bottom: 30px;
-            font-size: 32px;
-            font-family: "HelveticaNeueCyr";
-            font-weight: 300;
+            font-size: 30px;
             color: #16345f;
 
             @media (max-width: 1336px) {
@@ -183,8 +171,6 @@
         &-age {
             margin-bottom: 30px;
             font-size: 24px;
-            font-family: "HelveticaNeueCyr";
-            font-weight: 300;
             line-height: 1.5;
             color: $blue;
 
@@ -204,9 +190,8 @@
         }
 
         &-cost {
-            font-size: 32px;
-            font-family: "HelveticaNeueCyr";
-            font-weight: 300;
+            margin-bottom: 25px;
+            font-size: 30px;
             color: $twine;
 
             @media (max-width: 1336px) {
@@ -222,29 +207,29 @@
             }
         }
 
-        &-link {
-            position: relative;
-            display: block;
-            margin-left: 37px;
-            font-size: 14px;
-            line-height: 14px;
-            text-decoration: underline;
-            color: $twine;
+        // &-link {
+        //     position: relative;
+        //     display: block;
+        //     margin-left: 37px;
+        //     font-size: 14px;
+        //     line-height: 14px;
+        //     text-decoration: underline;
+        //     color: $twine;
 
-            &::before {
-                position: absolute;
-                top: 50%;
-                left: -37px;
-                width: 20px;
-                height: 1px;
-                transform: translateY(-50%);
-                content: "";
-                background-color: $twine;
-            }
+        //     &::before {
+        //         position: absolute;
+        //         top: 50%;
+        //         left: -37px;
+        //         width: 20px;
+        //         height: 1px;
+        //         transform: translateY(-50%);
+        //         content: "";
+        //         background-color: $twine;
+        //     }
 
-            &:hover {
-                text-decoration: none;
-            }
-        }
+        //     &:hover {
+        //         text-decoration: none;
+        //     }
+        // }
     }
 }

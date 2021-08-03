@@ -2,6 +2,27 @@
     position: relative;
     margin-bottom: 0;
 
+    &__line {
+        position: relative;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        &::after {
+            z-index: 0;
+            position: absolute;
+            bottom: -130px;
+            left: 50%;
+            display: block;
+            width: 3px;
+            height: 150px;
+            background: $twine;
+            transform: translateX(-50%);
+            content: "";
+        }
+    }
+
     .swiper-container {
         position: relative;
     }
@@ -82,8 +103,8 @@
         }
 
         &-info {
-            position: relative;
             z-index: 1;
+            position: relative;
         }
 
         &-wrap {
@@ -123,7 +144,7 @@
         &-text {
             z-index: 1;
             position: relative;
-            bottom: 25px;
+            bottom: 55px;
             max-width: 80%;
             min-width: 35%;
             font-family: "Lora", serif;

@@ -45,6 +45,15 @@ mixin environment-card(data)
           img(src='./img/' + data.icon alt="")
         .environment__item-title!=data.title
 
+//- Environment card 2 col
+mixin environment-card-col-6(data)
+  .col-6
+    .environment__item
+      .environment__item-info
+        .environment__item-icon
+          img(src='./img/' + data.icon alt="")
+        .environment__item-title!=data.title
+
 //- Хлебные крошки
 mixin breadcrumb(levels)
   nav.breadcrumbs(aria-label="breadcrumb")
@@ -89,7 +98,7 @@ mixin tuition-card(data)
           .tuition__card-name!=data.name
           .tuition__card-age!=data.age
           .tuition__card-cost!=data.cost
-        a.tuition__card-link(href="#") read more
+        a.tuition__card-link.btn(href="#") Читать далее
 
 mixin tuition-card-block(data)
   .tuition__card-block__item
