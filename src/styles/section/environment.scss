@@ -1,5 +1,11 @@
 .environment {
-    background-color: $white;
+    position: relative;
+
+    &__wrapper{
+        z-index: 1;
+        position: relative;
+        background-color: $white;
+    }
 
     &__line {
         position: relative;
