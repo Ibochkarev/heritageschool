@@ -48,6 +48,10 @@
             @media (max-width: 991px) {
                 width: 100%;
             }
+
+            @media (max-width: 575px) {
+                padding: 35px 20px;
+            }
         }
     }
 

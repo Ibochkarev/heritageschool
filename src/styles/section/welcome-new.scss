@@ -37,6 +37,11 @@
             padding-right: 0;
             padding-bottom: 50px;
         }
+
+        @media (max-width: 575px) {
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
     }
 
     &__text {
@@ -176,6 +181,7 @@
 
         @media (max-width: 575px) {
             height: 254px;
+            margin-top: 0;
         }
     }
 }
