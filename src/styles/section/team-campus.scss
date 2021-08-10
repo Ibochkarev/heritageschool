@@ -6,8 +6,11 @@
         align-items: center;
         justify-content: space-between;
         text-align: center;
-        flex-wrap: wrap;
         gap: 4px;
+
+        @media (max-width: 768px){
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
