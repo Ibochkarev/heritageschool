@@ -1,6 +1,10 @@
 .team-campus {
     margin-bottom: 150px;
 
+    @media (max-width: 768px) {
+        margin-bottom: 60px;
+    }
+
     &__wrapper {
         display: flex;
         align-items: center;

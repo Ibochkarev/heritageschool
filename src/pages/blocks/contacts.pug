@@ -1,38 +1,37 @@
-+b.contacts
++b.contact-campus.section
   .container
     +e.headline
-      +e.H2.title CONTACTS
-      +e.title-campus Sokolniki Campus
+      +e.H2.title Контакты
+      +e.H3.name Кампус Сокольники
     +e.wrap
-      +e.col
+      +e.col-info
         +e.info
           +e.info-item
             +e.info-item__icon
               img(src="img/contact/phone.svg", alt="")
             +e.info-item__text
-              span
-                a(href="tel:+74995830247") +7 (499) 583 02 47
-              span (по вопросам поступления)
+              a(href="tel:+74995830247") +7 (499) 583 02 47
+              | (по вопросам поступления)
 
           +e.info-item
             +e.info-item__icon
               img(src="img/contact/mail.svg", alt="")
             +e.info-item__text
-              span Учёба в Heritage
-              span
-                a(href="mailto:study@heritageschool.ru")  study@heritageschool.ru
+              | Учёба в Heritage
+              a(href="mailto:study@heritageschool.ru")  study@heritageschool.ru
 
           +e.info-item
             +e.info-item__icon
               img(src="img/contact/marker.svg", alt="")
             +e.info-item__text
-              span ул. Краснобогатырская, д. 90, стр. 3
-              span (метро «Преображенская Площадь»)
+              | ул. Краснобогатырская, д. 90, стр. 3
+              |
+              | (метро «Преображенская Площадь»)
 
-          +e.A.download(href="#" download) Скачать схему проезда
+          +e.A.download.btn(href="#" download) Скачать схему проезда
 
-        //- +e.map
-        //-   iframe(src="")
+        +e.map
+          script(type='text/javascript' charset='utf-8' async='' src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8affcf208390a7e2b607645f8709b2f7a44174ed2eaefad32614a7d176b2c367&height=352&lang=ru_RU&scroll=true')
 
-      +e.col
-        +e.form 1
+      +e.col-form
+        +e.form Тут будет форма
