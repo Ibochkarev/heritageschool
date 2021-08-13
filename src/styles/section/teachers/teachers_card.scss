@@ -1,0 +1,102 @@
+.teachers {
+    &__item {
+        &-card {
+            margin-top: 100px;
+
+            @media (max-width: 991px) {
+                margin-top: 60px;
+
+                &:nth-child(4) {
+                    margin-top: 60px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                margin-top: 45px;
+
+                &:nth-child(3),
+                &:nth-child(4)  {
+                    margin-top: 45px;
+                }
+            }
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                margin-top: 0;
+            }
+        }
+
+        &-photo {
+            margin-bottom: 45px;
+
+            @media (max-width: 991px) {
+                margin-bottom: 15px;
+            }
+        }
+
+        &-info {
+            font-size: 21px;
+            text-align: center;
+
+            @media (max-width: 991px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+
+        &-title {
+            margin-bottom: 5px;
+            font-family: "Lora", serif;
+            color: $blue;
+        }
+
+        &-position {
+            max-width: 220px;
+            margin: 0 auto 40px;
+            font-family: "HelveticaNeueCyr";
+            font-weight: 300;
+
+            @media (max-width: 991px) {
+                margin: 0 auto 25px;
+            }
+
+            @media (max-width: 768px) {
+                margin: 0 auto 15px;
+                font-size: 14px;
+            }
+        }
+
+        &-link {
+            height: 36px;
+            margin: 0 auto;
+            line-height: 36px;
+
+            @media (max-width: 575px) {
+                width: 100%;
+                max-width: 100%;
+                min-width: auto;
+                padding-right: 5px;
+                padding-left: 5px;
+                text-transform: none;
+            }
+        }
+    }
+
+    &-list {
+        &__wrap {
+            padding-top: 75px;
+            padding-bottom: 75px;
+            background-color: #ffffff;
+
+            @media (max-width: 768px) {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+        }
+    }
+}

@@ -137,12 +137,23 @@ mixin post-card(data)
       a.posts__item-title(href="#" data-aos="fade-up" data-aos-duration="2000")!=data.title
       .posts__item-text(data-aos="fade-up" data-aos-delay="4000" data-aos-duration="2500")!=data.text
 
+//- Campus team card
 mixin team-card(data)
   .posts__item(data-aos="fade-up" data-aos-delay!=data.delay data-aos-duration="1000")
     .posts__item-overlay
     img.posts__item-image(src='./img/' + data.image alt="")
     .posts__item-info
       a.posts__item-title(href="#" data-aos="fade-up" data-aos-duration="2000")!=data.title
+
+//- Teacher card
+mixin teacher-card(data)
+  .col-6.col-md-4.col-lg-3.teachers__item-card
+    .teachers__item(data-aos="fade-up" data-aos-delay!=data.delay data-aos-duration="1000")
+      img.teachers__item-photo(src='./img/' + data.image alt="")
+      .teachers__item-info
+        .teachers__item-title(data-aos="fade-up" data-aos-duration="2000")!=data.title
+        .teachers__item-position(data-aos="fade-up" data-aos-duration="2000")!=data.position
+        a.teachers__item-link.btn(href="#" data-aos="flip-down" data-aos-delay="2000" data-aos-duration="1000") Читать далее
 
 //- Home post
 mixin campuses-card(data)

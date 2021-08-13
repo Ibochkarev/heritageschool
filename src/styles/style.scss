@@ -52,9 +52,9 @@
 
 @import "section/welcome";
 
-@import "section/about-campus";
+@import "section/campus/about-campus";
 
-@import "section/contact-campus";
+@import "section/campus/contact-campus";
 
 @import "section/tuition";
 
@@ -80,13 +80,15 @@
 
 @import "section/about-block";
 
-@import "section/welcome-new";
+@import "section/campus/welcome-new";
 
-@import "section/team-campus";
+@import "section/campus/team-campus";
 
-@import "section/gallery-campus";
+@import "section/campus/gallery-campus";
 
 @import "section/bottom-block";
+
+@import "section/teachers/teachers_card";
 
 @import "pages/index";
 
