@@ -44,6 +44,18 @@
         }
     }
 
+    &__title {
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: 400;
+        color: $blue;
+
+        @media (max-width: 768px) {
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+    }
+
     &__text {
         width: 100%;
         max-width: 760px;

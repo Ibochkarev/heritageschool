@@ -16,21 +16,12 @@
     }
 
     .environment {
-        margin-bottom: 150px;
         background-color: $white;
-
-        @media (max-width: 1336px) {
-            margin-bottom: 120px;
-        }
-
-        @media (max-width: 768px) {
-            margin-bottom: 45px;
-        }
     }
 
-    .tuition {
-        margin-bottom: 0;
-    }
+    // .tuition {
+    //     margin-bottom: 0;
+    // }
 
     .posts {
         padding-top: 0;
