@@ -1,0 +1,53 @@
+.teachers-list {
+
+    &__nav {
+        margin-bottom: 60px;
+
+        @media (max-width: 991px) {
+            margin-bottom: 60px;
+        }
+
+        .swiper-wrapper {
+            padding-bottom: 50px;
+
+            @media (max-width: 660px) {
+                padding-bottom: 0;
+            }
+        }
+
+        &-item {
+            height: 50px;
+            font-size: 24px;
+            line-height: 50px;
+            text-align: center;
+            color: rgba(43, 44, 44, 0.6);
+
+            @media (max-width: 991px) {
+                font-size: 16px;
+            }
+        }
+
+        .swiper-slide-thumb {
+
+            &-active {
+                .teachers-list__nav-item {
+                    font-size: 30px;
+                    color: #C49A6C;
+
+                    @media (max-width: 991px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            top: 75%;
+
+            @media (max-width: 660px) {
+                top: 50%;
+            }
+        }
+    }
+}
+

@@ -1,5 +1,5 @@
-import { Swiper, Navigation, Pagination, Mousewheel } from "swiper"
-Swiper.use([Navigation, Pagination, Mousewheel])
+import { Swiper, Thumbs, Navigation, Pagination, Mousewheel } from "swiper"
+Swiper.use([Thumbs, Navigation, Pagination, Mousewheel])
 // import fullpage from "fullpage.js"
 import AOS from "../../node_modules/aos/dist/aos"
 
@@ -98,6 +98,34 @@ document.addEventListener(`DOMContentLoaded`, () => {
             },
         },
     })
+
+    const teachersNav = new Swiper('.teachersNav', {
+      spaceBetween: 0,
+      slidesPerView: 1,
+      centeredSlides: true,
+      loop: true,
+      freeMode: true,
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        // when window width is >= 992px
+        660: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+      },
+    });
+
+    const teachersList = new Swiper(".teachersList", {
+      spaceBetween: 10,
+      loop: true,
+      autoHeight: true,
+      thumbs: {
+          swiper: teachersNav,
+      },
+    });
 
     const feedbackSlider = new Swiper(".feedback-slider", {
         // slidesPerView: 2,
