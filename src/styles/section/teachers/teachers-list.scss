@@ -1,21 +1,23 @@
 .teachers-list {
 
     &__nav {
-        margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 970px;
+        margin: 0 auto 160px;
 
         @media (max-width: 991px) {
-            margin-bottom: 60px;
+            margin: 0 auto 60px;
         }
 
-        .swiper-wrapper {
-            padding-bottom: 50px;
-
-            @media (max-width: 660px) {
-                padding-bottom: 0;
-            }
+        @media (max-width: 768px) {
+            flex-direction: column;
         }
 
         &-item {
+            cursor: pointer;
             height: 50px;
             font-size: 24px;
             line-height: 50px;
@@ -23,31 +25,23 @@
             color: rgba(43, 44, 44, 0.6);
 
             @media (max-width: 991px) {
+                height: 36px;
                 font-size: 16px;
+                line-height: 36px;
             }
-        }
 
-        .swiper-slide-thumb {
+            &:hover {
+                color: #C49A6C;
+            }
 
-            &-active {
-                .teachers-list__nav-item {
-                    font-size: 30px;
-                    color: #C49A6C;
+            &.active {
+                font-size: 30px;
+                color: #C49A6C;
 
-                    @media (max-width: 991px) {
-                        font-size: 20px;
-                    }
+                @media (max-width: 991px) {
+                    font-size: 20px;
                 }
-            }
-        }
-
-        .swiper-button-next, .swiper-button-prev {
-            top: 75%;
-
-            @media (max-width: 660px) {
-                top: 50%;
             }
         }
     }
 }
-

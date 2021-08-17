@@ -2,133 +2,61 @@
   .container
     .row
       .col-12
-        +e.nav
-          .swiper-container.teachersNav(thumbsSlider)
-            .swiper-wrapper
-              .swiper-slide
-                +e.nav-item Academic Team
-              .swiper-slide
-                +e.nav-item Senior Leadership Team
-              .swiper-slide
-                +e.nav-item Operations Team
-            .swiper-button-next
-            .swiper-button-prev
+        +e.nav(data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2500")
+          +e.A.nav-item(href="#") Academic Team
+          +e.A.nav-prev
+          +e.A.nav-item.active(href="#") Senior Leadership Team
+          +e.A.nav-item(href="#") Operations Team
+          +e.A.nav-next
 
   .container-fluid.teachers-list__wrapper
     .row
-      .swiper-container.teachersList
-        .swiper-wrapper
-          .swiper-slide
-            +e.wrap
-              .container
-                .row
-                  +teacher-card({
-                    image : "teachers/img-01.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-02.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-03.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-04.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-
-          .swiper-slide
-            +e.wrap
-              .container
-                .row
-                  +teacher-card({
-                    image : "teachers/img-01.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-02.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-03.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-04.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-05.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-06.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-07.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-
-          .swiper-slide
-            +e.wrap
-              .container
-                .row
-                  +teacher-card({
-                    image : "teachers/img-01.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-02.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-03.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-04.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-05.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-06.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-07.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-08.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
-                  +teacher-card({
-                    image : "teachers/img-09.jpg",
-                    title: "Beverley Sandy",
-                    position: "Primary Teacher University of Cambridge",
-                  })
+      .col-12
+        +e.wrap
+          .container
+            .row
+              +teacher-card({
+                image : "teachers/img-01.jpg",
+                title: "Beverley Sandy",
+                position: "Primary Teacher University of Cambridge",
+              })
+              +teacher-card({
+                image : "teachers/img-02.jpg",
+                title: "Beverley Sandy",
+                position: "Primary Teacher University of Cambridge",
+              })
+              +teacher-card({
+                image : "teachers/img-03.jpg",
+                title: "Beverley Sandy",
+                position: "Primary Teacher University of Cambridge",
+              })
+              +teacher-card({
+                image : "teachers/img-04.jpg",
+                title: "Beverley Sandy",
+                position: "Primary Teacher University of Cambridge",
+              })
+              +teacher-card({
+                image : "teachers/img-05.jpg",
+                title: "Beverley Sandy",
+                position: "Primary Teacher University of Cambridge",
+              })
+              +teacher-card({
+                image : "teachers/img-06.jpg",
+                title: "Beverley Sandy",
+                position: "Primary Teacher University of Cambridge",
+              })
+              +teacher-card({
+                image : "teachers/img-07.jpg",
+                title: "Beverley Sandy",
+                position: "Primary Teacher University of Cambridge",
+              })
+              +teacher-card({
+                image : "teachers/img-08.jpg",
+                title: "Beverley Sandy",
+                position: "Primary Teacher University of Cambridge",
+              })
+              +teacher-card({
+                image : "teachers/img-09.jpg",
+                title: "Beverley Sandy",
+                position: "Primary Teacher University of Cambridge",
+              })
