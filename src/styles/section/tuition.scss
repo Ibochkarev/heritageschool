@@ -31,6 +31,10 @@
             height: auto;
         }
 
+        &-not-button {
+            height: auto;
+        }
+
         &-block {
             height: 100%;
             margin-bottom: 45px;
@@ -70,12 +74,12 @@
                 align-items: center;
                 width: 50%;
 
-                &:not(:last-child) {
-                    margin-bottom: 18px;
-                }
-
                 @media (max-width: 575px) {
                     width: 100%;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 18px;
                 }
 
                 &.w-100 {
@@ -229,5 +233,14 @@
         //         text-decoration: none;
         //     }
         // }
+    }
+
+    &__text {
+        margin: 130px 0 95px;
+        font-family: "HelveticaNeueCyr";
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 1.6;
+        text-align: center;
     }
 }

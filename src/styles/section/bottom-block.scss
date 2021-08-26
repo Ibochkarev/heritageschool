@@ -1,29 +1,35 @@
 .bottom-block {
+    margin-bottom: 150px;
     padding-top: 75px;
     padding-bottom: 75px;
     background-color: #ffffff;
-    margin-bottom: 150px;
 
     @media (max-width: 768px) {
         margin-bottom: 60px;
     }
 
+    &--gray {
+        background-color: transparent;
+    }
+
     &__title {
         margin-bottom: 35px;
         font-family: "Lora", serif;
-        font-size: 55px;
-        line-height: 1.28;
+        font-size: 42px;
+        font-weight: 400;
         color: $blue;
-
-        @media (max-width: 1336px) {
-            font-size: 42px;
-        }
 
         @media (max-width: 1024px) {
             font-size: 34px;
         }
 
         @media (max-width: 768px) {
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        @media (max-width: 575px) {
+            margin-bottom: 25px;
             font-size: 24px;
         }
     }

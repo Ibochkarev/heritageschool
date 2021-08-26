@@ -1,0 +1,394 @@
+//- +b#price-block__tab-links.price-block.price-block__tab-links.campuses(style="margin-top: 200px;")
+//-   .container
+//-     .row
+//-       +e.A.tab-link(href="#campus_01") 1
+//-       +e.A.tab-link(href="#campus_02") 2
+//-       +e.A.tab-link(href="#campus_03") 3
++b#price-block__tab-links.campuses.section
+  +e.wrapper
+    +campuses-card-price({
+      image : "campuses/image01.jpg",
+      city : "Москва",
+      title: "Кампус Сокольники",
+      link: "#campus_01",
+      aos: "fade-up",
+      duration: "1500",
+      delay: "1000"
+    })
+    +campuses-card-price({
+      image : "campuses/image02.jpg",
+      city : "Москва",
+      title: "Кампус Ленинский",
+      link: "#campus_02",
+      aos: "fade-up",
+      duration: "1500",
+      delay: "1500"
+    })
+    +campuses-card-price({
+      image : "campuses/image03.jpg",
+      city : "Тюмень",
+      title: "Кампус Тюмень",
+      link: "#campus_03",
+      aos: "fade-up",
+      duration: "1500",
+      delay: "2000"
+    })
+
+.price-block__tabs
+  +b#campus_01.tuition.price-block__tab-content
+    .container
+      +e.H2.title.section__title Кампус Сокольники
+
+      .row
+        +tuition-card-price({
+          name : "Pre - Nursery",
+          age: "2-3 года",
+          cost: "7,800 Евро в год"
+        })
+        +tuition-card-price({
+          name : "Nursery - Reception",
+          age: "3-5 лет",
+          cost: "12,800 Евро в год"
+        })
+        +tuition-card-price({
+          name : "Year 1 - Year 2",
+          age: "5-7 лет",
+          cost: "14,800 Евро в год"
+        })
+        +tuition-card-price({
+          name : "Year 3 - Year 6",
+          age: "7-10 лет",
+          cost: "15,800 Евро в год"
+        })
+        +tuition-card-price({
+          name : "Year 7 - Year 9",
+          age: "10-13 лет",
+          cost: "16,800 Евро в год"
+        })
+        +tuition-card-price({
+          name : "Year 10 - Year 13",
+          age: "14-18 лет",
+          cost: "17,800 Евро в год"
+        })
+
+      .row
+        .col-12.col-md-10.offset-md-1
+          +e.text
+            p Стоимость указана в евро. Оплата производится в российских рублях по курсу ЦБ РФ на день оплаты.
+              br
+              | Стоимость указана за учебный год c 1.09.2021—24.06.2022.
+            p Вступительный взнос составляет EUR 3,000 с семьи. Для детей, поступающих в группы Pre-Nursery, Nursery и Reception, вступительный взнос отсутствует.
+              br
+              | На второго и последующих детей предоставляется скидка 5%.
+
+      .row
+        .col-lg-8.col-md-12
+          .tuition__card-block
+            .tuition__card-block__wrapper
+              .tuition__card-block__title Включено в стоимость:
+              .tuition__card-block__wrap
+                +tuition-card-block({
+                  icon : "university.svg",
+                  text: "Кембриджская программа"
+                })
+                +tuition-card-block({
+                  icon : "russia.svg",
+                  text: "Российская программа"
+                })
+                +tuition-card-block({
+                  icon : "checklist.svg",
+                  text: "Кембриджские экзамены и аттестация"
+                })
+                +tuition-card-block({
+                  icon : "book.svg",
+                  text: "Учебники и учебные материалы"
+                })
+                +tuition-card-block({
+                  icon : "development.svg",
+                  text: "Бесплатные развивающие клубы"
+                })
+                +tuition-card-block({
+                  icon : "tablet.svg",
+                  text: "Персональные Apple iPad"
+                })
+                +tuition-card-block({
+                  icon : "restaurant.svg",
+                  text: "Пятиразовое питание "
+                })
+                +tuition-card-block({
+                  icon : "buildings.svg",
+                  text: "Городские экскурсии "
+                })
+                +tuition-card-block({
+                  icon : "psychologist.svg",
+                  text: "Занятия с психологом и логопедом"
+                })
+
+        .col-lg-4.col-md-12
+          .tuition__card-block
+            .tuition__card-block__wrapper
+              .tuition__card-block__title За дополнительную плату:
+              .tuition__card-block__wrap
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/uniform.svg", alt="")
+                  .tuition__card-block__item-text Школьная форма
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/bus.svg", alt="")
+                  .tuition__card-block__item-text Школьный автобус
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/thinking.svg", alt="")
+                  .tuition__card-block__item-text Платные развивающие клубы
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/training.svg", alt="")
+                  .tuition__card-block__item-text Вечерняя дежурная группа
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/calendar.svg", alt="")
+                  .tuition__card-block__item-text Летняя школа
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/around.svg", alt="")
+                  .tuition__card-block__item-text  Международные поездки
+
+      include bottom-block.pug
+
+  +b#campus_02.SECTION.tuition.price-block__tab-content
+    .container
+      +e.H2.title.section__title Кампус Ленинский
+      .row
+        +tuition-card-price({
+          name : "Pre - Nursery",
+          age: "2-3 года",
+          cost: "7,800 Евро в год"
+        })
+        +tuition-card-price({
+          name : "Nursery - Reception",
+          age: "3-5 лет",
+          cost: "12,800 Евро в год"
+        })
+        +tuition-card-price({
+          name : "Year 1 - Year 2",
+          age: "5-7 лет",
+          cost: "14,800 Евро в год"
+        })
+        +tuition-card-price({
+          name : "Year 3 - Year 6",
+          age: "7-10 лет",
+          cost: "15,800 Евро в год"
+        })
+        +tuition-card-price({
+          name : "Year 7 - Year 9",
+          age: "10-13 лет",
+          cost: "16,800 Евро в год"
+        })
+        +tuition-card-price({
+          name : "Year 10 - Year 13",
+          age: "14-18 лет",
+          cost: "17,800 Евро в год"
+        })
+
+      .row
+        .col-12.col-md-10.offset-md-1
+          +e.text
+            p Стоимость указана в евро. Оплата производится в российских рублях по курсу ЦБ РФ на день оплаты.
+              br
+              | Стоимость указана за учебный год c 1.09.2021—24.06.2022.
+            p Вступительный взнос составляет EUR 3,000 с семьи. Для детей, поступающих в группы Pre-Nursery, Nursery и Reception, вступительный взнос отсутствует.
+              br
+              | На второго и последующих детей предоставляется скидка 5%.
+
+      .row
+        .col-lg-8.col-md-12
+          .tuition__card-block
+            .tuition__card-block__wrapper
+              .tuition__card-block__title Включено в стоимость:
+              .tuition__card-block__wrap
+                +tuition-card-block({
+                  icon : "university.svg",
+                  text: "Кембриджская программа"
+                })
+                +tuition-card-block({
+                  icon : "russia.svg",
+                  text: "Российская программа"
+                })
+                +tuition-card-block({
+                  icon : "checklist.svg",
+                  text: "Кембриджские экзамены и аттестация"
+                })
+                +tuition-card-block({
+                  icon : "book.svg",
+                  text: "Учебники и учебные материалы"
+                })
+                +tuition-card-block({
+                  icon : "development.svg",
+                  text: "Бесплатные развивающие клубы"
+                })
+                +tuition-card-block({
+                  icon : "tablet.svg",
+                  text: "Персональные Apple iPad"
+                })
+                +tuition-card-block({
+                  icon : "restaurant.svg",
+                  text: "Пятиразовое питание "
+                })
+                +tuition-card-block({
+                  icon : "buildings.svg",
+                  text: "Городские экскурсии "
+                })
+                +tuition-card-block({
+                  icon : "psychologist.svg",
+                  text: "Занятия с психологом и логопедом"
+                })
+
+        .col-lg-4.col-md-12
+          .tuition__card-block
+            .tuition__card-block__wrapper
+              .tuition__card-block__title За дополнительную плату:
+              .tuition__card-block__wrap
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/uniform.svg", alt="")
+                  .tuition__card-block__item-text Школьная форма
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/bus.svg", alt="")
+                  .tuition__card-block__item-text Школьный автобус
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/thinking.svg", alt="")
+                  .tuition__card-block__item-text Платные развивающие клубы
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/training.svg", alt="")
+                  .tuition__card-block__item-text Вечерняя дежурная группа
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/calendar.svg", alt="")
+                  .tuition__card-block__item-text Летняя школа
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/around.svg", alt="")
+                  .tuition__card-block__item-text  Международные поездки
+
+  +b#campus_03.SECTION.tuition.price-block__tab-content
+    .container
+      +e.H2.title.section__title Кампус Тюмень
+      .row
+        +tuition-card-price({
+          name : "Pre - Nursery",
+          age: "2-3 года",
+          cost: "7,800 Евро в год"
+        })
+        +tuition-card-price({
+          name : "Nursery - Reception",
+          age: "3-5 лет",
+          cost: "12,800 Евро в год"
+        })
+        +tuition-card-price({
+          name : "Year 1 - Year 2",
+          age: "5-7 лет",
+          cost: "14,800 Евро в год"
+        })
+        +tuition-card-price({
+          name : "Year 3 - Year 6",
+          age: "7-10 лет",
+          cost: "15,800 Евро в год"
+        })
+        +tuition-card-price({
+          name : "Year 7 - Year 9",
+          age: "10-13 лет",
+          cost: "16,800 Евро в год"
+        })
+        +tuition-card-price({
+          name : "Year 10 - Year 13",
+          age: "14-18 лет",
+          cost: "17,800 Евро в год"
+        })
+
+      .row
+        .col-12.col-md-10.offset-md-1
+          +e.text
+            p Стоимость указана в евро. Оплата производится в российских рублях по курсу ЦБ РФ на день оплаты.
+              br
+              | Стоимость указана за учебный год c 1.09.2021—24.06.2022.
+            p Вступительный взнос составляет EUR 3,000 с семьи. Для детей, поступающих в группы Pre-Nursery, Nursery и Reception, вступительный взнос отсутствует.
+              br
+              | На второго и последующих детей предоставляется скидка 5%.
+
+      .row
+        .col-lg-8.col-md-12
+          .tuition__card-block
+            .tuition__card-block__wrapper
+              .tuition__card-block__title Включено в стоимость:
+              .tuition__card-block__wrap
+                +tuition-card-block({
+                  icon : "university.svg",
+                  text: "Кембриджская программа"
+                })
+                +tuition-card-block({
+                  icon : "russia.svg",
+                  text: "Российская программа"
+                })
+                +tuition-card-block({
+                  icon : "checklist.svg",
+                  text: "Кембриджские экзамены и аттестация"
+                })
+                +tuition-card-block({
+                  icon : "book.svg",
+                  text: "Учебники и учебные материалы"
+                })
+                +tuition-card-block({
+                  icon : "development.svg",
+                  text: "Бесплатные развивающие клубы"
+                })
+                +tuition-card-block({
+                  icon : "tablet.svg",
+                  text: "Персональные Apple iPad"
+                })
+                +tuition-card-block({
+                  icon : "restaurant.svg",
+                  text: "Пятиразовое питание "
+                })
+                +tuition-card-block({
+                  icon : "buildings.svg",
+                  text: "Городские экскурсии "
+                })
+                +tuition-card-block({
+                  icon : "psychologist.svg",
+                  text: "Занятия с психологом и логопедом"
+                })
+
+        .col-lg-4.col-md-12
+          .tuition__card-block
+            .tuition__card-block__wrapper
+              .tuition__card-block__title За дополнительную плату:
+              .tuition__card-block__wrap
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/uniform.svg", alt="")
+                  .tuition__card-block__item-text Школьная форма
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/bus.svg", alt="")
+                  .tuition__card-block__item-text Школьный автобус
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/thinking.svg", alt="")
+                  .tuition__card-block__item-text Платные развивающие клубы
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/training.svg", alt="")
+                  .tuition__card-block__item-text Вечерняя дежурная группа
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/calendar.svg", alt="")
+                  .tuition__card-block__item-text Летняя школа
+                .tuition__card-block__item.w-100
+                  .tuition__card-block__item-icon
+                    img(src="img/tuition/around.svg", alt="")
+                  .tuition__card-block__item-text  Международные поездки
+

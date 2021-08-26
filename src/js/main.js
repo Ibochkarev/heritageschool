@@ -200,8 +200,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
         const toggleTarget = e.target.classList.contains("camspus-item")
             ? e.target.parentNode
             : e.target.classList.contains("camspus-item")
-            ? e.target
-            : e.target.closest(".camspus-item")
+                ? e.target
+                : e.target.closest(".camspus-item")
 
         if (toggleTarget.classList.contains("is-active")) {
             toggleTarget.classList.remove("is-active")
@@ -256,8 +256,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
         const toggleTarget = e.target.classList.contains(`mobile-menu__link`)
             ? e.target.parentNode
             : e.target.classList.contains(`mobile-menu__sub-item`)
-            ? e.target
-            : e.target.closest(`.mobile-menu__sub-item`)
+                ? e.target
+                : e.target.closest(`.mobile-menu__sub-item`)
         if (toggleTarget.classList.contains(`is-open`)) {
             toggleTarget.classList.remove(`is-open`)
         } else {
@@ -275,4 +275,30 @@ document.addEventListener(`DOMContentLoaded`, () => {
             behavior: "smooth",
         })
     }
+
+    // Price tabs
+
+    (function () {
+        function onTabClick(event) {
+            event.preventDefault();
+            let actives = document.querySelectorAll('.active');
+
+            // deactivate existing active tab and panel
+            for (let i = 0; i < actives.length; i++) {
+                actives[i].className = actives[i].className.replace(' active', '');
+                if (actives[i].closest('.campuses__item')) {
+                    actives[i].closest('.campuses__item').classList.remove('_show')
+                };
+            }
+
+            // activate new tab and panel
+            event.target.className += ' active';
+            document.getElementById(event.target.href.split('#')[1]).className += ' active';
+            event.target.closest('.campuses__item').classList.add('_show');
+        }
+
+        const el = document.getElementById('price-block__tab-links');
+
+        el.addEventListener('click', onTabClick, false);
+    })();
 })

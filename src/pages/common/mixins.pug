@@ -100,6 +100,16 @@ mixin tuition-card(data)
           .tuition__card-cost!=data.cost
         a.tuition__card-link.btn(href="#") Читать далее
 
+//- Карточка стоимости обучения без кнопки
+mixin tuition-card-price(data)
+  .col-md-6.col-lg-4
+    .tuition__card.tuition__card-not-button
+      .tuition__card-wrap
+        .tuition__card-info
+          .tuition__card-name!=data.name
+          .tuition__card-age!=data.age
+          .tuition__card-cost!=data.cost
+
 mixin tuition-card-block(data)
   .tuition__card-block__item
     .tuition__card-block__item-icon
@@ -155,7 +165,7 @@ mixin teacher-card(data)
         .teachers__item-position(data-aos="fade-up" data-aos-duration="2000")!=data.position
         a.teachers__item-link.btn(href="#" data-aos="flip-down" data-aos-delay="2000" data-aos-duration="1000") Читать далее
 
-//- Home post
+//- Campus post
 mixin campuses-card(data)
   .campuses__item(data-aos!=data.aos data-aos-delay!=data.delay data-aos-duration!=data.duration)
     .campuses__item-overlay
@@ -165,3 +175,14 @@ mixin campuses-card(data)
       .campuses__item-title(data-aos="fade-up" data-aos-delay="2000" data-aos-duration="2000")!=data.title
     .campuses__item-link__wrap
       a.campuses__item-link.btn(href="#" data-aos="flip-down" data-aos-delay="2000" data-aos-duration="1000") Читать далее
+
+//- Price card tab
+mixin campuses-card-price(data)
+  .campuses__item(data-aos!=data.aos data-aos-delay!=data.delay data-aos-duration!=data.duration)
+    .campuses__item-overlay
+    img.campuses__item-image(src='./img/' + data.image alt="")
+    .campuses__item-info
+      .campuses__item-city(data-aos="fade-up" data-aos-duration="2000")!=data.city
+      .campuses__item-title(data-aos="fade-up" data-aos-delay="2000" data-aos-duration="2000")!=data.title
+    .campuses__item-link__wrap
+      a.campuses__item-link.btn.campuses__item-tab__link(href!=data.link data-aos="flip-down" data-aos-delay="2000" data-aos-duration="1000") Стоимость
