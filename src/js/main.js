@@ -278,27 +278,30 @@ document.addEventListener(`DOMContentLoaded`, () => {
 
     // Price tabs
 
+  if (document.getElementById('price-block__tab-links')) {
+
     (function () {
-        function onTabClick(event) {
-            event.preventDefault();
-            let actives = document.querySelectorAll('.active');
+      function onTabClick(event) {
+        event.preventDefault();
+        let actives = document.querySelectorAll('.active');
 
-            // deactivate existing active tab and panel
-            for (let i = 0; i < actives.length; i++) {
-                actives[i].className = actives[i].className.replace(' active', '');
-                if (actives[i].closest('.campuses__item')) {
-                    actives[i].closest('.campuses__item').classList.remove('_show')
-                };
-            }
-
-            // activate new tab and panel
-            event.target.className += ' active';
-            document.getElementById(event.target.href.split('#')[1]).className += ' active';
-            event.target.closest('.campuses__item').classList.add('_show');
+        // deactivate existing active tab and panel
+        for (let i = 0; i < actives.length; i++) {
+          actives[i].className = actives[i].className.replace(' active', '');
+          if (actives[i].closest('.campuses__item')) {
+            actives[i].closest('.campuses__item').classList.remove('_show')
+          };
         }
 
-        const el = document.getElementById('price-block__tab-links');
+        // activate new tab and panel
+        event.target.className += ' active';
+        document.getElementById(event.target.href.split('#')[1]).className += ' active';
+        event.target.closest('.campuses__item').classList.add('_show');
+      }
 
-        el.addEventListener('click', onTabClick, false);
+      const el = document.getElementById('price-block__tab-links');
+
+      el.addEventListener('click', onTabClick, false);
     })();
+  }
 })
