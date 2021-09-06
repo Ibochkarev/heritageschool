@@ -33,6 +33,30 @@ AOS.init({
     disable: window.innerWidth < 768,
 })
 
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 120) {
+        $('.universal-menu').addClass('sticky');
+    }
+    else {
+        $('.universal-menu').removeClass('sticky');
+    }
+});
+
+$(function() {
+  $('.universal-menu__list-link').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top-200
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
 document.addEventListener(`DOMContentLoaded`, () => {
     const homeSlider = new Swiper(`.home-slider .swiper-container`, {
         loop: false,

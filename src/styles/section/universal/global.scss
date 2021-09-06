@@ -10,6 +10,11 @@
         margin-bottom: 60px;
     }
 
+    &-bg {
+        padding-top: 60px;
+        background-color: #ffffff;
+    }
+
     &.first {
         margin-bottom: 90px;
 
@@ -27,22 +32,25 @@
     }
 
     &-menu {
-        margin-bottom: 120px;
+        margin-bottom: 70px;
+        transition: all .4s;
+        scroll-behavior: smooth;
 
         @media (max-width: 991px) {
-            margin-bottom: 90px;
-        }
-
-        @media (max-width: 768px) {
             margin-bottom: 60px;
         }
 
         &.sticky {
+            z-index: 50;
             position: sticky;
-            top: 120px;
+            top: 75px;
             padding-top: 25px;
             padding-bottom: 25px;
             background: #e5e5e5;
+
+            @media (max-width: 768px) {
+                top: 0;
+            }
         }
 
         &__list {
@@ -53,15 +61,25 @@
             padding: 0;
             text-align: center;
             list-style: none;
-            gap: 30px;
+            gap: 20px;
 
-            @media (max-width: 991px) {
-                overflow-y: scroll;
+            @media (max-width: 1280px) {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                gap: 5px;
             }
 
             &-item {
                 width: 100%;
                 max-width: 210px;
+
+                @media (max-width: 768px) {
+                    max-width: 100%;
+                }
             }
 
             &-link {
@@ -76,7 +94,7 @@
         }
     }
 
-    &__title {
+    &-title {
         margin-bottom: 40px;
         font-size: 55px;
         font-weight: 400;
@@ -95,6 +113,24 @@
 
         @media (max-width: 575px) {
             font-size: 24px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 1.6;
+        text-align: center;
+        color: $blue;
+
+        @media (max-width: 1336px) {
+            font-size: 27px;
+        }
+
+        @media (max-width: 992px) {
+            margin-bottom: 35px;
+            font-size: 18px;
         }
     }
 
@@ -152,15 +188,14 @@
         }
     }
 
-    &__wrap-bg {
+    &__wrap {
         z-index: 1;
         position: relative;
-        padding-top: 85px;
-        padding-bottom: 85px;
-        background-color: #ffffff;
+        padding-top: 40px;
+        padding-bottom: 65px;
 
         @media (max-width: 991px) {
-            padding-top: 50px;
+            padding-top: 40px;
             padding-bottom: 50px;
         }
     }
@@ -174,7 +209,11 @@
     }
 
     &-page {
-        margin-top: 200px;
+        margin-top: 110px;
+
+        @media (max-width: 768px) {
+            margin-top: 25px;
+        }
 
         .bottom-block {
             margin-bottom: 150px;
@@ -251,4 +290,9 @@
             }
         }
     }
+}
+
+
+html {
+	scroll-behavior: smooth;
 }
