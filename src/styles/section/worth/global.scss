@@ -1,0 +1,99 @@
+.worth-page {
+    .about-block {
+        @media (max-width: 1440px) {
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            margin-top: 0;
+        }
+    }
+
+    .universal-quote {
+        @media (max-width: 768px) {
+            padding: 30px 0;
+        }
+    }
+
+    .universal-quote__title {
+        @media (max-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.section-menu {
+    margin-bottom: 60px;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+
+    @media (max-width: 768px) {
+        padding: 30px 0;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+        flex-direction: column;
+    }
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 66px;
+
+            @media (max-width: 1440px) {
+                margin-bottom: 44px;
+            }
+
+            @media (max-width: 768px) {
+                margin-bottom: 30px;
+            }
+
+            &::after {
+                position: absolute;
+                top: 40px;
+                left: 50%;
+                width: 2px;
+                height: 49px;
+                transform: translateX(-50%);
+                pointer-events: none;
+                background-color: #c49a6c;
+                content: "";
+
+                @media (max-width: 1440px) {
+                    height: 33px;
+                    top: 33px;
+                }
+
+                @media (max-width: 768px) {
+                    height: 20px;
+                    top: 30px;
+                }
+            }
+        }
+    }
+
+    &__link {
+        font-size: 36px;
+        line-height: 24px;
+        color: $blue;
+        transition: opacity 0.5s ease-in-out;
+
+        @media (max-width: 1440px) {
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
