@@ -8,13 +8,17 @@
         margin-bottom: 30px;
     }
 
+    @media (max-width: 410px) {
+        flex-direction: column;
+    }
+
     &__photo {
-        width: 35%;
+        width: 40%;
         height: 100%;
         flex: none;
 
-        @media (max-width: 575px) {
-            width: 30%;
+        @media (max-width: 410px) {
+            width: 100%;
         }
 
         img {
@@ -27,7 +31,7 @@
 
     &__info {
         height: 100%;
-        padding: 45px 50px;
+        padding: 35px 50px;
 
         @media (max-width: 1200px) {
             padding: 25px 20px;

@@ -1,7 +1,7 @@
 import { Swiper, Navigation, Pagination, Mousewheel } from "swiper"
-Swiper.use([Navigation, Pagination, Mousewheel])
 // import fullpage from "fullpage.js"
 import AOS from "../../node_modules/aos/dist/aos"
+Swiper.use([Navigation, Pagination, Mousewheel])
 
 // const fullPageInstance = new fullpage("#fullpage", {
 //     navigation: true,
@@ -25,37 +25,36 @@ import AOS from "../../node_modules/aos/dist/aos"
 // //methods
 // fullpage_api.setAllowScrolling(true)
 
-AOS.init({
-    duration: 700,
-    easing: "ease-out-quad",
-    once: !0,
-    startEvent: "load",
-    disable: window.innerWidth < 768,
+// AOS.init({
+//     duration: 700,
+//     easing: "ease-out-quad",
+//     once: !0,
+//     startEvent: "load",
+//     disable: window.innerWidth < 768,
+// })
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 120) {
+        $(`.universal-menu`).addClass(`sticky`)
+    } else {
+        $(`.universal-menu`).removeClass(`sticky`)
+    }
 })
 
-$(window).scroll(function(){
-    if ($(window).scrollTop() >= 120) {
-        $('.universal-menu').addClass('sticky');
-    }
-    else {
-        $('.universal-menu').removeClass('sticky');
-    }
-});
-
-$(function() {
-  $('.universal-menu__list-link').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top-200
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+$(function () {
+    $(`.universal-menu__list-link`).click(function () {
+        if (location.pathname.replace(/^\//, ``) == this.pathname.replace(/^\//, ``) && location.hostname == this.hostname) {
+            var target = $(this.hash)
+            target = target.length ? target : $(`[name=` + this.hash.slice(1) + `]`)
+            if (target.length) {
+                $(`html,body`).animate({
+                    scrollTop: target.offset().top - 200
+                }, 1000)
+                return false
+            }
+        }
+    })
+})
 
 document.addEventListener(`DOMContentLoaded`, () => {
     const homeSlider = new Swiper(`.home-slider .swiper-container`, {
@@ -63,8 +62,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
         speed: 2400,
         navigation: {
             nextEl: `.swiper-button-next`,
-            prevEl: `.swiper-button-prev`,
-        },
+            prevEl: `.swiper-button-prev`
+        }
         // pagination: {
         //     el: `.swiper-pagination-main`,
         //     clickable: true,
@@ -86,129 +85,129 @@ document.addEventListener(`DOMContentLoaded`, () => {
         // },
     })
 
-    const teamSlider = new Swiper(".team-slider", {
+    const teamSlider = new Swiper(`.team-slider`, {
         slidesPerView: 2,
         slidesPerColumn: 2,
         spaceBetween: 30,
         pagination: {
-            el: ".swiper-pagination-team",
-            clickable: true,
+            el: `.swiper-pagination-team`,
+            clickable: true
         },
-        slidesPerColumnFill: "row",
+        slidesPerColumnFill: `row`,
         on: {
             afterInit: function () {
-                let totalNumber = this.pagination.bullets.length
-                let currentNumber = Number(this.activeIndex) + 1
-                this.el.querySelector(".swiper-pagination-total").innerText =
+                const totalNumber = this.pagination.bullets.length
+                const currentNumber = Number(this.activeIndex) + 1
+                this.el.querySelector(`.swiper-pagination-total`).innerText =
                     totalNumber < 10 ? `0${totalNumber}` : totalNumber
-                this.el.querySelector(".swiper-pagination-num").innerText =
+                this.el.querySelector(`.swiper-pagination-num`).innerText =
                     currentNumber < 10 ? `0${currentNumber}` : currentNumber
             },
             activeIndexChange: function () {
-                let currentNumber = Number(this.activeIndex) + 1
-                this.el.querySelector(".swiper-pagination-num").innerText =
+                const currentNumber = Number(this.activeIndex) + 1
+                this.el.querySelector(`.swiper-pagination-num`).innerText =
                     currentNumber < 10 ? `0${currentNumber}` : currentNumber
-            },
+            }
         },
         breakpoints: {
             640: {
-                slidesPerView: 2,
+                slidesPerView: 2
             },
             992: {
-                slidesPerView: 2,
+                slidesPerView: 2
             },
             1024: {
-                slidesPerView: 4,
-            },
-        },
+                slidesPerView: 4
+            }
+        }
     })
 
-    const feedbackSlider = new Swiper(".feedback-slider", {
+    const feedbackSlider = new Swiper(`.feedback-slider`, {
         // slidesPerView: 2,
         loop: true,
         spaceBetween: 30,
         // centeredSlides: true,
         pagination: {
-            el: ".swiper-pagination-feedback",
-            clickable: true,
+            el: `.swiper-pagination-feedback`,
+            clickable: true
         },
-        slidesPerColumnFill: "row",
+        slidesPerColumnFill: `row`,
         on: {
             afterInit: function () {
-                let totalNumber = this.pagination.bullets.length
-                let currentNumber = Number(this.activeIndex) + 1
-                this.el.querySelector(".swiper-pagination-total").innerText =
+                const totalNumber = this.pagination.bullets.length
+                const currentNumber = Number(this.activeIndex) + 1
+                this.el.querySelector(`.swiper-pagination-total`).innerText =
                     totalNumber < 10 ? `0${totalNumber}` : totalNumber
-                this.el.querySelector(".swiper-pagination-num").innerText =
+                this.el.querySelector(`.swiper-pagination-num`).innerText =
                     currentNumber < 10 ? `0${currentNumber}` : currentNumber
             },
             activeIndexChange: function () {
-                let currentNumber = Number(this.activeIndex) + 1
-                this.el.querySelector(".swiper-pagination-num").innerText =
+                const currentNumber = Number(this.activeIndex) + 1
+                this.el.querySelector(`.swiper-pagination-num`).innerText =
                     currentNumber < 10 ? `0${currentNumber}` : currentNumber
-            },
+            }
         },
         breakpoints: {
             640: {
                 slidesPerView: 2,
                 loop: true,
                 spaceBetween: 30,
-                centeredSlides: true,
-            },
-        },
+                centeredSlides: true
+            }
+        }
     })
 
-    const gallerySlider = new Swiper(".gallery-slider", {
+    const gallerySlider = new Swiper(`.gallery-slider`, {
         slidesPerView: 2,
         // loop: true,
         spaceBetween: 30,
         centeredSlides: true,
         pagination: {
-            el: ".swiper-pagination-gallery",
-            clickable: true,
+            el: `.swiper-pagination-gallery`,
+            clickable: true
         },
-        slidesPerColumnFill: "row",
+        slidesPerColumnFill: `row`,
         on: {
             afterInit: function () {
-                let totalNumber = this.pagination.bullets.length
-                let currentNumber = Number(this.activeIndex) + 1
-                this.el.querySelector(".swiper-pagination-total").innerText =
+                const totalNumber = this.pagination.bullets.length
+                const currentNumber = Number(this.activeIndex) + 1
+                this.el.querySelector(`.swiper-pagination-total`).innerText =
                     totalNumber < 10 ? `0${totalNumber}` : totalNumber
-                this.el.querySelector(".swiper-pagination-num").innerText =
+                this.el.querySelector(`.swiper-pagination-num`).innerText =
                     currentNumber < 10 ? `0${currentNumber}` : currentNumber
             },
             activeIndexChange: function () {
-                let currentNumber = Number(this.activeIndex) + 1
-                this.el.querySelector(".swiper-pagination-num").innerText =
+                const currentNumber = Number(this.activeIndex) + 1
+                this.el.querySelector(`.swiper-pagination-num`).innerText =
                     currentNumber < 10 ? `0${currentNumber}` : currentNumber
-            },
+            }
         },
         breakpoints: {
             640: {
-                spaceBetween: 40,
+                spaceBetween: 40
             },
             768: {
-                spaceBetween: 50,
+                spaceBetween: 50
             },
             992: {
-                spaceBetween: 50,
+                spaceBetween: 50
             },
             1024: {
-                spaceBetween: 120,
-            },
-        },
+                spaceBetween: 120
+            }
+        }
     })
 
-    const usefulSlider = new Swiper(".useful-slider", {
+    const usefulSlider = new Swiper(`.useful-slider`, {
         slidesPerView: 2,
         loop: true,
         spaceBetween: 10,
         centeredSlides: true,
         pagination: {
-            el: ".swiper-pagination-useful",
-            clickable: true,
+            el: `.swiper-pagination-useful`,
+            clickable: true
         },
-        slidesPerColumnFill: "row",
+        slidesPerColumnFill: `row`
     })
 
     // Карточка кампуса
@@ -216,21 +215,21 @@ document.addEventListener(`DOMContentLoaded`, () => {
     const campusBtn = document.querySelectorAll(`.camspus-item__btn`)
 
     campusBtn.forEach((el) => {
-        el.addEventListener("click", toggleCampus)
+        el.addEventListener(`click`, toggleCampus)
     })
 
-    function toggleCampus(e) {
+    function toggleCampus (e) {
         e.preventDefault()
-        const toggleTarget = e.target.classList.contains("camspus-item")
+        const toggleTarget = e.target.classList.contains(`camspus-item`)
             ? e.target.parentNode
-            : e.target.classList.contains("camspus-item")
+            : e.target.classList.contains(`camspus-item`)
                 ? e.target
-                : e.target.closest(".camspus-item")
+                : e.target.closest(`.camspus-item`)
 
-        if (toggleTarget.classList.contains("is-active")) {
-            toggleTarget.classList.remove("is-active")
+        if (toggleTarget.classList.contains(`is-active`)) {
+            toggleTarget.classList.remove(`is-active`)
         } else {
-            toggleTarget.classList.add("is-active")
+            toggleTarget.classList.add(`is-active`)
         }
     }
 
@@ -248,7 +247,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
 
     menuBtnClose.addEventListener(`click`, closeMobileMenu)
 
-    function toggleMenu() {
+    function toggleMenu () {
         if (mobileMenu.classList.contains(`_is-active`)) {
             mobileMenu.classList.remove(`_is-active`)
             menuBtnHamburger.style.display = `block`
@@ -260,7 +259,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
         }
     }
 
-    function closeMobileMenu() {
+    function closeMobileMenu () {
         mobileMenu.classList.remove(`_is-active`)
         overlay.classList.remove(`_is-open`)
     }
@@ -275,7 +274,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
         el.addEventListener(`click`, toggleLevelMenu)
     })
 
-    function toggleLevelMenu(e) {
+    function toggleLevelMenu (e) {
         e.preventDefault()
         const toggleTarget = e.target.classList.contains(`mobile-menu__link`)
             ? e.target.parentNode
@@ -289,43 +288,42 @@ document.addEventListener(`DOMContentLoaded`, () => {
         }
     }
 
-    const scrollToTopBtn = document.querySelector(".scroll-top__btn")
+    const scrollToTopBtn = document.querySelector(`.scroll-top__btn`)
 
-    scrollToTopBtn.addEventListener("click", scrollToTop)
+    scrollToTopBtn.addEventListener(`click`, scrollToTop)
 
-    function scrollToTop() {
+    function scrollToTop () {
         window.scrollTo({
             top: 0,
-            behavior: "smooth",
+            behavior: `smooth`
         })
     }
 
     // Price tabs
 
-  if (document.getElementById('price-block__tab-links')) {
+    if (document.getElementById(`price-block__tab-links`)) {
+        (function () {
+            function onTabClick (event) {
+                event.preventDefault()
+                const actives = document.querySelectorAll(`.active`)
 
-    (function () {
-      function onTabClick(event) {
-        event.preventDefault();
-        let actives = document.querySelectorAll('.active');
+                // deactivate existing active tab and panel
+                for (let i = 0; i < actives.length; i++) {
+                    actives[i].className = actives[i].className.replace(` active`, ``)
+                    if (actives[i].closest(`.campuses__item`)) {
+                        actives[i].closest(`.campuses__item`).classList.remove(`_show`)
+                    };
+                }
 
-        // deactivate existing active tab and panel
-        for (let i = 0; i < actives.length; i++) {
-          actives[i].className = actives[i].className.replace(' active', '');
-          if (actives[i].closest('.campuses__item')) {
-            actives[i].closest('.campuses__item').classList.remove('_show')
-          };
-        }
+                // activate new tab and panel
+                event.target.className += ` active`
+                document.getElementById(event.target.href.split(`#`)[1]).className += ` active`
+                event.target.closest(`.campuses__item`).classList.add(`_show`)
+            }
 
-        // activate new tab and panel
-        event.target.className += ' active';
-        document.getElementById(event.target.href.split('#')[1]).className += ' active';
-        event.target.closest('.campuses__item').classList.add('_show');
-      }
+            const el = document.getElementById(`price-block__tab-links`)
 
-      const el = document.getElementById('price-block__tab-links');
-
-      el.addEventListener('click', onTabClick, false);
-    })();
-  }
+            el.addEventListener(`click`, onTabClick, false)
+        })()
+    }
 })

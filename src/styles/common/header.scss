@@ -185,6 +185,23 @@
         &__item {
             position: relative;
 
+            &:hover,
+            &:focus {
+                .header-menu__item-link::after {
+                    opacity: 1;
+                    transform: translate3d(0, 0.2em, 0);
+                }
+            }
+
+            &._sub {
+                &:hover,
+                &:focus {
+                    .header-menu__item-link::after {
+                        opacity: 0;
+                    }
+                }
+            }
+
             &-link {
                 position: relative;
                 display: block;
@@ -207,12 +224,6 @@
                     transition: opacity 300ms, transform 300ms;
                     content: "";
                     background-color: $blue;
-                }
-
-                &:hover::after,
-                &:focus::after {
-                    opacity: 1;
-                    transform: translate3d(0, 0.2em, 0);
                 }
             }
 
