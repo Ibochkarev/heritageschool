@@ -1,15 +1,15 @@
 .two-diplomas {
     position: relative;
     padding-top: 150px;
-    padding-bottom: 350px;
+    padding-bottom: 200px;
 
     @media (max-width: 992px) {
-        padding-bottom: 300px;
+        padding-bottom: 200;
     }
 
     @media (max-width: 575px) {
         padding-top: 160px;
-        padding-bottom: 220px;
+        padding-bottom: 160px;
     }
 
     &::after {

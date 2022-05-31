@@ -1,8 +1,8 @@
 .campuses {
-    margin-bottom: 160px;
+    margin-bottom: 90px;
 
     @media (max-width: 992px) {
-        margin-bottom: 120px;
+        margin-bottom: 80px;
     }
 
     @media (max-width: 575px) {
@@ -13,8 +13,9 @@
         z-index: 1;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         width: 100%;
+        gap: 15px;
         flex-wrap: wrap;
     }
 
@@ -70,7 +71,7 @@
 
         &._show {
             margin-bottom: -18px;
-            border-bottom: 18px solid #C49A6C;
+            border-bottom: 18px solid #c49a6c;
         }
 
         &:hover {

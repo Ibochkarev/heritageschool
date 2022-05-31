@@ -64,25 +64,25 @@ document.addEventListener(`DOMContentLoaded`, () => {
             nextEl: `.swiper-button-next`,
             prevEl: `.swiper-button-prev`
         }
-        // pagination: {
-        //     el: `.swiper-pagination-main`,
-        //     clickable: true,
-        // },
-        // on: {
-        //     afterInit: function () {
-        //         let totalNumber = this.pagination.bullets.length
-        //         this.el.querySelector(".swiper-pagination-total").innerText =
-        //             totalNumber < 10 ? `0${totalNumber}` : totalNumber
-        //         let currentNumber = Number(this.activeIndex) + 1
-        //         this.el.querySelector(".swiper-pagination-num").innerText =
-        //             currentNumber < 10 ? `0${currentNumber}` : currentNumber
-        //     },
-        //     activeIndexChange: function () {
-        //         let currentNumber = Number(this.activeIndex) + 1
-        //         this.el.querySelector(".swiper-pagination-num").innerText =
-        //             currentNumber < 10 ? `0${currentNumber}` : currentNumber
-        //     },
-        // },
+    // pagination: {
+    //     el: `.swiper-pagination-main`,
+    //     clickable: true,
+    // },
+    // on: {
+    //     afterInit: function () {
+    //         let totalNumber = this.pagination.bullets.length
+    //         this.el.querySelector(".swiper-pagination-total").innerText =
+    //             totalNumber < 10 ? `0${totalNumber}` : totalNumber
+    //         let currentNumber = Number(this.activeIndex) + 1
+    //         this.el.querySelector(".swiper-pagination-num").innerText =
+    //             currentNumber < 10 ? `0${currentNumber}` : currentNumber
+    //     },
+    //     activeIndexChange: function () {
+    //         let currentNumber = Number(this.activeIndex) + 1
+    //         this.el.querySelector(".swiper-pagination-num").innerText =
+    //             currentNumber < 10 ? `0${currentNumber}` : currentNumber
+    //     },
+    // },
     })
 
     const teamSlider = new Swiper(`.team-slider`, {
@@ -99,14 +99,14 @@ document.addEventListener(`DOMContentLoaded`, () => {
                 const totalNumber = this.pagination.bullets.length
                 const currentNumber = Number(this.activeIndex) + 1
                 this.el.querySelector(`.swiper-pagination-total`).innerText =
-                    totalNumber < 10 ? `0${totalNumber}` : totalNumber
+          totalNumber < 10 ? `0${totalNumber}` : totalNumber
                 this.el.querySelector(`.swiper-pagination-num`).innerText =
-                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
+          currentNumber < 10 ? `0${currentNumber}` : currentNumber
             },
             activeIndexChange: function () {
                 const currentNumber = Number(this.activeIndex) + 1
                 this.el.querySelector(`.swiper-pagination-num`).innerText =
-                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
+          currentNumber < 10 ? `0${currentNumber}` : currentNumber
             }
         },
         breakpoints: {
@@ -123,7 +123,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
     })
 
     const feedbackSlider = new Swiper(`.feedback-slider`, {
-        // slidesPerView: 2,
+    // slidesPerView: 2,
         loop: true,
         spaceBetween: 30,
         // centeredSlides: true,
@@ -137,14 +137,14 @@ document.addEventListener(`DOMContentLoaded`, () => {
                 const totalNumber = this.pagination.bullets.length
                 const currentNumber = Number(this.activeIndex) + 1
                 this.el.querySelector(`.swiper-pagination-total`).innerText =
-                    totalNumber < 10 ? `0${totalNumber}` : totalNumber
+          totalNumber < 10 ? `0${totalNumber}` : totalNumber
                 this.el.querySelector(`.swiper-pagination-num`).innerText =
-                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
+          currentNumber < 10 ? `0${currentNumber}` : currentNumber
             },
             activeIndexChange: function () {
                 const currentNumber = Number(this.activeIndex) + 1
                 this.el.querySelector(`.swiper-pagination-num`).innerText =
-                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
+          currentNumber < 10 ? `0${currentNumber}` : currentNumber
             }
         },
         breakpoints: {
@@ -172,14 +172,14 @@ document.addEventListener(`DOMContentLoaded`, () => {
                 const totalNumber = this.pagination.bullets.length
                 const currentNumber = Number(this.activeIndex) + 1
                 this.el.querySelector(`.swiper-pagination-total`).innerText =
-                    totalNumber < 10 ? `0${totalNumber}` : totalNumber
+          totalNumber < 10 ? `0${totalNumber}` : totalNumber
                 this.el.querySelector(`.swiper-pagination-num`).innerText =
-                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
+          currentNumber < 10 ? `0${currentNumber}` : currentNumber
             },
             activeIndexChange: function () {
                 const currentNumber = Number(this.activeIndex) + 1
                 this.el.querySelector(`.swiper-pagination-num`).innerText =
-                    currentNumber < 10 ? `0${currentNumber}` : currentNumber
+          currentNumber < 10 ? `0${currentNumber}` : currentNumber
             }
         },
         breakpoints: {
@@ -326,4 +326,14 @@ document.addEventListener(`DOMContentLoaded`, () => {
             el.addEventListener(`click`, onTabClick, false)
         })()
     }
+
+    $(`.cost__card`).on(`click`, function (evt) {
+        evt.preventDefault()
+        $(`.cost__card`).removeClass(`_active`)
+        $(this).addClass(`_active`)
+        $(`.cost__content`).addClass(`_active`)
+        var sel = this.getAttribute(`data-toggle-target`)
+        $(`.cost__card-content`).removeClass(`_active`).filter(sel).addClass(`_active`)
+        window.scrollBy(0, 300)
+    })
 })

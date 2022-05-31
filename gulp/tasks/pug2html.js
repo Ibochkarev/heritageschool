@@ -14,7 +14,7 @@ module.exports = function pug2html() {
             .pipe(pugLinter({ reporter: "default" }))
             // .pipe(pug({ pretty: config.pug2html.beautifyHtml }))
             .pipe(pug({ pretty: true }))
-            .pipe(htmlValidator())
+            // .pipe(htmlValidator())
             // .pipe(bemValidator())
             .pipe(gulp.dest("docs"))
     )

@@ -88,9 +88,10 @@ h2 {
     font-weight: 550;
 }
 
-b,
-strong {
-    font-weight: 550;
+strong,
+b {
+    font-family: "Lora";
+    font-weight: 700;
 }
 
 .content {
@@ -105,7 +106,7 @@ strong {
 }
 
 .full-image-block {
-    margin-bottom: 160px;
+    margin-bottom: 120px;
 
     @media (max-width: 1440px) {
         margin-bottom: 90px;
@@ -732,13 +733,19 @@ strong {
         @media (max-width: 575px) {
             font-size: 12px;
         }
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
 @media (min-width: 1200px) {
     .section {
-        padding-top: 130px;
-        padding-bottom: 130px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 
@@ -856,6 +863,12 @@ strong {
             font-size: 14px;
         }
 
+        strong,
+        b {
+            font-family: "Lora";
+            font-weight: 700;
+        }
+
         p {
             line-height: 1.6;
 
@@ -867,16 +880,14 @@ strong {
                 font-size: 14px;
             }
 
-            &:not(:last-child) {
-                margin-bottom: 30px;
+            margin-bottom: 30px;
 
-                @media (max-width: 1200px) {
-                    margin-bottom: 20px;
-                }
+            @media (max-width: 1200px) {
+                margin-bottom: 20px;
+            }
 
-                @media (max-width: 575px) {
-                    margin-bottom: 15px;
-                }
+            @media (max-width: 575px) {
+                margin-bottom: 15px;
             }
 
             img {
@@ -916,6 +927,7 @@ strong {
         h4 {
             font-family: "Lora", serif;
             font-weight: 400;
+            margin-bottom: 15px;
         }
     }
 }
@@ -977,12 +989,14 @@ strong {
     th {
         font-size: 0.85em;
         font-weight: 700;
+        font-family: "Lora";
         text-transform: uppercase;
         letter-spacing: 0.1em;
     }
 
     &-cost {
         font-weight: 700;
+        font-family: "Lora";
     }
 }
 
@@ -1082,6 +1096,7 @@ strong {
     padding: 10px 14px 10px 14px;
     font-size: 11px;
     font-weight: 700;
+    font-family: "Lora";
     line-height: 16px;
     text-transform: uppercase;
     color: $dark-black;
@@ -1173,6 +1188,7 @@ blockquote {
 .card__item-rating .post-top__time span {
     margin-right: 5px;
     font-weight: 700;
+    font-family: "Lora";
 }
 
 .card__item-rating .post-top__time svg {

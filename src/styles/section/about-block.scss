@@ -1,11 +1,7 @@
-.about-block{
-    margin-top: 90px;
+.about-block {
+    margin-top: 60px;
     padding-bottom: 0;
     text-align: center;
-
-    @media (max-width: 991px) {
-        margin-top: 60px;
-    }
 
     @media (max-width: 575px) {
         margin-top: 30px;
@@ -14,5 +10,10 @@
     &__wrap {
         max-width: 1060px;
         margin: 0 auto;
+    }
+
+    .section__title {
+        margin-top: 0;
+        margin-bottom: 25px;
     }
 }

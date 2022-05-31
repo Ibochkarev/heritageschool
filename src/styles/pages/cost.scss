@@ -1,0 +1,171 @@
+.cost {
+    &-page {
+        &-title {
+            padding: 100px 0 80px;
+
+            @media (max-width: 768px) {
+                padding: 40px 0 60px;
+            }
+
+            @media (max-width: 576px) {
+                padding: 25px 0;
+            }
+        }
+
+        .campuses {
+            margin-bottom: 0;
+
+            @media (max-width: 575px) {
+                padding-bottom: 20px;
+            }
+        }
+        .campuses__wrapper {
+            @media (max-width: 575px) {
+                gap: 10px;
+            }
+        }
+    }
+
+    &-text.section {
+        @media (max-width: 575px) {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+
+    &__content {
+        display: none;
+
+        &._active {
+            display: block;
+        }
+    }
+
+    &-text {
+        background-color: #fff;
+
+        &__content {
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &-includes {
+        background-color: #fff;
+    }
+
+    &-extra {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 157px;
+            height: 380px;
+            transform: translateY(-50%);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url("../img/quote/bg.png");
+            content: "";
+
+            @media (max-width: 1336px) {
+                width: 130px;
+                height: 340px;
+            }
+
+            @media (max-width: 992px) {
+                width: 120px;
+                height: 320px;
+            }
+
+            @media (max-width: 575px) {
+                width: 110px;
+                height: 260px;
+            }
+        }
+    }
+
+    &-payment {
+        margin-bottom: 200px;
+        background-color: #fff;
+
+        @media (max-width: 768px) {
+            margin-bottom: 100px;
+        }
+
+        &__content {
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__card {
+        overflow: visible;
+        position: relative;
+        background-color: #041e42;
+
+        @media (max-width: 575px) {
+            &.campuses__item {
+                align-items: center;
+                justify-content: space-between;
+                height: auto;
+                padding: 10px;
+                flex-direction: row;
+                gap: 10px;
+            }
+            .campuses__item-city {
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+            .campuses__item-title {
+                font-size: 14px;
+            }
+            .campuses__item-info {
+                position: relative;
+                top: 0;
+                left: 0;
+                text-align: left;
+                transform: none;
+            }
+            .campuses__item-link__wrap {
+                padding: 0;
+            }
+            .btn {
+                max-width: max-content;
+                min-width: auto;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            bottom: -18px;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 18px;
+            content: "";
+            background-color: transparent;
+
+            @media (max-width: 575px) {
+                bottom: -10px;
+                height: 10px;
+            }
+        }
+
+        &._active {
+            &::before {
+                background-color: #c49a6c;
+            }
+        }
+        &-content {
+            display: none;
+
+            &._active {
+                display: block;
+            }
+        }
+    }
+}

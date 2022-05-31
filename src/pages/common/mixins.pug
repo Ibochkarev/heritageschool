@@ -186,3 +186,13 @@ mixin campuses-card-price(data)
       .campuses__item-title(data-aos="fade-up" data-aos-delay="2000" data-aos-duration="2000")!=data.title
     .campuses__item-link__wrap
       a.campuses__item-link.btn.campuses__item-tab__link(href!=data.link data-aos="flip-down" data-aos-delay="2000" data-aos-duration="1000") Стоимость
+
+//- Cost card
+mixin cost-card(data)
+  a.campuses__item.cost__card(data-toggle-target=".campus_" + data.id)
+    .campuses__item-overlay
+    .campuses__item-info
+      .campuses__item-city!=data.city
+      .campuses__item-title!=data.title
+    .campuses__item-link__wrap
+      button.campuses__item-link.btn(type="button") Стоимость
